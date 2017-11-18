@@ -1,0 +1,32 @@
+---
+title: "score"
+author: "Zhuqoun Sheng"
+date: "November 18, 2017"
+output: pdf_document
+---
+
+```{r}
+library(stringr)
+library(ggplot2)
+library(dplyr)
+
+genre = read.csv("data/genre.csv")
+movie = read.csv("data/movie_metadata_filtered.csv")
+
+genre_matrix = matrix(0,
+                    nrow=dim(movie)[1],
+                    ncol=dim(genre)[1])
+colnames(genre_matrix)= genre$genres
+
+for(i in dim(genre)[1]){
+genre_matrix[,i] =genre_matrix[,i] + 
+  str_detect(movie$genres,pattern = as.character(genre[i,1]))
+}
+
+genre_matrix[,22] =genre_matrix[,22] + 
+  str_detect(movie$genres,pattern = as.character(genre[22,1]))
+sum(genre_matrix[,22])
+sum(genre_matrix[,23])
+
+```
+
