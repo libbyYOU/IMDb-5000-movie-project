@@ -10,18 +10,67 @@ library(stringr)
 library(ggplot2)
 library(dplyr)
 
-genre = read.csv("data/genre.csv")
+genres = read.csv("data/genre.csv")
 movie = read.csv("data/movie_metadata_filtered.csv")
+keywords = read.csv("data/keywords.csv")
+actors = read.csv("actor.csv")
+directors = read.csv("data/directors.csv")
 
-genre_matrix = matrix(0,
+genres_matrix = matrix(0,
                     nrow=dim(movie)[1],
-                    ncol=dim(genre)[1])
-colnames(genre_matrix)= genre$genres
+                    ncol=dim(genres)[1])
+colnames(genres_matrix)= genres$genres
 
-for(i in 1:dim(genre)[1]){
-genre_matrix[,i] =genre_matrix[,i] + 
-  str_detect(movie$genres,pattern = as.character(genre[i,1]))
+
+
+for(i in 1:dim(genres)[1]){
+genres_matrix[,i] =genres_matrix[,i] + 
+  str_detect(movie$genres,pattern = as.character(genres[i,1]))
 }
 
+keywords_matrix = matrix(0,
+                    nrow=dim(movie)[1],
+                    ncol=dim(keywords)[1])
+colnames(keywords_matrix)= keywords$plot_keywords
+
+for(i in 1:dim(keywords)[1]){
+keywords_matrix[,i] =keywords_matrix[,i] + 
+  str_detect(movie$plot_keywords,pattern = as.character(keywords[i,1]))
+}
+
+actors_matrix = matrix(0,
+                    nrow=dim(movie)[1],
+                    ncol=dim(actors)[1])
+colnames(actors_matrix)= actors$actor_name
+
+for(i in 1:dim(keywords)[1]){
+actors_matrix[,i] =actors_matrix[,i] + 
+  str_detect(movie$actor_1_name,pattern = as.character(keywords[i,1]))  +
+  str_detect(movie$actor_2_name,pattern = as.character(keywords[i,1])) +
+  str_detect(movie$actor_3_name,pattern = as.character(keywords[i,1])) 
+}
+
+actors_matrix[actors_matrix > 0] = 1
+
+
+
+rm(actors,genres,keywords,i)
+
+#get a new datafarme contains movie & genre information
+
+movie_genres = data.frame(movie,genres_matrix)
+```
+
+
+```{r}
+directors_matrix = matrix(0,
+                    nrow=dim(movie)[1],
+                    ncol=dim(directors)[1])
+colnames(directors_matrix)= directors$director_name
+
+for(i in 1:dim(directors)[1]){
+  directors_matrix[,i] =directors_matrix[,i] + 
+  str_detect(movie$director_name,pattern =  as.character(directors[i,1]))
+}
 ```
 
