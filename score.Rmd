@@ -18,15 +18,10 @@ genre_matrix = matrix(0,
                     ncol=dim(genre)[1])
 colnames(genre_matrix)= genre$genres
 
-for(i in dim(genre)[1]){
+for(i in 1:dim(genre)[1]){
 genre_matrix[,i] =genre_matrix[,i] + 
   str_detect(movie$genres,pattern = as.character(genre[i,1]))
 }
-
-genre_matrix[,22] =genre_matrix[,22] + 
-  str_detect(movie$genres,pattern = as.character(genre[22,1]))
-sum(genre_matrix[,22])
-sum(genre_matrix[,23])
 
 ```
 
