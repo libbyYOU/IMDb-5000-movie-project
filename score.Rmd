@@ -43,11 +43,11 @@ actors_matrix = matrix(0,
                     ncol=dim(actors)[1])
 colnames(actors_matrix)= actors$actor_name
 
-for(i in 1:dim(keywords)[1]){
+for(i in 1:dim(actors)[1]){
 actors_matrix[,i] =actors_matrix[,i] + 
-  str_detect(movie$actor_1_name,pattern = as.character(keywords[i,1]))  +
-  str_detect(movie$actor_2_name,pattern = as.character(keywords[i,1])) +
-  str_detect(movie$actor_3_name,pattern = as.character(keywords[i,1])) 
+  str_detect(movie$actor_1_name,pattern = as.character(actors[i,1]))  +
+  str_detect(movie$actor_2_name,pattern = as.character(actors[i,1])) +
+  str_detect(movie$actor_3_name,pattern = as.character(actors[i,1])) 
 }
 
 actors_matrix[actors_matrix > 0] = 1
