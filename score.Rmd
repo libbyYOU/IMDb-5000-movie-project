@@ -10,10 +10,12 @@ library(stringr)
 library(ggplot2)
 library(dplyr)
 
+# prepared the matrixs needed
+
 genres = read.csv("data/genre.csv")
 movie = read.csv("data/movie_metadata_filtered.csv")
 keywords = read.csv("data/keywords.csv")
-actors = read.csv("actor.csv")
+actors = read.csv("data/actors.csv")
 directors = read.csv("data/directors.csv")
 
 genres_matrix = matrix(0,
@@ -63,14 +65,12 @@ for(i in 1:dim(directors)[1]){
 }
 
 rm(actors,genres,keywords,directors,i)
-
-#get a new datafarme contains movie & genre information
-
-movie_genres = data.frame(movie,genres_matrix)
 ```
 
 
 ```{r}
+#get a new datafarme contains movie & genre information
 
+movie_genres = data.frame(movie,genres_matrix)
 ```
 
