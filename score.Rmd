@@ -71,6 +71,7 @@ rm(actors,genres,keywords,directors,i)
 ```{r}
 #get a new datafarme contains movie & genre information
 
-movie_genres = data.frame(movie,genres_matrix)
+movie_all = data.frame(movie,
+                       genres_matrix)
 ```
 
