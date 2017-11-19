@@ -43,7 +43,7 @@ keywords_matrix[,i] =keywords_matrix[,i] +
 actors_matrix = matrix(0,
                     nrow=dim(movie)[1],
                     ncol=dim(actors)[1])
-colnames(actors_matrix)= actors$actor_name
+colnames(actors_matrix)= actors$actor
 
 for(i in 1:dim(actors)[1]){
 actors_matrix[,i] =actors_matrix[,i] + 
