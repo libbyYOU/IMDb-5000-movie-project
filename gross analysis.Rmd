@@ -79,17 +79,28 @@ movie_genres = data.frame(movie,genres_matrix)
 ```{r}
 names(movie)
 ```
+
 The numerical variables include: num_critic_for_reviews, duration,director_facebook_likes, actor_3_facebook_likes, actor_1_facebook_likes, num_voted_users, cast_total_facebook_like, facenumber_in_poster, budget, actor_2_facebook_likes, imdb_score, aspect_ratio, movie_facebook_likes
 
 The categorical variables include: director_name, actor_1_name, actor_2_name, actor_3_name, genres and plot_keywords.
 
 ## Analysis into numerical variables
+
+#数量级降到以million记
+Firstly, we calculate gross and budget in million, so that budget will not be over-valued in this model.
+```{r}
+library(dplyr)
+movie1=movie %>%
+  mutate(budget=budget/1000000)%>%
+  mutate(gross=gross/1000000)
+```
+
 # Select numerical variables to be analysed
 We assumed that gross has relationship with both production and marketing process, thus gross is probably affected by factors including budget,duration and popularity of director and cast (which is reflected by Facebook likes). Additionally, gross is also related to marketing
 
 ```{r}
 library(dplyr)
-data=select(movie,gross,budget,duration,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
+data=select(movie1,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
 
 set.seed(1)
 train_n=sample(dim(data)[1],0.75*dim(data)[1])
@@ -116,21 +127,81 @@ M2=lm(gross~.-facenumber_in_poster,train_data)
 summary(M2)
 ```
 ```{r}
-M3=lm(gross~.-facenumber_in_poster-imdb_score,train_data)
+M3=lm(gross~.-facenumber_in_poster-movie_facebook_likes,train_data)
 summary(M3)
 ```
 ```{r}
-M4=lm(gross~.-facenumber_in_poster-imdb_score-movie_facebook_likes,train_data)
+M4=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score,train_data)
 summary(M4)
 ```
 
 ```{r}
-M5=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-num_critic_for_reviews,train_data)
+M5=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year,train_data)
 summary(M5)
 ```
 ```{r}
-M6=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-num_critic_for_reviews-duration,train_data)
+M6=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews,train_data)
 summary(M6)
+```
+
+```{r}
+M7=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews-duration,train_data)
+summary(M7)
+```
+From this model, budget has a strong positive relationship with gross
+# 数量级降到以 万 记
+# Build a linear regression model
+```{r}
+library(dplyr)
+movie2=movie %>%
+  mutate(budget=budget/100000)%>%
+  mutate(gross=gross/100000)
+```
+
+```{r}
+library(dplyr)
+data1=select(movie2,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
+
+set.seed(1)
+train_n=sample(dim(data)[1],0.75*dim(data)[1])
+train_data1=data1[train_n,]
+test_data1=data1[-train_n,]
+```
+
+
+```{r}
+Ma1=lm(gross~.,train_data1)
+summary(Ma1)
+```
+
+```{r}
+Ma2=lm(gross~.-facenumber_in_poster,train_data1)
+summary(Ma2)
+```
+
+```{r}
+Ma3=lm(gross~.-facenumber_in_poster-movie_facebook_likes,train_data1)
+summary(Ma3)
+```
+
+```{r}
+Ma4=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score,train_data1)
+summary(Ma4)
+```
+
+```{r}
+Ma5=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year,train_data1)
+summary(Ma5)
+```
+
+```{r}
+Ma6=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews,train_data1)
+summary(Ma6)
+```
+
+```{r}
+Ma7=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews-duration,train_data1)
+summary(Ma7)
 ```
 
 ## Analysis into categorical variables
@@ -144,6 +215,7 @@ gross.genres=data.frame(movie$gross,genres_matrix)
 gross.genres=na.omit(gross.genres)
 x=model.matrix(movie.gross~.,gross.genres)[,-1]
 y=gross.genres$movie.gross
+y=scale(y)
 set.seed(1)
 train=sample(dim(x)[1],0.75*dim(x)[1])
 ```
@@ -154,7 +226,7 @@ ridge.mod=glmnet(x[train,],y[train],alpha=0)
 set.seed(1)
 ridge.cv.out=cv.glmnet(x[train,],y[train],alpha=0)
 ridge.best.lam=ridge.cv.out$lambda.min
-ridge.pre=predict(ridge.mod,s=best.lam,newx = x[-train,])
+ridge.pre=predict(ridge.mod,s=ridge.best.lam,newx = x[-train,])
 MSE.ridge=mean((ridge.pre-y[-train])^2)
 MSE.ridge
 ```
@@ -165,15 +237,31 @@ lasso.mod=glmnet(x[train,],y[train],alpha = 1)
 set.seed(1)
 lasso.cv.out=cv.glmnet(x[train,],y[train],alpha=1)
 lasso.best.lam=lasso.cv.out$lambda.min
-lasso.pre=predict(lasso.mod,s=best.lam,newx = x[-train,])
+lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
 MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
-Since MSE for ridge model and lasso model are nearly the same, we use lasso model to generate coefficients, so that we could get less number of coefficients.
 ```{r}
-genres.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)
-genres.lasso.coef
-genres.lasso.coef[lasso.coef!=0]
+dim(genres_matrix)[2]
+```
+
+Since MSE for ridge model and lasso model are nearly the same, we use lasso model to generate coefficients, so that we could get less number of coefficients.
+
+```{r}
+genres.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:24,]
+genres.lasso.coef=genres.lasso.coef[genres.lasso.coef!=0]
+genres.co=data.frame(genres.lasso.coef)
+genres.co=data.frame(rownames(genres.co),genres.co)[-1,]
+
+ordered.desc.genres=genres.co %>%
+  arrange(desc(genres.lasso.coef))
+ordered.desc.genres
+
+ordered.asc.genres=genres.co %>%
+  arrange(genres.lasso.coef)
+ordered.asc.genres
+
+colnames(genres.co)=c("genres","gross_coef")
 ```
 
 # Identify top keywords leading to high gross
@@ -182,6 +270,7 @@ gross.keywords=data.frame(movie$gross,keywords_matrix)
 gross.keywords=na.omit(gross.keywords)
 x=model.matrix(movie.gross~.,gross.keywords)[,-1]
 y=gross.keywords$movie.gross
+y=scale(y)
 set.seed(1)
 train=sample(dim(x)[1],0.75*dim(x)[1])
 ```
@@ -197,9 +286,8 @@ MSE.ridge=mean((ridge.pre-y[-train])^2)
 MSE.ridge
 ```
 ```{r}
-keywords.ridge.coef=predict(ridge.mod,type ="coefficients",s =ridge.best.lam )[1:5253,]
+keywords.ridge.coef=predict(ridge.mod,type ="coefficients",s =ridge.best.lam )[1:5254,]
 keywords.ridge.coef=keywords.ridge.coef[keywords.ridge.coef!=0]
-keywords.ridge.coef
 ```
 
 2.Lasso model
@@ -212,11 +300,26 @@ lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
 MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
+```{r}
+dim(keywords_matrix)[2]
+```
 
 ```{r}
-keywords.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:5253,]
+keywords.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:5254,]
 keywords.lasso.coef=keywords.lasso.coef[keywords.lasso.coef!=0]
-keywords.lasso.coef
+keywords.co=data.frame(keywords.lasso.coef)
+keywords.co=data.frame(rownames(keywords.co),keywords.co)[-1,]
+
+
+ordered.desc.keywords=keywords.co %>%
+  arrange(desc(keywords.lasso.coef))
+ordered.desc.keywords
+
+ordered.asc.keywords=keywords.co %>%
+  arrange(keywords.lasso.coef)
+ordered.asc.keywords
+
+colnames(keywords.co)=c("keywords","gross_coef")
 ```
 
 # Identify directors leading to high gross
@@ -225,6 +328,7 @@ gross.directors=data.frame(movie$gross,directors_matrix)
 gross.directors=na.omit(gross.directors)
 x=model.matrix(movie.gross~.,gross.directors)[,-1]
 y=gross.directors$movie.gross
+y=scale(y)
 set.seed(1)
 train=sample(dim(x)[1],0.75*dim(x)[1])
 ```
@@ -240,6 +344,76 @@ ridge.pre=predict(ridge.mod,s=ridge.best.lam,newx = x[-train,])
 MSE.ridge=mean((ridge.pre-y[-train])^2)
 MSE.ridge
 ```
+
+2.Lasso model
+```{r}
+lasso.mod=glmnet(x[train,],y[train],alpha=1)
+set.seed(1)
+lasso.cv.out=cv.glmnet(x[train,],y[train],alpha=1)
+lasso.best.lam=lasso.cv.out$lambda.min
+lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
+MSE.lasso=mean((lasso.pre-y[-train])^2)
+MSE.lasso
+```
+```{r}
+dim(directors_matrix)[2]
+```
+
+
+Since Lasso model has a lower MSE, we use it to generate coefficients.
+```{r}
+directors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:1466,]
+directors.lasso.coef=directors.lasso.coef[directors.lasso.coef!=0]
+directors.co=data.frame(directors.lasso.coef)
+directors.co=data.frame(rownames(directors.co),directors.co)[-1,]
+
+
+ordered.desc.directors=directors.co %>%
+  arrange(desc(directors.lasso.coef))
+ordered.desc.directors
+
+ordered.asc.directors=directors.co %>%
+  arrange(directors.lasso.coef)
+ordered.asc.directors
+
+colnames(directors.co)=c("directors","gross_coef")
+```
+
+# Identify actors and their relationship to high gross
+```{r}
+gross.actors=data.frame(movie$gross,actors_matrix)
+gross.actors=na.omit(gross.actors)
+x=model.matrix(movie.gross~.,gross.actors)[,-1]
+y=gross.actors$movie.gross
+y=scale(y)
+set.seed(1)
+train=sample(dim(x)[1],0.75*dim(x)[1])
+```
+Use Ridge model and Lasso model to analyse relationship between actors and gross.
+
+1.Ridge model
+```{r}
+ridge.mod=glmnet(x[train,],y[train],alpha = 0)
+set.seed(1)
+ridge.cv.out=cv.glmnet(x[train,],y[train],alpha = 0)
+ridge.best.lambda=ridge.cv.out$lambda.min
+ridge.pre=predict(ridge.mod,s=ridge.best.lam,newx = x[-train,])
+MSE.ridge=mean((ridge.pre-y[-train])^2)
+MSE.ridge
+```
+```{r}
+dim(actors_matrix)[2]
+```
+
+
+```{r}
+actors.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:3550,]
+actors.ridge.coef=actors.ridge.coef[actors.ridge.coef!=0]
+actors.ridge.co=data.frame(actors.ridge.coef)
+actors.ridge.co=data.frame(rownames(actors.ridge.co),actors.ridge.co)[-1,]
+dim(actors.ridge.co)
+```
+
 2.Lasso model
 ```{r}
 lasso.mod=glmnet(x[train,],y[train],alpha=1)
@@ -251,14 +425,22 @@ MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
 
-Since Lasso model has a lower MSE, we use it to generate coefficients.
-```{r}
-directors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:1465,]
-directors.lasso.coef=directors.lasso.coef[directors.lasso.coef!=0]
-directors.lasso.coef
-directors.co=data.frame(directors.lasso.coef)
-library(dplyr)
-ordered.directors=directors.co %>%
-  arrange(desc(directors.lasso.coef))
-```
 
+```{r}
+actors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:3550,]
+actors.lasso.coef=actors.lasso.coef[actors.lasso.coef!=0]
+actors.lasso.coef
+actors.lasso.co=data.frame(actors.lasso.coef)
+actors.lasso.co=data.frame(rownames(actors.lasso.co),actors.lasso.co)[-1,]
+
+colnames(actors.lasso.co)=c("actors","gross_coef")
+
+library(dplyr)
+ordered.desc.actors=actors.lasso.co %>%
+  arrange(desc(actors.lasso.coef))
+ordered.desc.actors
+
+ordered.asc.actors=actors.lasso.co %>%
+  arrange(actors.lasso.coef)
+ordered.asc.actors
+```
