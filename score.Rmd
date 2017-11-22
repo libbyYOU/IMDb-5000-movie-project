@@ -74,7 +74,6 @@ movie = mutate(movie,high_low = ifelse(imdb_score>7,1,0))
 
 #get a new datafarme contains useful information
 movie_useful = data.frame(movie$high_low,
-                         movie$movie_title,
                          movie$duration,
                          movie$actor_1_facebook_likes,
                          movie$actor_2_facebook_likes,
@@ -87,42 +86,42 @@ movie_useful = data.frame(movie$high_low,
                          movie$budget,
                          movie$aspect_ratio,
                          movie$title_year)
+movie_useful = na.omit(movie_useful)
 ```
 
 ```{r}
 set.seed(1)
-train_n =sample(1:dim(movie_useful)[1],                                                     dim(movie_useful)[1]*0.7)
+train_n =sample(1:dim(movie_useful)[1],                                                     dim(movie_useful)[1]*0.75)
 
 train_data = movie_useful[train_n,]
 test_data = movie_useful[-train_n,]
 
-glm=glm(movie.high_low~.-movie.movie_title,
+glm=glm(movie.high_low~.,
        data=train_data,
        family="binomial")
-summary(glm1)
-rm(train_n)
+summary(glm)
 ```
 
 ```{r}
-glm=glm(movie.high_low~.-movie.movie_title-movie.actor_3_facebook_likes,
+glm=glm(movie.high_low~.-movie.actor_3_facebook_likes,
        data=train_data,
        family="binomial")
 summary(glm)
 ```
 ```{r}
-glm=glm(movie.high_low~.-movie.movie_title-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes,
+glm=glm(movie.high_low~.-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes,
        data=train_data,
        family="binomial")
 summary(glm)
 ```
 ```{r}
-glm=glm(movie.high_low~.-movie.movie_title-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes-movie.cast_total_facebook_likes,
+glm=glm(movie.high_low~.-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes-movie.cast_total_facebook_likes,
        data=train_data,
        family="binomial")
 summary(glm)
 ```
 ```{r}
-glm=glm(movie.high_low~.-movie.movie_title-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes-movie.cast_total_facebook_likes-movie.actor_1_facebook_likes,
+glm=glm(movie.high_low~.-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes-movie.cast_total_facebook_likes-movie.actor_1_facebook_likes,
        data=train_data,
        family="binomial")
 summary(glm)
@@ -132,14 +131,321 @@ Step by step, we elimated some variables' effect, include actor's facebook likes
 
 For the remined variables, the longer the movie, the higher the score which is a little superice, however, the year also is a significant variables means that recent years the movie get harder than before to get a score higher then 7.0.
 
+
 ```{r}
-glm.probabilities=predict(glm,type="response") 
-
-i=seq(0,0.99,by=0.01)
-summary.test.accuracy=NULL
-for(Top10.probability in i){
-
+glm_predict=predict(glm,test_data,type="response") 
+threshold_range = seq(0.01,0.4,by=0.01)
+threshold = NULL
+result = NULL
+for(threshold in threshold_range){
+glm.test.pre=rep("low",dim(test_data)[1])
+glm.test.pre[glm_predict>=threshold]="high"
+confusion_table=table(test_data$movie.high_low,glm.test.pre)
+misclassification_error=(confusion_table[1,2]+confusion_table[2,1])/sum(confusion_table)
+result = c(result,misclassification_error)
 }
-summary.test.accuracy
+plot(threshold_range,result)
+error_matrix = data.frame(threshold_range,result)
+error_matrix = error_matrix %>% 
+  arrange(result)
+rm(error_matrix,glm,glm.test.pre,glm_predict,confusion_table,result,threshold,threshold_range,misclassification_error)
+```
+```{r}
+library(MASS)
+ldam = lda(movie.high_low~.-movie.title_year-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes-movie.cast_total_facebook_likes-movie.actor_1_facebook_likes,data = train_data)
+lda_pred = predict(ldam,test_data)
+lda_pred_y = lda_pred$class
+testing_y = test_data$movie.high_low
+table(testing_y,lda_pred_y)
+mean(testing_y!=lda_pred_y)
+rm(lda_pred,lda_pred_y,ldam)
+```
+```{r}
+qdam = qda(movie.high_low~.-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes-movie.cast_total_facebook_likes-movie.actor_1_facebook_likes-movie.title_year,data = train_data)
+qda_pred = predict(qdam,test_data)
+qda_pred_y = qda_pred$class
+testing_y = test_data$movie.high_low
+table(testing_y,qda_pred_y)
+mean(testing_y!=qda_pred_y)
+rm(qda_pred,qda_pred_y,qdam)
+```
+
+```{r, warning= FALSE}
+library(class)
+train_high_low = train_data$movie.high_low
+test_high_low = test_data$movie.high_low
+test_data_scaled = scale(test_data)
+train_data_scaled = scale(train_data)
+k_range = seq(1,50,by=1)
+k = NULL
+train_errors = NULL
+test_errors = NULL
+for(kk in k_range){
+knn_pred =knn(train_data_scaled,test_data_scaled,train_high_low,k=kk)
+misclassification_error = mean(test_high_low != knn_pred)
+test_errors = c(test_errors,misclassification_error)
+
+misclassification_error = mean(train_high_low != knn_pred)
+train_errors = c(train_errors,misclassification_error)
+}
+plot(k_range,test_errors)
+plot(k_range,train_errors)
+
+error_matrix = data.frame(k_range,test_errors,train_errors)
+error_matrix = error_matrix %>% 
+  mutate(sumerrors = test_errors + train_errors) %>% 
+  arrange(sumerrors)
+rm(error_matrix,test_data_scaled,train_data_scaled,k,k_range,kk,knn_pred,misclassification_error,test_high_low,test_errors,testing_y,train_errors,train_high_low)
+```
+
+
+
+
+In a conclusion, the lda model would be the best model to predict the high or low of the imdb score.Besides,the knn model and glm model have quite big misclassification error so we cannot use them.
+
+To identify genres that have relationship with IMDB score,we used lasso and irdge model to identify.
+
+```{r}
+library(glmnet)
+
+score_genres=data.frame(movie$movie_title,movie$high_low,genres_matrix)
+score_genres=na.omit(score_genres)
+x=model.matrix(movie.high_low~.,score_genres[,-1])[,-1]
+y=score_genres$movie.high_low
+set.seed(1)
+train_n =sample(1:dim(score_genres)[1],                                                     dim(score_genres)[1]*0.75)
+train_x = x[train_n,]
+test_x = x[-train_n,]
+train_y = y[train_n]
+test_y = y[-train_n]
+```
+
+1.Ridge model
+```{r}
+ridgem=glmnet(train_x,train_y,alpha=0)
+set.seed(1)
+ridge.cv.out=cv.glmnet(train_x,train_y,alpha=0)
+ridge.best.lam=ridge.cv.out$lambda.min
+ridge.pre=predict(ridgem,s=ridge.best.lam,newx = x[-train_n,])
+MSE.ridge=mean((ridge.pre-test_y)^2)
+MSE.ridge
+```
+
+2.Lasso model
+```{r}
+lassom=glmnet(train_x,train_y,alpha=1)
+set.seed(1)
+lasso.cv.out=cv.glmnet(train_x,train_y,alpha=0)
+lasso.best.lam=lasso.cv.out$lambda.min
+lasso.pre=predict(lassom,s=lasso.best.lam,newx = test_x)
+MSE.lasso=mean((lasso.pre-test_y)^2)
+MSE.lasso
+```
+
+The results are pretty close,so we consider use lasso to identity the genres have the most important influence. 
+
+```{r}
+lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(genres_matrix)[2]+1,]
+lasso.coef=data.frame(colnames(genres_matrix),
+                      data.frame(lasso.coef))
+lasso.coef %>% 
+  filter(lasso.coef!=0) %>% 
+  arrange(desc(lasso.coef))
+```
+#actors
+
+
+```{r}
+score_actors=data.frame(movie$movie_title,movie$high_low,actors_matrix)
+score_actors=na.omit(score_actors)
+x=model.matrix(movie.high_low~.,score_actors[,-1])[,-1]
+y=score_actors$movie.high_low
+set.seed(1)
+train_n =sample(1:dim(score_actors)[1],                                                     dim(score_actors)[1]*0.75)
+train_x = x[train_n,]
+test_x = x[-train_n,]
+train_y = y[train_n]
+test_y = y[-train_n]
+```
+
+1.Ridge model
+```{r}
+ridgem=glmnet(train_x,train_y,alpha=0)
+set.seed(1)
+ridge.cv.out=cv.glmnet(train_x,train_y,alpha=0)
+ridge.best.lam=ridge.cv.out$lambda.min
+ridge.pre=predict(ridgem,s=ridge.best.lam,newx = x[-train_n,])
+MSE.ridge=mean((ridge.pre-test_y)^2)
+MSE.ridge
+```
+
+2.Lasso model
+```{r}
+lassom=glmnet(train_x,train_y,alpha=1)
+set.seed(1)
+lasso.cv.out=cv.glmnet(train_x,train_y,alpha=0)
+lasso.best.lam=lasso.cv.out$lambda.min
+lasso.pre=predict(lassom,s=lasso.best.lam,newx = test_x)
+MSE.lasso=mean((lasso.pre-test_y)^2)
+MSE.lasso
+```
+
+The results are pretty close,so we consider use lasso to identity the genres have the most important influence. 
+
+```{r}
+lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(actors_matrix)[2]+1,]
+lasso.coef=data.frame(colnames(actors_matrix),
+                      data.frame(lasso.coef))
+actors.coef = lasso.coef %>% 
+  filter(lasso.coef!=0) %>% 
+  arrange(desc(lasso.coef))
+```
+
+However, none of the actors have significant influence on the imdb_score from lasso regression, we need to use ridge regression to identity.
+```{r}
+ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(actors_matrix)[2]+1,]
+ridge.coef=data.frame(colnames(actors_matrix),
+                      data.frame(ridge.coef))
+actors.coef = ridge.coef %>% 
+  filter(ridge.coef!=0) %>% 
+  arrange(desc(ridge.coef))
+
+
+colnames(actors.coef)=c("actors","score_coef")
+
+actors.coef[1:10,1]
+actors.coef[(dim(actors.coef)[1]-10):dim(actors.coef)[1],1]
+```
+
+#keywords
+
+
+```{r}
+score_keywords=data.frame(movie$movie_title,movie$high_low,keywords_matrix)
+score_keywords=na.omit(score_keywords)
+x=model.matrix(movie.high_low~.,score_keywords[,-1])[,-1]
+y=score_keywords$movie.high_low
+set.seed(1)
+train_n =sample(1:dim(score_keywords)[1],                                                     dim(score_keywords)[1]*0.75)
+train_x = x[train_n,]
+test_x = x[-train_n,]
+train_y = y[train_n]
+test_y = y[-train_n]
+```
+
+1.Ridge model
+```{r}
+ridgem=glmnet(train_x,train_y,alpha=0)
+set.seed(1)
+ridge.cv.out=cv.glmnet(train_x,train_y,alpha=0)
+ridge.best.lam=ridge.cv.out$lambda.min
+ridge.pre=predict(ridgem,s=ridge.best.lam,newx = x[-train_n,])
+MSE.ridge=mean((ridge.pre-test_y)^2)
+MSE.ridge
+```
+
+2.Lasso model
+```{r}
+lassom=glmnet(train_x,train_y,alpha=1)
+set.seed(1)
+lasso.cv.out=cv.glmnet(train_x,train_y,alpha=0)
+lasso.best.lam=lasso.cv.out$lambda.min
+lasso.pre=predict(lassom,s=lasso.best.lam,newx = test_x)
+MSE.lasso=mean((lasso.pre-test_y)^2)
+MSE.lasso
+```
+
+The results are pretty close,so we consider use lasso to identity the keywords have the most important influence. 
+
+```{r}
+lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(keywords_matrix)[2]+1,]
+lasso.coef=data.frame(colnames(keywords_matrix),
+                      data.frame(lasso.coef))
+keywords.coef = lasso.coef %>% 
+  filter(lasso.coef!=0) %>% 
+  arrange(desc(lasso.coef))
+```
+
+There is no result
+
+```{r}
+ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(keywords_matrix)[2]+1,]
+ridge.coef=data.frame(colnames(keywords_matrix),
+                      data.frame(ridge.coef))
+keywords.coef = ridge.coef %>% 
+  filter(ridge.coef!=0) %>% 
+  arrange(desc(ridge.coef))
+
+
+colnames(keywords.coef)=c("keywords","score_coef")
+
+keywords.coef[1:10,1]
+keywords.coef[(dim(keywords.coef)[1]-10):dim(keywords.coef)[1],1]
+```
+
+#directors
+
+
+```{r}
+score_directors=data.frame(movie$movie_title,movie$high_low,directors_matrix)
+score_directors=na.omit(score_directors)
+x=model.matrix(movie.high_low~.,score_directors[,-1])[,-1]
+y=score_directors$movie.high_low
+set.seed(1)
+train_n =sample(1:dim(score_directors)[1],                                                     dim(score_directors)[1]*0.75)
+train_x = x[train_n,]
+test_x = x[-train_n,]
+train_y = y[train_n]
+test_y = y[-train_n]
+```
+
+1.Ridge model
+```{r}
+ridgem=glmnet(train_x,train_y,alpha=0)
+set.seed(1)
+ridge.cv.out=cv.glmnet(train_x,train_y,alpha=0)
+ridge.best.lam=ridge.cv.out$lambda.min
+ridge.pre=predict(ridgem,s=ridge.best.lam,newx = x[-train_n,])
+MSE.ridge=mean((ridge.pre-test_y)^2)
+MSE.ridge
+```
+
+2.Lasso model
+```{r}
+lassom=glmnet(train_x,train_y,alpha=1)
+set.seed(1)
+lasso.cv.out=cv.glmnet(train_x,train_y,alpha=0)
+lasso.best.lam=lasso.cv.out$lambda.min
+lasso.pre=predict(lassom,s=lasso.best.lam,newx = test_x)
+MSE.lasso=mean((lasso.pre-test_y)^2)
+MSE.lasso
+```
+
+The results are pretty close,so we consider use lasso to identity the directors have the most important influence. 
+
+```{r}
+lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(directors_matrix)[2]+1,]
+lasso.coef=data.frame(colnames(directors_matrix),
+                      data.frame(lasso.coef))
+directors.coef = lasso.coef %>% 
+  filter(lasso.coef!=0) %>% 
+  arrange(desc(lasso.coef))
+```
+
+There is no result
+
+```{r}
+ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(directors_matrix)[2]+1,]
+ridge.coef=data.frame(colnames(directors_matrix),
+                      data.frame(ridge.coef))
+directors.coef = ridge.coef %>% 
+  filter(ridge.coef!=0) %>% 
+  arrange(desc(ridge.coef))
+
+
+colnames(directors.coef)=c("directors","score_coef")
+
+directors.coef[1:10,1]
+directors.coef[(dim(directors.coef)[1]-10):dim(directors.coef)[1],1]
 ```
 
