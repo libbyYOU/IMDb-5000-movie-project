@@ -248,7 +248,7 @@ The results are pretty close,so we consider use lasso to identity the genres hav
 lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(genres_matrix)[2]+1,]
 lasso.coef=data.frame(colnames(genres_matrix),
                       data.frame(lasso.coef))
-lasso.coef %>% 
+genres.coef = lasso.coef %>% 
   filter(lasso.coef!=0) %>% 
   arrange(desc(lasso.coef))
 ```
@@ -447,5 +447,11 @@ colnames(directors.coef)=c("directors","score_coef")
 
 directors.coef[1:10,1]
 directors.coef[(dim(directors.coef)[1]-10):dim(directors.coef)[1],1]
+```
+```{r}
+write.csv(actors.coef,file = "actors_score")
+write.csv(keywords.coef,file = "keywords_score")
+write.csv(directors.coef,file = "directors_score")
+write.csv(genres.coef,file = "genres_score")
 ```
 
