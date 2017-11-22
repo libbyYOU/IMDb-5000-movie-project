@@ -1,4 +1,4 @@
----
+%>% %>% %>% ---
 title: "score"
 author: "Zhuqoun Sheng"
 date: "November 18, 2017"
@@ -69,9 +69,77 @@ rm(actors,genres,keywords,directors,i)
 
 
 ```{r}
-#get a new datafarme contains movie & genre information
+#mutate a new column represent the high score and low score
+movie = mutate(movie,high_low = ifelse(imdb_score>7,1,0))
 
-movie_all = data.frame(movie,
-                       genres_matrix)
+#get a new datafarme contains useful information
+movie_useful = data.frame(movie$high_low,
+                         movie$movie_title,
+                         movie$duration,
+                         movie$actor_1_facebook_likes,
+                         movie$actor_2_facebook_likes,
+                         movie$actor_3_facebook_likes,
+                         movie$num_voted_users,
+                         movie$facenumber_in_poster,
+                         movie$cast_total_facebook_likes,
+                         movie$num_user_for_reviews,
+                         movie$num_critic_for_reviews,
+                         movie$budget,
+                         movie$aspect_ratio,
+                         movie$title_year)
+```
+
+```{r}
+set.seed(1)
+train_n =sample(1:dim(movie_useful)[1],                                                     dim(movie_useful)[1]*0.7)
+
+train_data = movie_useful[train_n,]
+test_data = movie_useful[-train_n,]
+
+glm=glm(movie.high_low~.-movie.movie_title,
+       data=train_data,
+       family="binomial")
+summary(glm1)
+rm(train_n)
+```
+
+```{r}
+glm=glm(movie.high_low~.-movie.movie_title-movie.actor_3_facebook_likes,
+       data=train_data,
+       family="binomial")
+summary(glm)
+```
+```{r}
+glm=glm(movie.high_low~.-movie.movie_title-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes,
+       data=train_data,
+       family="binomial")
+summary(glm)
+```
+```{r}
+glm=glm(movie.high_low~.-movie.movie_title-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes-movie.cast_total_facebook_likes,
+       data=train_data,
+       family="binomial")
+summary(glm)
+```
+```{r}
+glm=glm(movie.high_low~.-movie.movie_title-movie.actor_3_facebook_likes-movie.actor_2_facebook_likes-movie.cast_total_facebook_likes-movie.actor_1_facebook_likes,
+       data=train_data,
+       family="binomial")
+summary(glm)
+```
+
+Step by step, we elimated some variables' effect, include actor's facebook likes and cast_total_facebook_likes. In another words, all the variables contains facebook's effect. The IMDB_Score have nothing relate to the facebook.
+
+For the remined variables, the longer the movie, the higher the score which is a little superice, however, the year also is a significant variables means that recent years the movie get harder than before to get a score higher then 7.0.
+
+```{r}
+glm.probabilities=predict(glm,type="response") 
+
+i=seq(0,0.99,by=0.01)
+summary.test.accuracy=NULL
+for(Top10.probability in i){
+
+}
+summary.test.accuracy
 ```
 
