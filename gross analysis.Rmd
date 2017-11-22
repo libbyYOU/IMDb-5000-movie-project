@@ -8,6 +8,7 @@ output: pdf_document
 ```{r}
 library(stringr)
 library(ggplot2)
+library(MASS)
 library(dplyr)
 
 # prepared the matrixs needed
@@ -99,8 +100,7 @@ movie1=movie %>%
 We assumed that gross has relationship with both production and marketing process, thus gross is probably affected by factors including budget,duration and popularity of director and cast (which is reflected by Facebook likes). Additionally, gross is also related to marketing
 
 ```{r}
-library(dplyr)
-data=select(movie1,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
+data=dplyr::select(movie1,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
 
 set.seed(1)
 train_n=sample(dim(data)[1],0.75*dim(data)[1])
@@ -152,15 +152,13 @@ From this model, budget has a strong positive relationship with gross
 # 数量级降到以 万 记
 # Build a linear regression model
 ```{r}
-library(dplyr)
 movie2=movie %>%
   mutate(budget=budget/100000)%>%
   mutate(gross=gross/100000)
 ```
 
 ```{r}
-library(dplyr)
-data1=select(movie2,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
+data1=dplyr::select(movie2,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
 
 set.seed(1)
 train_n=sample(dim(data)[1],0.75*dim(data)[1])
