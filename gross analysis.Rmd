@@ -431,9 +431,6 @@ actors.lasso.coef
 actors.lasso.co=data.frame(actors.lasso.coef)
 actors.lasso.co=data.frame(rownames(actors.lasso.co),actors.lasso.co)[-1,]
 
-colnames(actors.lasso.co)=c("actors","gross_coef")
-
-library(dplyr)
 ordered.desc.actors=actors.lasso.co %>%
   arrange(desc(actors.lasso.coef))
 ordered.desc.actors
@@ -441,4 +438,14 @@ ordered.desc.actors
 ordered.asc.actors=actors.lasso.co %>%
   arrange(actors.lasso.coef)
 ordered.asc.actors
+
+colnames(actors.lasso.co)=c("actors","gross_coef")
 ```
+
+```{r}
+write.csv(actors.lasso.co,file = "actors_gross")
+write.csv(directors.co,file = "directors_gross")
+write.csv(genres.co,file = "genres_gross")
+write.csv(keywords.co,file = "keywords_gross")
+```
+
