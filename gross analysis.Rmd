@@ -443,9 +443,9 @@ colnames(actors.lasso.co)=c("actors","gross_coef")
 ```
 
 ```{r}
-write.csv(actors.lasso.co,file = "actors_gross")
-write.csv(directors.co,file = "directors_gross")
-write.csv(genres.co,file = "genres_gross")
-write.csv(keywords.co,file = "keywords_gross")
+write.csv(actors.lasso.co,file = "actors_gross.csv")
+write.csv(directors.co,file = "directors_gross.csv")
+write.csv(genres.co,file = "genres_gross.csv")
+write.csv(keywords.co,file = "keywords_gross.csv")
 ```
 
