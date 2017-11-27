@@ -87,6 +87,7 @@ movie_useful = data.frame(movie$high_low,
                          movie$aspect_ratio,
                          movie$title_year)
 movie_useful = na.omit(movie_useful)
+dim(actors_matrix)
 ```
 
 ```{r}
@@ -292,11 +293,11 @@ MSE.lasso
 The results are pretty close,so we consider use lasso to identity the genres have the most important influence. 
 
 ```{r}
-lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(actors_matrix)[2]+1,]
-lasso.coef=data.frame(colnames(actors_matrix),
-                      data.frame(lasso.coef))
-actors.coef = lasso.coef %>% 
-  arrange(desc(lasso.coef))
+ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(actors_matrix)[2]+1,]
+ridge.coef=data.frame(colnames(actors_matrix),
+                      data.frame(ridge.coef))
+actors.coef = ridge.coef %>% 
+  arrange(desc(ridge.coef))
 ```
 
 However, none of the actors have significant influence on the imdb_score from lasso regression, we need to use ridge regression to identity.
@@ -447,9 +448,9 @@ directors.coef[1:10,1]
 directors.coef[(dim(directors.coef)[1]-10):dim(directors.coef)[1],1]
 ```
 ```{r}
-write.csv(actors.coef,file = "actors_score")
-write.csv(keywords.coef,file = "keywords_score")
-write.csv(directors.coef,file = "directors_score")
-write.csv(genres.coef,file = "genres_score")
+write.csv(actors.coef,file = "actors_score.csv")
+write.csv(keywords.coef,file = "keywords_score.csv")
+write.csv(directors.coef,file = "directors_score.csv")
+write.csv(genres.coef,file = "genres_score.csv")
 ```
 
