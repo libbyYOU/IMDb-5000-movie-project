@@ -22,8 +22,11 @@ directors = plyr::join(read.csv("directors_score.csv")[,2:3],
                        read.csv("directors_gross.csv")[,2:3],
                        type = "right", 
                        by = "directors")
-genres = plyr::join(read.csv("genres_score.csv")[,2:3],
-                    read.csv("genres_gross.csv")[,2:3],
+genres_score = read.csv("genres_score.csv")[,2:3] 
+genres_gross = read.csv("genres_gross.csv")[,2:3]
+colnames(genres_score)=c("genres","score.coef")
+genres = plyr::join(genres_score,
+                    genres_gross,
                     type = "right", 
                     by = "genres")
 ```

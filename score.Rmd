@@ -246,11 +246,10 @@ MSE.lasso
 The results are pretty close,so we consider use lasso to identity the genres have the most important influence. 
 
 ```{r}
-lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(genres_matrix)[2]+1,]
-lasso.coef=data.frame(colnames(genres_matrix),
-                      data.frame(lasso.coef))
-genres.coef = lasso.coef %>% 
-  arrange(desc(lasso.coef))
+ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(genres_matrix)[2]+1,]
+ridge.coef=data.frame(colnames(genres_matrix),
+                      data.frame(ridge.coef))
+genres.coef = ridge.coef
 ```
 #actors
 
