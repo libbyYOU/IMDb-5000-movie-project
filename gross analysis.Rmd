@@ -1,6 +1,6 @@
 ---
-title: "score"
-author: "Zhuqoun Sheng"
+title: "Gross Analysis"
+author: "He YOU"
 date: "November 18, 2017"
 output: pdf_document
 ---
@@ -87,7 +87,7 @@ The categorical variables include: director_name, actor_1_name, actor_2_name, ac
 
 ## Analysis into numerical variables
 
-#数量级降到以million记
+# gross in million
 Firstly, we calculate gross and budget in million, so that budget will not be over-valued in this model.
 ```{r}
 library(dplyr)
@@ -122,14 +122,17 @@ From the graph we could see that there is strong positive relationship between g
 M1=lm(gross~.,train_data)
 summary(M1)
 ```
+
 ```{r}
 M2=lm(gross~.-facenumber_in_poster,train_data)
 summary(M2)
 ```
+
 ```{r}
 M3=lm(gross~.-facenumber_in_poster-movie_facebook_likes,train_data)
 summary(M3)
 ```
+
 ```{r}
 M4=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score,train_data)
 summary(M4)
@@ -139,6 +142,8 @@ summary(M4)
 M5=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year,train_data)
 summary(M5)
 ```
+
+
 ```{r}
 M6=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews,train_data)
 summary(M6)
@@ -149,58 +154,6 @@ M7=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-nu
 summary(M7)
 ```
 From this model, budget has a strong positive relationship with gross
-# 数量级降到以 万 记
-# Build a linear regression model
-```{r}
-movie2=movie %>%
-  mutate(budget=budget/100000)%>%
-  mutate(gross=gross/100000)
-```
-
-```{r}
-data1=dplyr::select(movie2,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
-
-set.seed(1)
-train_n=sample(dim(data)[1],0.75*dim(data)[1])
-train_data1=data1[train_n,]
-test_data1=data1[-train_n,]
-```
-
-
-```{r}
-Ma1=lm(gross~.,train_data1)
-summary(Ma1)
-```
-
-```{r}
-Ma2=lm(gross~.-facenumber_in_poster,train_data1)
-summary(Ma2)
-```
-
-```{r}
-Ma3=lm(gross~.-facenumber_in_poster-movie_facebook_likes,train_data1)
-summary(Ma3)
-```
-
-```{r}
-Ma4=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score,train_data1)
-summary(Ma4)
-```
-
-```{r}
-Ma5=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year,train_data1)
-summary(Ma5)
-```
-
-```{r}
-Ma6=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews,train_data1)
-summary(Ma6)
-```
-
-```{r}
-Ma7=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews-duration,train_data1)
-summary(Ma7)
-```
 
 ## Analysis into categorical variables
 
@@ -246,17 +199,16 @@ dim(genres_matrix)[2]
 Since MSE for ridge model and lasso model are nearly the same, we use lasso model to generate coefficients, so that we could get less number of coefficients.
 
 ```{r}
-genres.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:24,]
-genres.lasso.coef=genres.lasso.coef[genres.lasso.coef!=0]
-genres.co=data.frame(genres.lasso.coef)
+genres.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:24,]
+genres.co=data.frame(genres.ridge.coef)
 genres.co=data.frame(rownames(genres.co),genres.co)[-1,]
 
 ordered.desc.genres=genres.co %>%
-  arrange(desc(genres.lasso.coef))
+  arrange(desc(genres.ridge.coef))
 ordered.desc.genres
 
 ordered.asc.genres=genres.co %>%
-  arrange(genres.lasso.coef)
+  arrange(genres.ridge.coef)
 ordered.asc.genres
 
 colnames(genres.co)=c("genres","gross_coef")
@@ -283,10 +235,7 @@ ridge.pre=predict(ridge.mod,s=ridge.best.lam,newx = x[-train,])
 MSE.ridge=mean((ridge.pre-y[-train])^2)
 MSE.ridge
 ```
-```{r}
-keywords.ridge.coef=predict(ridge.mod,type ="coefficients",s =ridge.best.lam )[1:5254,]
-keywords.ridge.coef=keywords.ridge.coef[keywords.ridge.coef!=0]
-```
+
 
 2.Lasso model
 ```{r}
@@ -298,23 +247,24 @@ lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
 MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
+
+
 ```{r}
 dim(keywords_matrix)[2]
 ```
 
 ```{r}
-keywords.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:5254,]
-keywords.lasso.coef=keywords.lasso.coef[keywords.lasso.coef!=0]
-keywords.co=data.frame(keywords.lasso.coef)
+keywords.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:5254,]
+keywords.co=data.frame(keywords.ridge.coef)
 keywords.co=data.frame(rownames(keywords.co),keywords.co)[-1,]
 
 
 ordered.desc.keywords=keywords.co %>%
-  arrange(desc(keywords.lasso.coef))
+  arrange(desc(keywords.ridge.coef))
 ordered.desc.keywords
 
 ordered.asc.keywords=keywords.co %>%
-  arrange(keywords.lasso.coef)
+  arrange(keywords.ridge.coef)
 ordered.asc.keywords
 
 colnames(keywords.co)=c("keywords","gross_coef")
@@ -353,25 +303,26 @@ lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
 MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
+
+
 ```{r}
 dim(directors_matrix)[2]
 ```
 
 
-Since Lasso model has a lower MSE, we use it to generate coefficients.
+We use Ridge model to generate coefficients.
 ```{r}
-directors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:1466,]
-directors.lasso.coef=directors.lasso.coef[directors.lasso.coef!=0]
-directors.co=data.frame(directors.lasso.coef)
+directors.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:1466,]
+directors.co=data.frame(directors.ridge.coef)
 directors.co=data.frame(rownames(directors.co),directors.co)[-1,]
 
 
 ordered.desc.directors=directors.co %>%
-  arrange(desc(directors.lasso.coef))
+  arrange(desc(directors.ridge.coef))
 ordered.desc.directors
 
 ordered.asc.directors=directors.co %>%
-  arrange(directors.lasso.coef)
+  arrange(directors.ridge.coef)
 ordered.asc.directors
 
 colnames(directors.co)=c("directors","gross_coef")
@@ -399,17 +350,10 @@ ridge.pre=predict(ridge.mod,s=ridge.best.lam,newx = x[-train,])
 MSE.ridge=mean((ridge.pre-y[-train])^2)
 MSE.ridge
 ```
+
+
 ```{r}
 dim(actors_matrix)[2]
-```
-
-
-```{r}
-actors.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:3550,]
-actors.ridge.coef=actors.ridge.coef[actors.ridge.coef!=0]
-actors.ridge.co=data.frame(actors.ridge.coef)
-actors.ridge.co=data.frame(rownames(actors.ridge.co),actors.ridge.co)[-1,]
-dim(actors.ridge.co)
 ```
 
 2.Lasso model
@@ -425,25 +369,24 @@ MSE.lasso
 
 
 ```{r}
-actors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:3550,]
-actors.lasso.coef=actors.lasso.coef[actors.lasso.coef!=0]
-actors.lasso.coef
-actors.lasso.co=data.frame(actors.lasso.coef)
-actors.lasso.co=data.frame(rownames(actors.lasso.co),actors.lasso.co)[-1,]
+actors.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:3550,]
+actors.ridge.coef
+actors.ridge.co=data.frame(actors.ridge.coef)
+actors.ridge.co=data.frame(rownames(actors.ridge.co),actors.ridge.co)[-1,]
 
-ordered.desc.actors=actors.lasso.co %>%
-  arrange(desc(actors.lasso.coef))
+ordered.desc.actors=actors.ridge.co %>%
+  arrange(desc(actors.ridge.coef))
 ordered.desc.actors
 
-ordered.asc.actors=actors.lasso.co %>%
-  arrange(actors.lasso.coef)
+ordered.asc.actors=actors.ridge.co %>%
+  arrange(actors.ridge.coef)
 ordered.asc.actors
 
-colnames(actors.lasso.co)=c("actors","gross_coef")
+colnames(actors.ridge.co)=c("actors","gross_coef")
 ```
 
 ```{r}
-write.csv(actors.lasso.co,file = "actors_gross.csv")
+write.csv(actors.ridge.co,file = "actors_gross.csv")
 write.csv(directors.co,file = "directors_gross.csv")
 write.csv(genres.co,file = "genres_gross.csv")
 write.csv(keywords.co,file = "keywords_gross.csv")
