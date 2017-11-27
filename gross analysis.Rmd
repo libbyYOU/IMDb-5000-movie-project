@@ -200,15 +200,15 @@ Since MSE for ridge model and lasso model are nearly the same, we use lasso mode
 
 ```{r}
 genres.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:24,]
-genres.co=data.frame(genres.ridge.coef)
-genres.co=data.frame(rownames(genres.co),genres.co)[-1,]
+genres.co=data.frame(genres.ridge.coef)[-1,]
+genres.co=data.frame(colnames(genres_matrix),genres.co)
 
 ordered.desc.genres=genres.co %>%
-  arrange(desc(genres.ridge.coef))
+  arrange(desc(genres.co))
 ordered.desc.genres
 
 ordered.asc.genres=genres.co %>%
-  arrange(genres.ridge.coef)
+  arrange(genres.co)
 ordered.asc.genres
 
 colnames(genres.co)=c("genres","gross_coef")
@@ -255,16 +255,16 @@ dim(keywords_matrix)[2]
 
 ```{r}
 keywords.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:5254,]
-keywords.co=data.frame(keywords.ridge.coef)
-keywords.co=data.frame(rownames(keywords.co),keywords.co)[-1,]
+keywords.co=data.frame(keywords.ridge.coef)[-1,]
+keywords.co=data.frame(colnames(keywords_matrix),keywords.co)
 
 
 ordered.desc.keywords=keywords.co %>%
-  arrange(desc(keywords.ridge.coef))
+  arrange(desc(keywords.co))
 ordered.desc.keywords
 
 ordered.asc.keywords=keywords.co %>%
-  arrange(keywords.ridge.coef)
+  arrange(keywords.co)
 ordered.asc.keywords
 
 colnames(keywords.co)=c("keywords","gross_coef")
@@ -313,16 +313,16 @@ dim(directors_matrix)[2]
 We use Ridge model to generate coefficients.
 ```{r}
 directors.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:1466,]
-directors.co=data.frame(directors.ridge.coef)
-directors.co=data.frame(rownames(directors.co),directors.co)[-1,]
+directors.co=data.frame(directors.ridge.coef)[-1,]
+directors.co=data.frame(colnames(directors_matrix),directors.co)
 
 
 ordered.desc.directors=directors.co %>%
-  arrange(desc(directors.ridge.coef))
+  arrange(desc(directors.co))
 ordered.desc.directors
 
 ordered.asc.directors=directors.co %>%
-  arrange(directors.ridge.coef)
+  arrange(directors.co)
 ordered.asc.directors
 
 colnames(directors.co)=c("directors","gross_coef")
@@ -370,16 +370,15 @@ MSE.lasso
 
 ```{r}
 actors.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:3550,]
-actors.ridge.coef
-actors.ridge.co=data.frame(actors.ridge.coef)
-actors.ridge.co=data.frame(rownames(actors.ridge.co),actors.ridge.co)[-1,]
+actors.ridge.co=data.frame(actors.ridge.coef)[-1,]
+actors.ridge.co=data.frame(colnames(actors_matrix),actors.ridge.co)
 
 ordered.desc.actors=actors.ridge.co %>%
-  arrange(desc(actors.ridge.coef))
+  arrange(desc(actors.ridge.co))
 ordered.desc.actors
 
 ordered.asc.actors=actors.ridge.co %>%
-  arrange(actors.ridge.coef)
+  arrange(actors.ridge.co)
 ordered.asc.actors
 
 colnames(actors.ridge.co)=c("actors","gross_coef")

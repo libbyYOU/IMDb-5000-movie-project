@@ -1,59 +1,3550 @@
 "","actors","gross_coef"
-"Orlando.Bloom","Orlando.Bloom",2.47879938765415
-"Robert.Downey.Jr.","Robert.Downey.Jr.",0.740853226552609
-"Andrew.Garfield","Andrew.Garfield",0.119738881035285
-"Adam.Brown","Adam.Brown",0.597273915619452
-"Scarlett.Johansson","Scarlett.Johansson",0.59533050523101
-"Judy.Greer","Judy.Greer",0.00152805883150923
-"Jon.Favreau","Jon.Favreau",0.476185010221857
-"Kevin.Dunn","Kevin.Dunn",2.32947414331656
-"Sophia.Myles","Sophia.Myles",0.420866432058872
-"John.Ratzenberger","John.Ratzenberger",2.16830696902041
-"Bryce.Dallas.Howard","Bryce.Dallas.Howard",0.948170760585088
-"Christopher.Lee","Christopher.Lee",0.521693120279118
-"Morgan.Freeman","Morgan.Freeman",0.192597318969174
-"Mindy.Kaling","Mindy.Kaling",0.0259905253797861
-"Tom.Hardy","Tom.Hardy",1.16252495268058
-"Rami.Malek","Rami.Malek",0.195486673687975
-"Ryan.Reynolds","Ryan.Reynolds",0.0846572636540439
-"Maurice.LaMarche","Maurice.LaMarche",2.54744178525773
-"Daniel.Bernhardt","Daniel.Bernhardt",0.913233311857123
-"Tom.Cruise","Tom.Cruise",0.234885570482895
-"Dwayne.Johnson","Dwayne.Johnson",0.0203109338547872
-"Hayley.Atwell","Hayley.Atwell",0.855648540450148
-"Josh.Hutcherson","Josh.Hutcherson",0.201524977068034
-"Lisa.Ann.Walter","Lisa.Ann.Walter",0.040050298876934
-"Brad.Garrett","Brad.Garrett",0.590572718346589
-"Steve.Coogan","Steve.Coogan",0.0167152606790632
-"Blythe.Danner","Blythe.Danner",0.237195535418699
-"Mason.Lee","Mason.Lee",0.5452255420684
-"Jon.Hamm","Jon.Hamm",0.578930970383259
-"Tom.Hanks","Tom.Hanks",0.278162116278154
-"Amy.Poehler","Amy.Poehler",0.0826532014175135
-"Will.Smith","Will.Smith",0.536442270969957
-"Ed.Skrein","Ed.Skrein",1.94324396175454
-"Leonard.Roberts","Leonard.Roberts",1.85787931343013
-"Taylor.Lautner","Taylor.Lautner",0.130113681682171
-"Omar.Sy","Omar.Sy",1.81832217386998
-"Johnny.Depp","Johnny.Depp",0.321362796584308
-"Chris.Hemsworth","Chris.Hemsworth",0.977279403856439
-"Henry.Cavill","Henry.Cavill",0.0908783949568459
-"Bingbing.Li","Bingbing.Li",0.00109731776289043
-"Jennifer.Lawrence","Jennifer.Lawrence",0.806369129723446
-"Steve.Bastoni","Steve.Bastoni",0.0034697893464954
-"Robert.Pattinson","Robert.Pattinson",0.777751046213525
-"Catherine.Dyer","Catherine.Dyer",0.566335682207352
-"Lisa.Ann","Lisa.Ann",1.14571742734771e-06
-"Alan.D..Purwin","Alan.D..Purwin",1.49488198874946
-"James.Nesbitt","James.Nesbitt",0.0020594436739451
-"Don.Rickles","Don.Rickles",0.301914913240977
-"Noel.Clarke","Noel.Clarke",0.193214744369764
-"Phyllis.Smith","Phyllis.Smith",0.804485853772538
-"Willow.Smith","Willow.Smith",0.0358701248175505
-"Livvy.Stubenrauch","Livvy.Stubenrauch",0.00544892146291071
-"Helmut.Bakaitis","Helmut.Bakaitis",8.3051176142352e-05
-"Anthony.Reynolds","Anthony.Reynolds",1.64464490054189
-"Mike.Tyson","Mike.Tyson",0.000602963155292219
-"Conrad.Vernon","Conrad.Vernon",3.04318976903408
-"Stefan.Kapicic","Stefan.Kapicic",0.00755248981237485
-"Keir.O.Donnell","Keir.O.Donnell",0.000568521295793599
+"1","Joel David Moore",-0.0466688382188474
+"2","Orlando Bloom",0.902153160925286
+"3","Christian Bale",0.255448662249127
+"4","Samantha Morton",-0.103615023075934
+"5","James Franco",0.199073770990642
+"6","Donna Murphy",0.127163266289236
+"7","Robert Downey Jr.",0.488564194194618
+"8","Lauren Cohan",0.422654226670777
+"9","Marlon Brando",0
+"10","Ruth Wilson",0.0649866216237804
+"11","Christopher Meloni",0.351760340510609
+"12","Pierfrancesco Favino",0.383366341855679
+"13","Sam Claflin",0.242283687649457
+"14","Michael Stuhlbarg",-0.124127174225091
+"15","Andrew Garfield",0.32569110457893
+"16","William Hurt",-0.0570956151808268
+"17","Adam Brown",0.664245303990822
+"18","Eva Green",-0.0404570747744778
+"19","Scarlett Johansson",0.47989994890979
+"20","Alexander Skarsg??rd",0
+"21","Judy Greer",0.254629670101184
+"22","Jon Favreau",0.442721559939694
+"23","Alan Rickman",0.345386535525395
+"24","Tyler Labine",0.0759918489931215
+"25","Kevin Dunn",0.942740473928813
+"26","Sophia Myles",0.676699011740149
+"27","Mila Kunis",-0.0247196082731089
+"28","Olivia Wilde",-0.0402192795180901
+"29","Thomas Kretschmann",0.348349101673192
+"30","Temuera Morrison",0.165104124037184
+"31","John Ratzenberger",0.839564830534147
+"32","Bryce Dallas Howard",0.696963853886639
+"33","Paul Walker",0.183487962579359
+"34","Brad Pitt",0.0938440889038885
+"35","Peter Dinklage",0.108648708874829
+"36","Bruce Greenwood",0.0862161831090804
+"37","Ewen Bremner",-0.0559800764770327
+"38","Richard Coyle",-0.0875685590186942
+"39","Clifton Collins Jr.",-0.148430007639738
+"40","Lester Speight",1.04288456709546
+"41","Ray Winstone",0.272700017675399
+"42","Jack McGraw",0.269409598528034
+"43","Melissa Roxburgh",0
+"44","Fred Willard",-0.0139470231870137
+"45","Dana Ivey",0.219839502859138
+"46","Liam James",0.203802164390598
+"47","Colin Firth",0.0689586349133818
+"48","Kiran Shah",0
+"49","Michael Fassbender",0.200733135025516
+"50","Heath Ledger",0.218370277917166
+"51","Delroy Lindo",0.045007057002185
+"52","Rainn Wilson",0.0997267594669218
+"53","Jeff Bridges",0.16674975470923
+"54","Christopher Lee",0.477448606328567
+"55","Brendan Fraser",0.0436110881091359
+"56","Robin Atkin Downes",0.284225072521097
+"57","Morgan Freeman",0.242187366971097
+"58","Lara Pulver",0.0935642458700459
+"59","Dennis Quaid",0.00633392557098066
+"60","Mindy Kaling",0.583653369690166
+"61","Kristen Stewart",0.120106136216514
+"62","Sharlto Copley",-0.117718029592541
+"63","Cary-Hiroyuki Tagawa",0.121278563233871
+"64","Chris Evans",0.256733452026957
+"65","Kathy Griffin",0.650355606524881
+"66","Chris Bauer",-0.0807466094250855
+"67","Daniel Henney",0.261489584212926
+"68","Sarah Silverman",0.0395940146122169
+"69","Eddie Deezen",0.307131718842515
+"70","Sela Ward",0.415614107059943
+"71","America Ferrera",0.0308492879223234
+"72","M.C. Gainey",0.2894470598019
+"73","Vin Diesel",0.162792068925711
+"74","Anne Hathaway",0.142820658131551
+"75","Tom Hardy",0.765038237764423
+"76","Jason Flemyng",0.254072246252451
+"77","Philip Seymour Hoffman",0.19569521517779
+"78","Omar Benson Miller",-0.0102581116324785
+"79","Mike Vogel",-0.0657993164038334
+"80","Eric Idle",-0.0793440601497849
+"81","Callum Rennie",0.00355409052719965
+"82","Emilia Clarke",0.136933791079313
+"83","Shane Rangi",0.143661807312717
+"84","Jaime King",0.0555351266943561
+"85","Michael O'Neill",0.278445802325585
+"86","Charlize Theron",-0.0247854323543262
+"87","Alice Braga",0.0916564561975785
+"88","Liam Neeson",-0.0438053383741383
+"89","Jada Pinkett Smith",0.198454543285822
+"90","Rami Malek",0.374702059050743
+"91","Ryan Reynolds",0.228131838090687
+"92","Maurice LaMarche",1.20186189164221
+"93","Daniel Bernhardt",0.641900620429537
+"94","Natalie Portman",0.248691568725556
+"95","Ayelet Zurer",0
+"96","Diedrich Bader",-0.044284084218835
+"97","Piper Mackenzie Harris",0.248882336572211
+"98","Edgar Ram??rez",0
+"99","Chlo?? Grace Moretz",0
+"100","Simon Merrells",0.00972368511755967
+"101","Oprah Winfrey",0.224072277726021
+"102","Gary Oldman",0.186890275762594
+"103","Noah Ringer",0.284897438546843
+"104","Tom Cruise",0.201298621003949
+"105","Jake Weber",0.0802460494941289
+"106","Dan Fogler",0.0649106418017308
+"107","Cara Delevingne",-0.0939153141087774
+"108","Zach Callison",0.269293727806181
+"109","Martin Short",0.188972132219064
+"110","Kate McKinnon",0.327075458762615
+"111","Rosario Dawson",0.00403442045815373
+"112","Anthony Hopkins",0.0805319016967101
+"113","Angelina Jolie Pitt",0.117163481801409
+"114","Jeremy Renner",0.0238256315705512
+"115","Kamil McFadden",0.133143728698115
+"116","Richard Burgi",-0.10115621895564
+"117","Tony Goldwyn",-0.0305581578339973
+"118","Leonard Nimoy",0.429733306199704
+"119","Djimon Hounsou",-0.0395637093813749
+"120","Elodie Yung",0.0948625376923298
+"121","Joe Morton",-0.0962043072878506
+"122","Billy Crudup",-0.0382072119330716
+"123","Regi Davis",0.27140763546451
+"124","Dwayne Johnson",0.155325593938294
+"125","Ming-Na Wen",-0.0472277066452116
+"126","Dominic Cooper",0.0134418592895438
+"127","Lee Ingleby",0.128138049952531
+"128","Peter Mensah",0.0698720071808248
+"129","Snoop Dogg",0.0156420462958719
+"130","Annet Mahendru",0.0230039118976221
+"131","Wayne Knight",0.327558950715722
+"132","Hayley Atwell",0.53858254908999
+"133","Josh Hutcherson",0.315918896267209
+"134","Matt Jones",0.432864213811054
+"135","Lisa Ann Walter",0.306721871433993
+"136","Henry Rollins",0.277941408387942
+"137","Constance Marie",0.371606658419233
+"138","Andre Braugher",0.125947919222349
+"139","Emma Watson",0.165294888446534
+"140","Mackenzie Crook",-0.0675634361756072
+"141","Zo?? Kravitz",0
+"142","D.B. Sweeney",0.129405571752113
+"143","Seth Gabel",0.508422054805949
+"144","Rachel Crow",0
+"145","Eddie Marsan",0.1968851383263
+"146","Scott Glenn",-0.0439314974736569
+"147","T.J. Thyne",-0.243904654806674
+"148","Dougray Scott",-0.11643702890249
+"149","Mary Elizabeth Mastrantonio",0.363748194222689
+"150","Ioan Gruffudd",0.199732870380581
+"151","Rafe Spall",-0.003875564638197
+"152","Matt Long",0
+"153","Bernie Mac",0.0645934454445035
+"154","Brad Garrett",0.525118416650955
+"155","Alexa Davalos",0.227578277494294
+"156","Abbie Cornish",-0.0336091331111272
+"157","Kick Gurry",-0.00846323407290925
+"158","Domenick Lombardozzi",-0.0649972146176868
+"159","Marc Blucas",-0.0971507342124996
+"160","Tao Okamoto",0.253018646548972
+"161","Emma Stone",0.190586115421753
+"162","Roger Willie",-0.0643157854090382
+"163","Danny Woodburn",0.101752600132206
+"164","Noel Fisher",0.139279869701385
+"165","Reg E. Cathey",-0.0323683668410093
+"166","Adam Baldwin",0.0779837507022371
+"167","Julia Roberts",0.0264659405147892
+"168","Theo James",0.238651893826045
+"169","Adam Scott",-0.0702521808169057
+"170","Catherine Tate",-0.0296535801649453
+"171","Tom Wilkinson",0.0109234937881376
+"172","Sullivan Stapleton",0.106548393016512
+"173","Tim Gunn",0.251208427454781
+"174","Roseanne Barr",-0.0222281252718077
+"175","Torey Michael Adkins",0.0863636164053181
+"176","Nancy O'Dell",0.0181963408771785
+"177","Moises Arias",0.0780035791885127
+"178","Jonathan Sadowski",0.0105471631540102
+"179","Steve Coogan",0.249359421941836
+"180","Kelly Preston",-0.0230727471887146
+"181","Jenifer Lewis",-0.0458734430658973
+"182","Donald Glover",-0.134919437639507
+"183","Steve Buscemi",0.0409810258317161
+"184","Connie Nielsen",-0.0787748094006322
+"185","Frank Grillo",-0.0313341078384581
+"186","Estella Warren",0.0552944358324527
+"187","Ruby Dee",0
+"188","Ramon Rodriguez",-0.0634984437929166
+"189","Blythe Danner",0.373661237894354
+"190","Will Ferrell",0.0399152152761024
+"191","Christoph Waltz",0.191938997076276
+"192","Wendie Malick",-0.0465612983657508
+"193","Sylvester Stallone",0.0342071198963255
+"194","Armando Riesco",-0.0592881574685231
+"195","Ed Speleers",0
+"196","Emma Kenney",0.110332187256569
+"197","Matthew McConaughey",0.00810975762584275
+"198","Richard Roxburgh",-0.102548073171344
+"199","Christopher Heyerdahl",-0.0204205969568631
+"200","Rufus Sewell",-0.032023937495174
+"201","Anna Friel",-0.129623657738096
+"202","Traylor Howard",-0.088786261642368
+"203","Benjamin Walker",-0.150403304736281
+"204","Randy Quaid",0
+"205","Venus Schultheis",0
+"206","Zooey Deschanel",-0.0172203002638992
+"207","Matthew Broderick",-0.0906130054601491
+"208","Sam Shepard",-0.0799005609983686
+"209","Thomas Middleditch",0.172001969247183
+"210","Liza Minnelli",0.208185045698789
+"211","Rosie Perez",-0.0354278725540519
+"212","Josh Gad",0.107542572280151
+"213","Derek Jacobi",0.425754143262381
+"214","AJ Michalka",-0.0614627420878832
+"215","Stephen Root",0.0809276149074515
+"216","Billy Boyd",1.00646154341376
+"217","Noah Taylor",0.172656515603871
+"218","Trevor Morgan",0.197793421800455
+"219","David Oyelowo",0.0814310942898371
+"220","Tod Fennell",0.0143643107165293
+"221","Cole Hauser",-0.023244174379781
+"222","Craig T. Nelson",0.118110989597605
+"223","John Lone",0
+"224","Amber Valletta",-0.0140129964420898
+"225","Bobb'e J. Thompson",0.13009565458213
+"226","Maile Flanagan",0
+"227","Adrian Martinez",-0.0907657330084588
+"228","LL Cool J",-0.00535956347182507
+"229","Matt Damon",0.0554353077436656
+"230","Goran Visnjic",0.15472555782587
+"231","Jim Varney",0.00877912773061162
+"232","Joshua Mikel",0.0964691691904901
+"233","Sayed Badreya",0.0944559876068014
+"234","Adam Sandler",0.168127154733305
+"235","Rachael Harris",0.0309950518636653
+"236","Kim Dickens",0.269108182016153
+"237","Leven Rambin",-0.0465060638271189
+"238","Wanda Sykes",-0.0119050297909572
+"239","Bruce McGill",0.0914021862801455
+"240","Michael Angarano",-0.142368271758742
+"241","Paul Sanchez",0.0906475583914398
+"242","Hugh Jackman",0.106218934214763
+"243","Joan Allen",0.420078649029665
+"244","Teala Dunn",0.209270150868522
+"245","Gabourey Sidibe",0.051164693070676
+"246","Hunter Parrish",-0.0326971960186012
+"247","Debra Messing",-0.0882613748385762
+"248","Gabriel Thomson",-0.00509396931699386
+"249","Mako",0.204272841125809
+"250","Zachery Ty Bryan",0
+"251","Rick Worthy",-0.0373292033741794
+"252","Nathan Lane",-0.128031842999778
+"253","Kieran Culkin",-0.156517993610934
+"254","Tch??ky Karyo",0
+"255","Janet Jackson",0.353107668505064
+"256","Linda Cardellini",0.104908257931839
+"257","Cameron Monaghan",0
+"258","Sean Hayes",0.025739868864157
+"259","Hayden Christensen",0.113645281470769
+"260","Iv??n Kamar??s",0
+"261","Jake Gyllenhaal",-0.0589087046558103
+"262","Michael Rapaport",0.0838393179604145
+"263","Steve Carell",0.122747952762709
+"264","Mason Lee",0.693790043519055
+"265","Jason Scott Lee",0.315119623495024
+"266","Steve Reevis",0.327537696415632
+"267","Jesse McCartney",0.167122986546533
+"268","Joseph Sikora",-0.0629003114870955
+"269","Drew Carey",0
+"270","Carmen Electra",-0.0776544061687517
+"271","Jennifer Jason Leigh",-0.0882501022296774
+"272","Bailee Madison",0.000992101639311113
+"273","Ethan Embry",-0.0842095004589355
+"274","Henry Czerny",0.111030319160858
+"275","Jon Hamm",0.470927671671607
+"276","Logan Lerman",0.00596239125229296
+"277","Tom Cavanagh",0.172132731584477
+"278","Charles Napier",-0.0677706386980729
+"279","Leslie Bibb",0.0814301471627381
+"280","Dorian Missick",0.109124463243311
+"281","Alan Young",0.0321781427685559
+"282","Don Cheadle",0.184350262495912
+"283","Nick Chinlund",-0.0593572528128785
+"284","Jon Lovitz",0.0381326299160278
+"285","Devin Ratray",-0.0970577300386103
+"286","Jon Foster",-0.124610096041938
+"287","Tiya Sircar",-0.0485121540069335
+"288","Michael Byrne",-0.0895889475022581
+"289","Elio Germano",-0.0946477687296627
+"290","Gerard Butler",0.00310631148649298
+"291","Joseph Gilgun",-0.133876118537667
+"292","Val Kilmer",0
+"293","Austin Pendleton",0.259739568363248
+"294","Khamani Griffin",0.197922671692133
+"295","Viggo Mortensen",-0.0949600380945473
+"296","Veronica Cartwright",-0.0543745912238566
+"297","Janeane Garofalo",0.0798918027401371
+"298","Max Ryan",-0.0414713456234423
+"299","Miranda Cosgrove",-0.00166500752850333
+"300","Cedric the Entertainer",0.172285443832671
+"301","Danny Huston",-0.166140806548724
+"302","Tyler Mane",0.228983832073449
+"303","Ray Romano",-0.153938852563732
+"304","Peter Dante",0
+"305","Elijah Kelley",0.301600666414992
+"306","Alan Ford",0
+"307","Common",-0.0237457411061578
+"308","Chi McBride",-0.0155034261120111
+"309","Kevin Dillon",0.0603775850775181
+"310","Tom Hanks",0.282058775770459
+"311","Martin Scorsese",0.454466341829174
+"312","Jennifer Hudson",0.0128612676651359
+"313","Christina Milian",-0.10835679138476
+"314","Tom Skerritt",-0.102241768507174
+"315","Elizabeth Debicki",-0.121909276525771
+"316","Paz Vega",-0.134386413569297
+"317","Jon Heder",0.0113982303397619
+"318","Br??an F. O'Byrne",0
+"319","Daniel Sharman",-0.0790287996047963
+"320","Bruce Willis",0.0301957411705559
+"321","Kiernan Shipka",-0.291404164153156
+"322","Bridget Fonda",0
+"323","Tony Curran",0.0456109654240905
+"324","RZA",-0.104519057882043
+"325","Frances Fisher",-0.112795650116216
+"326","Jeffrey Jones",0.0178728033088299
+"327","Yeardley Smith",0.365191393260029
+"328","Hal Holbrook",0.0162231714695815
+"329","Merritt Wever",-0.124097908895118
+"330","Jennifer Saunders",0.6451375879141
+"331","Cheech Marin",-0.0204875799219576
+"332","Eve",0.118702394716404
+"333","Billy West",0.307186505896557
+"334","Josh Charles",-0.0584441670585617
+"335","Ivana Milicevic",-0.012788268618983
+"336","Freddy Rodr??guez",0
+"337","Colin Salmon",-0.294930356405938
+"338","Bridgit Mendler",0.667739273249849
+"339","Jim Parrack",0.118875621967426
+"340","Alison Lohman",-0.133387977724427
+"341","Benedict Cumberbatch",0.118168904982374
+"342","Sarah Gadon",-0.0403904590489265
+"343","Clint Howard",-0.0711947900540102
+"344","Brooke Smith",-0.162901479403621
+"345","Phill Lewis",0
+"346","Stephen Rea",-0.0536906378342285
+"347","Shane Hartline",0
+"348","Chris Klein",-0.175508469775297
+"349","Sandrine Holt",-0.0213469822398049
+"350","Brandy Norwood",-0.124515422896424
+"351","Oliver Platt",-0.0353154383069105
+"352","Archie Kao",0
+"353","Laurence Olivier",-0.0713203162411606
+"354","50 Cent",-0.0917571235758988
+"355","Luke Newberry",-0.0970462029195587
+"356","Larry Joe Campbell",0.249929013389959
+"357","Abraham Benrubi",0.28299857270458
+"358","Simon McBurney",-0.0849853283571087
+"359","Stephanie Szostak",-0.135878252505163
+"360","Lisa Edelstein",0.257504247356965
+"361","Aisha Tyler",0.0222282028984547
+"362","Eddie Redmayne",-0.0478708049155204
+"363","Jack O'Connell",0.0946119932927808
+"364","Courtney B. Vance",0.106377754352552
+"365","Lily Tomlin",-0.0451707039892427
+"366","Jay Hernandez",-0.0197486279169509
+"367","Kirsten Dunst",0.256202479959211
+"368","Aasif Mandvi",-0.0308986683205138
+"369","Abigail Spencer",-0.151374283664708
+"370","Natasha Lyonne",-0.015843859678985
+"371","Alun Armstrong",-0.058287155916896
+"372","Kimberly Williams-Paisley",-0.0244444656828397
+"373","Josh Zuckerman",0.449436463286676
+"374","Brittany Daniel",-0.0499775147377372
+"375","Romany Malco",-0.0188257582379857
+"376","Bokeem Woodbine",-0.0175739263219546
+"377","Amy Poehler",0.193635406531156
+"378","Elizabeth Perkins",0.102644221385184
+"379","Kathleen Turner",0.385624955500951
+"380","Tichina Arnold",0.251399490626753
+"381","Josh Hamilton",0.226904875919553
+"382","Patrick Fischler",-0.0049207514914845
+"383","Alicia Witt",0.0282725401198261
+"384","Kristin Davis",0.0373130684218846
+"385","Tom Welling",0.184124788940277
+"386","Lili Taylor",0.0192279288117339
+"387","Roger Rees",-0.033816195349267
+"388","Robert Duvall",-0.0914699547461504
+"389","Mekia Cox",0
+"390","Monique Gabriela Curnen",-0.0388977323253763
+"391","Dyan Cannon",-0.0613011117004579
+"392","Dawn French",-0.08867134292795
+"393","Alan Ruck",-0.14183855006703
+"394","Radha Mitchell",-0.060249024264039
+"395","Rupert Evans",-0.0807248129995301
+"396","Kodi Smit-McPhee",0.292597275819183
+"397","Debi Mazar",-0.0999903818817653
+"398","Nonso Anozie",-0.0464889328434162
+"399","Robert De Niro",0.0496856959779759
+"400","Ned Beatty",-0.206757873967042
+"401","Dee Bradley Baker",-0.00917582719982453
+"402","Brandon Molale",0.00271421958587678
+"403","Harry Lennix",0.172901548696536
+"404","David Rasche",-0.03598526330634
+"405","LeVar Burton",0
+"406","Paul Adelstein",-0.132837961083694
+"407","Ed Lauter",-0.0531527345878763
+"408","Cathy Moriarty",0
+"409","Al Pacino",0.0159437107749193
+"410","Will Smith",0.30866876062593
+"411","Nona Gaye",0
+"412","Alan Dale",-0.103864996350299
+"413","Adriano Giannini",-0.11986997395305
+"414","Susanna Thompson",-0.108859896520514
+"415","Wilson Cruz",-0.142578942093089
+"416","Kevin Zegers",-0.0950482412160322
+"417","Mike O'Malley",-0.12187019888081
+"418","Camryn Manheim",-0.131022167654881
+"419","Teri Polo",0.281734078184861
+"420","Clayne Crawford",-0.177979595941946
+"421","Ed Skrein",1.03728129412281
+"422","Leonard Roberts",1.0323800534169
+"423","Dylan Minnette",0.0652521740945899
+"424","Mark Addy",-0.0785959101041565
+"425","Malcolm Goodwin",-0.0622253513883587
+"426","Kim Shaw",-0.067962259055251
+"427","Jessica Szohr",-0.117517718553737
+"428","Nate Parker",-0.09527601339435
+"429","Leighton Meester",-0.105858543818584
+"430","Spencer Wilding",-0.0558711404716385
+"431","Ashley Scott",-0.120700255783306
+"432","Beth Riesgraf",0
+"433","Thomas Ian Nicholas",0.00097048067018577
+"434","Chris Mulkey",0.0202827044686971
+"435","Frances Conroy",-0.0247376733610798
+"436","Kurt Fuller",0.0627520566585302
+"437","Michael Irby",-0.0111200480363654
+"438","Vivica A. Fox",-0.0642670991304206
+"439","Michael Parks",0.0893379434760738
+"440","Jason Connery",0.0146279521857561
+"441","Ophelia Lovibond",0.116633180386655
+"442","Thomas McDonell",-0.0861018612610908
+"443","Carlos Ponce",-0.0751126721205037
+"444","Nicholas Braun",0.0312596419151081
+"445","Jenna Boyd",0
+"446","Terence Bernie Hines",-0.0461970375884812
+"447","Maura Tierney",-0.0342045615291854
+"448","Michael Kelly",0.0554220794339631
+"449","Sophie Okonedo",0
+"450","Bruce Boxleitner",-0.113787163237575
+"451","Ronny Cox",-0.134782646756715
+"452","Tina Fey",-0.0861702959229168
+"453","Peter Gallagher",0.0307906563885366
+"454","Tom Berenger",-0.0684466610554181
+"455","Jason Momoa",-0.163963458807134
+"456","Billy Gardell",0
+"457","Lenny Venito",-0.134071578750668
+"458","Kylie Minogue",-0.066802489075612
+"459","Harold Perrineau",-0.000869770237338676
+"460","John Michael Higgins",-0.000347066086442426
+"461","Meryl Streep",-0.0715100193056868
+"462","Taylor Lautner",0.328406366685096
+"463","Jessica Simpson",0.0117225259611979
+"464","Tony Cox",-0.00877092166393544
+"465","Jorge Garcia",0
+"466","Chris Miller",0
+"467","Seth MacFarlane",0.0643047829441376
+"468","Albert Finney",0.24339720006367
+"469","Adam Goldberg",0.0713077272282977
+"470","Craig Roberts",0.468593637676484
+"471","James Ransone",-0.0814591655861365
+"472","Ben Mendelsohn",-0.0153274411389086
+"473","Gary Cole",0.076629322810712
+"474","Mark Christopher Lawrence",0.0840105380495128
+"475","Robin Wright",0.0190630339691971
+"476","Billy Brown",-0.0145019736764311
+"477","Anna-Louise Plowman",0
+"478","Frank Welker",-0.0730245481238854
+"479","Thomas Lennon",-0.0177205700223223
+"480","Jennifer Esposito",-0.0438254450575001
+"481","Erik Per Sullivan",-0.0483632690736486
+"482","Emily Wickersham",-0.0138562116174737
+"483","Amr Waked",-0.0231563242182905
+"484","James Badge Dale",0.0164199954172515
+"485","Hector Elizondo",-0.0546524778663112
+"486","Harrison Ford",0.127703291251078
+"487","Dania Ramirez",-0.0870337368178491
+"488","Alycia Debnam-Carey",0
+"489","Sanaa Lathan",-0.00510734906932656
+"490","Virginie Ledoyen",-0.100139862972643
+"491","Felicity Huffman",-0.13375688866757
+"492","Ben Miles",-0.0958874215741493
+"493","Jay Mohr",-0.00599473340104539
+"494","Chris Penn",-0.118207632046189
+"495","Chandler Canterbury",-0.0595286972140227
+"496","Anjelica Huston",0.0200814177548611
+"497","Donald Watkins",-0.118630792107035
+"498","Kate Winslet",-0.00486719884248435
+"499","Vanessa Ferlito",-0.105319581120588
+"500","Naomi Watts",-0.101366380542294
+"501","James Frain",0.105124730230897
+"502","Gregory Smith",-0.105176929904938
+"503","Ty Burrell",-0.0817379124647262
+"504","Zoey Deutch",-0.0908195393681783
+"505","Andrew Wilson",-0.228276072003649
+"506","Linda Fiorentino",-0.232112555279786
+"507","Billy Burke",-0.0256312914042861
+"508","Jet Li",0.00209723188690592
+"509","Jacob Vargas",-0.0764433010302397
+"510","Dwight Yoakam",0
+"511","Lochlyn Munro",-0.128594727302643
+"512","Frances O'Connor",0.018745280436903
+"513","Adam Garcia",-0.0177055406419426
+"514","George Carlin",0.138524445285997
+"515","Billy Blair",-0.203181668031925
+"516","Pamela Anderson",0
+"517","Wendy Raquel Robinson",0.169074109706544
+"518","Raven-Symon??",0.290197310989255
+"519","Noel Gugliemi",-0.104978736446765
+"520","Eric Jacobson",0.145211138330904
+"521","Rick Gonzalez",0.153818868881122
+"522","Matt Malloy",0.0761394113605075
+"523","Tyra Banks",0.0584105243058719
+"524","Kelly Macdonald",0.156047837926929
+"525","Nick Zano",-0.0239978173261072
+"526","Shea Whigham",-0.185779877425882
+"527","Valerie Cruz",-0.0493461826497147
+"528","T.V. Carpio",-0.0837232439904131
+"529","Carter Jenkins",-0.128129202628281
+"530","Adrien Dorval",-0.121675660295962
+"531","Henry Thomas",-0.168553606845579
+"532","Omari Hardwick",-0.189107435098563
+"533","Charlie Yeung",0
+"534","Giovanna Mezzogiorno",-0.13709718850112
+"535","Tim McInnerny",0
+"536","Larry Miller",-0.108616232874221
+"537","Scoot McNairy",0.104781573625765
+"538","Rob Brown",0.0192340249151792
+"539","Lillian Adams",-0.0812684602080476
+"540","Charlie Tahan",-0.0603729409526611
+"541","Dax Flame",0.00395461389968668
+"542","Masi Oka",0.0289706721410136
+"543","William Xifaras",0.477670308646959
+"544","Reggie Lee",-0.150481976769101
+"545","Will Patton",-0.140520438459279
+"546","Elton John",0.0308184721230933
+"547","Jeremy Crutchley",-0.103512541131475
+"548","Debbie Reynolds",-0.119399074866701
+"549","Randall Park",-0.143572671536027
+"550","Mandy Gonzalez",-0.0992605755942208
+"551","Kevin Pollak",-0.0344812693380976
+"552","Denis O'Hare",-0.000579977507422788
+"553","Luke Grimes",0.134517867983427
+"554","Salma Hayek",0.0728087432982158
+"555","Alyson Stoner",0.0776281775315099
+"556","Scott Elrod",-0.00019813559386783
+"557","Dustin Fitzsimons",0.0703010578056445
+"558","Sabrina Revelle",0.114309731939453
+"559","Roger Jackson",0.122083178468301
+"560","Alison Brie",0.0363894559598365
+"561","Mary Lynn Rajskub",0.0394846441625564
+"562","Nadine Velazquez",0
+"563","Curtis Armstrong",-0.014244353916328
+"564","Powers Boothe",-0.145691503166808
+"565","Nia Long",-0.0140310993488256
+"566","Kate Upton",0.0533592651552773
+"567","Andrew Fiscella",-0.0660179210067568
+"568","Mark Rylance",-0.221383540958084
+"569","David Keith",0.0382759758406251
+"570","Mario Lopez",-0.0173454915534967
+"571","Nick Cannon",-0.195919358493163
+"572","Margarita Levieva",0.0586430282343238
+"573","Paul Scheer",0.00182580397505262
+"574","Dalia Hern??ndez",0
+"575","Charles S. Dutton",-0.166991903303689
+"576","Dylan Walsh",0.0434920083024032
+"577","Deneen Tyler",-0.0155075039109618
+"578","Odeya Rush",0.0393876080127887
+"579","Beau Garrett",0
+"580","Steve Schirripa",-0.0176793621624471
+"581","Johnny Lewis",-0.145358842723888
+"582","Sam Trammell",0.0823020144107307
+"583","Scott Porter",-0.0959952579320818
+"584","Nelson Ascencio",0
+"585","Tom Virtue",-0.0670975745301377
+"586","Aimee Teegarden",0
+"587","Jacqueline MacInnes Wood",0
+"588","Haley Joel Osment",-0.0176757435597407
+"589","KaDee Strickland",-0.00229046835717536
+"590","Shaun Weiss",-0.260939465649878
+"591","Thomas Horn",-0.148773089439819
+"592","Patti D'Arbanville",-0.0628048310374826
+"593","Bill Duke",-0.118613702757881
+"594","David Fine",-0.135211517499783
+"595","Jimmy Smits",-0.117605288827443
+"596","Andrea Frankle",-0.0859623639544131
+"597","Shirley Henderson",-0.24384212157937
+"598","Miranda Richardson",-0.0356538766943989
+"599","Stockard Channing",-0.136252478455991
+"600","Bob Saget",-0.0812555245705493
+"601","Tim Blake Nelson",-0.108305501131406
+"602","Mekhi Phifer",0.0653967446616693
+"603","Lou Saliba",0
+"604","Anne Bancroft",-0.122370970448072
+"605","Aaron Yoo",-0.0222371581382594
+"606","Zan Marolt",0
+"607","Glenn Morshower",0.160183568161921
+"608","Brooklynn Proulx",0.0283926959232057
+"609","Stephen Collins",0
+"610","Catherine O'Hara",0.164565762489364
+"611","Sean Maher",-0.119155365772896
+"612","Alexa PenaVega",-0.0482026935681213
+"613","Jeff Kober",-0.130248899582332
+"614","Daniella Alonso",-0.0149543038467061
+"615","Shirley Knight",-0.0823536870056004
+"616","Ken Marino",0.00935260052231209
+"617","Dagmara Dominczyk",-0.139841980073795
+"618","Nolan Gerard Funk",-0.124977188595648
+"619","Usher Raymond",0.0553698774428897
+"620","Toby Jones",-0.086434101332227
+"621","Jeffrey W. Jenkins",-0.103922930955627
+"622","Nicole Beharie",-0.0603009649263271
+"623","Maggie Siff",-0.0651393027215942
+"624","Phylicia Rashad",0.116122348282149
+"625","Anthony Simcoe",-0.0195992716195825
+"626","Tracy Morgan",0.00111490666253451
+"627","Damon Wayans Jr.",0.186424075010732
+"628","Michael Roark",0
+"629","Laura Harring",0.065529173351174
+"630","Molly C. Quinn",0.348057041447438
+"631","Collette Wolfe",-0.130434318521339
+"632","Taylor Blackwell",-0.120338663871608
+"633","Bradley Cooper",0.0700470255652618
+"634","Colin O'Donoghue",0
+"635","Kenan Thompson",-0.0438253222522626
+"636","Dylan Baker",-0.105366968041144
+"637","Rob Riggle",0.111872205021085
+"638","Quinton Aaron",0.254304626486635
+"639","Lindsay Sloane",0.115978262666443
+"640","Eric Stonestreet",0.180621999541374
+"641","Jim Sturgess",-0.0651258578323923
+"642","Nicole Sullivan",0
+"643","Kevin Connolly",-0.0531924729234438
+"644","Riley Smith",-0.179010188267639
+"645","Justin Timberlake",-0.0245153303791893
+"646","Ike Barinholtz",0.0604340842855845
+"647","Maude Apatow",-0.0292746660400503
+"648","Kevin Grevioux",-0.0211453649943542
+"649","Christine Taylor",-0.260031704897308
+"650","Victor Webster",-0.0332519860960797
+"651","Noureen DeWulf",-0.127986929444603
+"652","Steve Howey",-0.124059104546824
+"653","Marsha Thomason",-0.00972861143141309
+"654","Hiam Abbass",-0.0441714289136603
+"655","Cameron Boyce",0.255829857515431
+"656","Lena Olin",-0.302078759001639
+"657","Jesse Tyler Ferguson",-0.0721603020032015
+"658","Mike Starr",-0.344114938063697
+"659","Chad Lindberg",0.00697084235753214
+"660","Benjamin J. Cain Jr.",-0.0710459466153646
+"661","Rip Torn",-0.0559584069955133
+"662","Portia de Rossi",-0.113088371087175
+"663","Richard T. Jones",-0.0069777675585784
+"664","Brooke Shields",-0.137675046215681
+"665","Nat Faxon",-0.0798961342394961
+"666","Bashar Rahal",-0.135654089768282
+"667","Tye Sheridan",-0.0198358245873719
+"668","Martin Donovan",-0.0942491094782091
+"669","Soleyman Pierini",-0.202959386137868
+"670","Aml Ameen",0.143793679671248
+"671","June Diane Raphael",0
+"672","Ellen Burstyn",-0.129767134327185
+"673","Mark Valley",-0.245540173555699
+"674","Melissa Benoist",-0.188996608187351
+"675","Eva Marie Saint",-0.157196416710172
+"676","Veronika Vernadskaya",-0.0897182364429408
+"677","Stephen Boss",-0.0551887054463477
+"678","Marco St. John",-0.182453875449658
+"679","Kuno Becker",0
+"680","David Kross",0
+"681","Lauren Ambrose",-0.124252163712972
+"682","Wendi McLendon-Covey",0.0626989870946726
+"683","Cas Anvar",-0.142148756547297
+"684","Virginia Madsen",-0.103495649712586
+"685","Kyle Schmid",-0.0536775116355699
+"686","Beau Bridges",-0.091634456185448
+"687","Rollo Weeks",0
+"688","Kelli Garner",-0.0578914682941105
+"689","Mika Boorem",-0.0558964633495871
+"690","Norman Reedus",-0.131751254148113
+"691","Chita Rivera",0
+"692","Shannon Elizabeth",-0.0970122686611773
+"693","Lucas Bryant",0.232873206764411
+"694","Denzel Washington",0.104026972492988
+"695","Bill Fagerbakke",-0.0101825439153997
+"696","Spencer Treat Clark",0.139024088815179
+"697","Bern Cohen",0
+"698","Vanessa Williams",0.0102927501334408
+"699","Anna Kendrick",0.190683916479571
+"700","June Squibb",0
+"701","Vincent Leclerc",0
+"702","Jack McBrayer",0.249945842866636
+"703","Tony Nappo",0.0904154716839947
+"704","Scott Adsit",0
+"705","Ethan Suplee",-0.0168308984867064
+"706","Robert Forster",0.0162503167675331
+"707","Harry Connick Jr.",-0.0510046802635812
+"708","Frankie Muniz",-0.0900782601551568
+"709","Marcia DeBonis",0
+"710","Larry David",-0.111056450271286
+"711","Austin Nichols",0.0192974087151546
+"712","Bernardo Saracino",-0.0161857164784523
+"713","Michiel Huisman",0
+"714","Christian Stolte",-0.0569437609872023
+"715","Mark Rendall",0
+"716","Bradley Whitford",-0.146111348914614
+"717","Vicky Krieps",-0.0367722415296762
+"718","Yaya DaCosta",-0.151070324069389
+"719","Jurnee Smollett-Bell",0
+"720","Alan Oppenheimer",-0.0456515668909392
+"721","David Costabile",-0.0650774504857052
+"722","Robert Lopez",-0.0749198104865759
+"723","Mimi Rogers",-0.0658572709791951
+"724","Josh Hopkins",-0.0933855210290681
+"725","Eddie Izzard",0.138579779228561
+"726","Rhys Wakefield",-0.0788360877150746
+"727","Kevin Sussman",0.0332708042701009
+"728","Jacki Weaver",-0.0944486079803917
+"729","Chris Noth",-0.0597535905901876
+"730","Daniel Stern",0
+"731","Cameron Bright",-0.138304658823294
+"732","Drea de Matteo",0
+"733","Doug E. Doug",-0.276530576926222
+"734","Matthew Perry",0.0691970595007939
+"735","Lobo Sebastian",-0.111802756214269
+"736","Christopher Cousins",-0.11389942785433
+"737","Reid Ewing",-0.0985182555894516
+"738","Michael Greyeyes",-0.209602813861795
+"739","Texas Battle",0
+"740","James Burnett",-0.122265729304278
+"741","Stark Sands",-0.115702799997927
+"742","Phil LaMarr",-0.266140445441957
+"743","John Heard",-0.177990796970398
+"744","Richard Roundtree",-0.172574547391045
+"745","Isabelle Huppert",-0.147715362681163
+"746","Holly Valance",-0.177757891864986
+"747","Madeline Carroll",-0.0505018297266423
+"748","Birgitte Hjort S??rensen",0
+"749","Dallas Roberts",-0.261695601865651
+"750","Milos Forman",-0.124619458568972
+"751","David Julian Hirsh",0
+"752","Jason Lewis",-0.143637764476478
+"753","Neil Brown Jr.",0.0994997434105538
+"754","Kevin Chamberlin",-0.167103766871815
+"755","Noah Emmerich",-0.156633611628538
+"756","Rebecca De Mornay",-0.119896557096259
+"757","David Sparrow",0
+"758","Noah Lomax",0
+"759","Lily Rabe",-0.0221446339910816
+"760","Danny Masterson",-0.0727092565460664
+"761","Richard Sammel",-0.0597637196525569
+"762","Oleg Taktarov",-0.0640168440573819
+"763","Bob Clendenin",-0.132117366149074
+"764","Clea DuVall",0.0586324969055862
+"765","Zoe Kazan",-0.0318908394826675
+"766","Bella Heathcote",-0.148588877897372
+"767","Donald Faison",-0.116320853230758
+"768","Martin Starr",-0.065205024818296
+"769","Sofia Vassilieva",0.0110779196135236
+"770","Mike Epps",0.0206332591964351
+"771","Fionnula Flanagan",0.113985983739053
+"772","Jeremy Jordan",0
+"773","Richard Schiff",-0.15329590073349
+"774","Joel McHale",-0.154312527880525
+"775","Adhir Kalyan",0
+"776","Julie Gonzalo",0.127237172220144
+"777","Boyd Holbrook",-0.176023490135742
+"778","Michael Jeter",0.150302897633196
+"779","Carl Gilliard",0.0204333740014839
+"780","Michael Landes",-0.00119988954817533
+"781","Kate Walsh",-0.120498740617085
+"782","Larry Hankin",-0.0379867878746198
+"783","Paula Garc??s",0
+"784","Dave Legeno",-0.106716103588281
+"785","Elizabeth Berkley",0
+"786","Kirstie Alley",0
+"787","Derek Luke",-0.152390609141445
+"788","Maia Morgenstern",0
+"789","Dreama Walker",0.101431658892341
+"790","Gerald McRaney",-0.0739188092283581
+"791","Peter Capaldi",0
+"792","Jason Ritter",-0.10209976114817
+"793","Rob Paulsen",-0.0686608512494444
+"794","Ben Feldman",0.0140651813927845
+"795","Tika Sumpter",0.0918315421954064
+"796","Gedde Watanabe",0.0874942477653893
+"797","Greta Gerwig",-0.169158245809359
+"798","Riley Thomas Stewart",-0.181847057445601
+"799","David O'Hara",0
+"800","Paul F. Tompkins",-0.036851987829783
+"801","Flea",-0.0755968890052533
+"802","Cree Summer",-0.0334458445185842
+"803","Eddie Griffin",-0.149053244855029
+"804","Katharine McPhee",-0.281242588216527
+"805","Keshia Knight Pulliam",0
+"806","Suraj Sharma",0.320730282430679
+"807","Oliver James",-0.113065321072929
+"808","Jonathan Breck",-0.0449324369726135
+"809","Tom Arnold",-0.094389226823429
+"810","Stephen Dillane",-0.0584290623152828
+"811","Alexandra Breckenridge",-0.0820639048353697
+"812","Salli Richardson-Whitfield",0
+"813","Aaron Staton",0
+"814","J.B. Smoove",-0.115351632278469
+"815","Essence Atkins",-0.199991133620074
+"816","Cjon Saulsberry",0
+"817","Trevor Blumas",-0.0814058250307855
+"818","Tyrone Giordano",-0.152082762549215
+"819","Jason Patric",-0.0996001482102742
+"820","Emily Watson",-0.250383383409643
+"821","Scott Mechlowicz",0
+"822","Matthew Knight",-0.11937211757292
+"823","Gillian Jacobs",-0.117512870045576
+"824","Jonathan Tucker",0
+"825","Rupert Everett",0.528275432600032
+"826","Emily Meade",-0.128813212630753
+"827","Timothy Bottoms",-0.108952291118362
+"828","Megan Mullally",-0.118573879276954
+"829","Jorma Taccone",-0.116768443619605
+"830","Channing Tatum",0.0809159673271309
+"831","Madison Davenport",-0.0330385871933375
+"832","Laz Alonso",-0.140663067121512
+"833","Christopher Evan Welch",-0.102755372923132
+"834","Loretta Devine",0.0490155351180598
+"835","Udo Kier",-0.154072031486888
+"836","Erica Linz",0
+"837","Bai Ling",-0.125412395480349
+"838","Mario Van Peebles",0
+"839","Burt Young",0
+"840","Regina Hall",0.00560612009995116
+"841","Leah Remini",0.0893896630595239
+"842","Jim Belushi",-0.0953249679593526
+"843","Jeff Anderson",-0.10291366425863
+"844","Ellen Albertini Dow",-0.141618916551959
+"845","Busy Philipps",-0.00947866981024649
+"846","Kelly Brook",0
+"847","Bob Hoskins",-0.00661792082451284
+"848","Bill Murray",-0.0231392266157117
+"849","Brendan Fehr",-0.147704464911403
+"850","Ellen Barkin",-0.119343601505266
+"851","Brian Johnson",-0.222042551823162
+"852","Jessica Bowman",-0.158264411774329
+"853","Dan Hedaya",-0.197305151854437
+"854","Dash Mihok",-0.172438328870035
+"855","Roger Lloyd Pack",-0.104635562465064
+"856","Kim Thomson",0.0715865869311367
+"857","Kyra Sedgwick",0.0705329637935707
+"858","Michael Papajohn",0.00111547443762524
+"859","Charlotte Le Bon",0.00257936209523932
+"860","Amber Rose Revah",0.0179414413822307
+"861","Bobby Moynihan",-0.0635411833629833
+"862","Neil Diamond",-0.0955559382252514
+"863","Bruce Dern",-0.183062197321403
+"864","Ted Danson",-0.113052496470316
+"865","Milla Jovovich",-0.0814955608672027
+"866","Judy Davis",-0.103058621520652
+"867","Jim Gaffigan",-0.139711998611082
+"868","Judge Reinhold",0.298313175294804
+"869","Holly Hunter",-0.139469515977397
+"870","Cherry Jones",-0.367417142817178
+"871","Kimberly J. Brown",0
+"872","Steve-O",0.0534956447183157
+"873","Mark Duplass",-0.0777923822111039
+"874","Nick Krause",0.134131512087449
+"875","Zane Holtz",0.0775152527662084
+"876","Bobby Coleman",-0.103994288011919
+"877","Cicely Tyson",-0.0476164389432493
+"878","Phil Collins",0
+"879","Skye McCole Bartusiak",-0.0195667036466672
+"880","John Fiedler",0.0109262662599997
+"881","CCH Pounder",-0.0932420693420952
+"882","Joseph Julian Soria",-0.0350897969814737
+"883","Jamey Sheridan",-0.0196245097258949
+"884","Justin Chambers",-0.0542780187747456
+"885","Sarah Roemer",0.158169269103478
+"886","Thekla Reuten",-0.049856112731115
+"887","Dave Foley",-0.0475379478665857
+"888","Keram Malicki-S??nchez",0
+"889","Jan Cornet",0
+"890","Ron Eldard",-0.246595686533372
+"891","Paige Turco",0
+"892","Jesper Christensen",-0.08128091023791
+"893","James Wolk",-0.211823161032556
+"894","Leo Howard",0.164039198955116
+"895","Marc John Jefferies",0.0332808191861156
+"896","James Gammon",-0.0106482681055327
+"897","Taran Killam",-0.0405829353797996
+"898","Zachary Gordon",-0.0856587800404579
+"899","Brenda Blethyn",-0.162224865033582
+"900","Alex Rocco",-0.195247324719937
+"901","Shaun Toub",-0.0441767115679693
+"902","Tom Hollander",-0.128933897293686
+"903","Robert Miano",-0.106491591419883
+"904","Michael Moore",-0.0911439069255848
+"905","Fred Ward",-0.00960609975531559
+"906","Ari Graynor",-0.15212138652392
+"907","Ariel Gade",-0.116418759426579
+"908","Tiffany Dupont",-0.126465141170353
+"909","Hope Davis",-0.189317628685227
+"910","Wes Studi",-0.20959528636418
+"911","Dequina Moore",-0.133961756987784
+"912","Omar Sy",1.27030978017907
+"913","Nia Vardalos",0.047025570061889
+"914","Katherine Waterston",-0.127226793563703
+"915","Caity Lotz",-0.17791804864469
+"916","Geoffrey Arend",-0.124607441221423
+"917","Keanu Reeves",-0.0907813435903256
+"918","Charlie Saxton",0
+"919","Anne Heche",-0.04954542282781
+"920","Ashley Williams",-0.0828915250451017
+"921","Bill Lake",0
+"922","Maximilian Schell",-0.155441267068259
+"923","Finn Wittrock",0.0531136408145976
+"924","Jane Krakowski",-0.12038429780877
+"925","Garrett Clayton",-0.177382860070185
+"926","Costas Mandylor",0.010752438858897
+"927","Laura Spencer",-0.182444747122991
+"928","Reeve Carney",-0.17756736563561
+"929","Traci Dinwiddie",0
+"930","Maggie Wheeler",0
+"931","Lin Shaye",-0.0234228673560554
+"932","Embeth Davidtz",-0.0628401764183734
+"933","Mary J. Blige",-0.088709885293041
+"934","Erin O'Brien",0
+"935","David Agranov",0.0204092550464546
+"936","Sophie N??lisse",0
+"937","Michael Cudlitz",0
+"938","Kaitlin Olson",0
+"939","Michael Biehn",-0.129552280394845
+"940","Carla Gallo",-0.172875627513498
+"941","Ken Davitian",0.211515914547101
+"942","Raquel Welch",0.120468425114518
+"943","Colm Feore",-0.0577312808261439
+"944","Lea Thompson",-0.276196025818073
+"945","Paul Schneider",-0.179351934668142
+"946","Sean Patrick Thomas",0.0663921073974894
+"947","Louis Mandylor",0.410649042311796
+"948","Lindsay Duncan",-0.0273357537727937
+"949","David Alan Basche",0
+"950","Chris Brochu",-0.0883895762547373
+"951","Celia Weston",0.0290943566400402
+"952","Sasha Alexander",-0.224850413778874
+"953","Kay Panabaker",-0.110325925732955
+"954","Treat Williams",-0.111756676486078
+"955","Susan May Pratt",0
+"956","Alex Borstein",-0.0964941054576335
+"957","Corbin Bleu",-0.160563434156726
+"958","Jamie Lee Curtis",-0.0323237939805744
+"959","Paul Freeman",-0.125147991774209
+"960","Annie Parisse",-0.0960985170101134
+"961","Anna Harr",0
+"962","Meat Loaf",-0.194607078550132
+"963","Mackenzie Gray",-0.140373549041474
+"964","Joe Lo Truglio",0.00120900019734667
+"965","Mari Koda",0.0131872851450745
+"966","Chazz Palminteri",-0.0292848749063486
+"967","Shawn Andrews",-0.149078872749309
+"968","Elaine Cassidy",0
+"969","Patrick Gallagher",0.0221005134650489
+"970","Owain Yeoman",-0.0922567561124005
+"971","Molly Shannon",-0.128494042544797
+"972","Vinessa Shaw",-0.107586444280994
+"973","Mary-Kate Olsen",-0.126370673858509
+"974","Greg Nicotero",0
+"975","Valente Rodriguez",0
+"976","Adam Boyer",-0.152746282475141
+"977","Hana Mae Lee",0.554321556933772
+"978","Brian Dennehy",0.0287930792962812
+"979","Larry the Cable Guy",-0.0455058353264245
+"980","Elizabeth Blackmore",0
+"981","Harland Williams",-0.173949854003697
+"982","Jeremy Northam",-0.143582950063666
+"983","Rick Gomez",-0.136123258277826
+"984","Rachel Blanchard",0.0581688997556817
+"985","Atticus Shaffer",-0.101805416110777
+"986","Jordana Brewster",0.149353447859488
+"987","Vincent Walsh",-0.131814066010478
+"988","Angus T. Jones",0.0199214324293864
+"989","Danneel Ackles",-0.0284718312193466
+"990","Amanda Detmer",-0.0955700820031504
+"991","Amy Sedaris",0.174241225286447
+"992","Alexandra Holden",-0.103446080474759
+"993","Vincent Pastore",-0.106103368504671
+"994","Marian Seldes",-0.132857020007414
+"995","Justin Kirk",-0.158660226526801
+"996","Jake Lloyd",0
+"997","Georgina Cates",0.136890400507814
+"998","Tasha Smith",0.0260022156017127
+"999","Tessa Thompson",0.0165735535264497
+"1000","Adam Lamberg",-0.0127851522173816
+"1001","Conchata Ferrell",0.250704369650842
+"1002","JoAnna Garcia Swisher",-0.120852786579997
+"1003","Kevin Rankin",0.271409885986685
+"1004","Monica Potter",-0.0178310921721589
+"1005","Albert Brooks",0.365249271030795
+"1006","Matthew Daddario",-0.0645269643189304
+"1007","Luke Benward",0
+"1008","Katy Mixon",-0.137244658719132
+"1009","Erica Leerhsen",0
+"1010","Hutch Dano",-0.0763979730835878
+"1011","Danny Pino",-0.14300651407985
+"1012","Joey Lawrence",-0.138823278045748
+"1013","Sissy Spacek",-0.0878574623144666
+"1014","Firass Dirani",-0.114596006697117
+"1015","Will Forte",-0.0408447628034069
+"1016","Akie Kotabe",0
+"1017","Christian Camargo",0
+"1018","Cam Clarke",-0.118921400704673
+"1019","The Edge",-0.13908488223016
+"1020","Adrian Paul",-0.131809119072229
+"1021","Faizon Love",-0.163986232924524
+"1022","Jimmy Fallon",-0.14543665548311
+"1023","Tom Noonan",-0.189526073095964
+"1024","Brian Van Holt",-0.120709774282076
+"1025","Keith Allen",-0.192766823268466
+"1026","Michael Raymond-James",-0.193391213685737
+"1027","Archie Panjabi",-0.0258561820060382
+"1028","Jodi Lyn O'Keefe",-0.209134451254732
+"1029","Neil Flynn",-0.180174393244613
+"1030","S. Epatha Merkerson",-0.133724657982362
+"1031","Zach Gilford",-0.0925794852040013
+"1032","Michael McKean",-0.185486913584435
+"1033","Susan Ward",-0.0798121805631833
+"1034","Corbin Bernsen",-0.366160156075574
+"1035","Agnes Bruckner",-0.119821336137761
+"1036","Siobhan Fallon Hogan",-0.160694309129866
+"1037","Gael Le Cornec",-0.29569482448867
+"1038","Chris Marquette",-0.10896856277271
+"1039","Mike Nawrocki",-0.0733883756891399
+"1040","Roger Guenveur Smith",-0.103834611661855
+"1041","Lance Gross",-0.109311024244047
+"1042","Eliza Coupe",-0.295830429409127
+"1043","Kane Hodder",-0.162085821228631
+"1044","Jackson Nicoll",0.136913565345839
+"1045","Sharon Lawrence",-0.136633069497153
+"1046","Angela Featherstone",-0.141271622279878
+"1047","Katherine LaNasa",-0.0739794111350923
+"1048","Tamara Tunie",-0.183654804958142
+"1049","Sean Kingston",0.0553829991731363
+"1050","Terry Kinney",-0.0749794576409015
+"1051","Brighton Sharbino",-0.0774897453701482
+"1052","Brett Cullen",-0.0444668867298794
+"1053","Eric Stoltz",-0.1767285541439
+"1054","Mark Webber",-0.129953582806401
+"1055","Chris Brown",0.0429096483690345
+"1056","Kate del Castillo",0.0149816842166416
+"1057","Ella Wahlestedt",-0.0405138033494049
+"1058","Kazunari Ninomiya",-0.140026200207212
+"1059","Josie Loren",-0.0673195221205599
+"1060","Kathryn Morris",-0.253359988226009
+"1061","Sarita Choudhury",-0.102744316568278
+"1062","Meghan Heffern",-0.166518880000818
+"1063","Ezra Miller",-0.147462118751376
+"1064","Isabella Rossellini",-0.150944490662407
+"1065","Nikola Djuricko",-0.149146430243292
+"1066","Tara Platt",0.0124288188688428
+"1067","Margo Harshman",0
+"1068","Don Johnson",-0.0805415145685372
+"1069","Jason George",-0.00602243836783063
+"1070","Jason Cottle",0.0469598734090361
+"1071","Eric Winter",0.0711080903127842
+"1072","Alex Russell",0.142772601721801
+"1073","Katherine Boecher",0
+"1074","Kirby Bliss Blanton",0.00395988624160274
+"1075","Alessandro Nivola",0.223898319759438
+"1076","Ashley Ashida Dixon",-0.0789864913278124
+"1077","Erika Christensen",0.0115369665498676
+"1078","Joanna 'JoJo' Levesque",-0.0976825413404789
+"1079","Patton Oswalt",-0.0810355321770237
+"1080","Edi Gathegi",-0.123567937105605
+"1081","Rosemarie DeWitt",-0.0879466371065246
+"1082","Barry Watson",-0.0195689476484984
+"1083","Curtiss Cook",-0.165503068301478
+"1084","Jonny Weston",-0.0871727201109614
+"1085","Veronika Dash",0
+"1086","Dave Chappelle",-0.157760013282626
+"1087","Joseph Cross",-0.104684789139928
+"1088","Kelly Clarkson",-0.197536405860989
+"1089","Megan Park",-0.101934917592468
+"1090","Michael Harding",-0.14203286665982
+"1091","Erin Boyes",-0.145754469306398
+"1092","Tatyana Ali",-0.118468744040061
+"1093","Isaiah Washington",-0.22628718426635
+"1094","Lynn Cohen",-0.161081084377455
+"1095","Kelly LeBrock",0
+"1096","Connor Corum",0
+"1097","Matt Marr",0
+"1098","Matt Prokop",-0.137665170875632
+"1099","Jack McGee",0
+"1100","Mireille Enos",-0.0548781584234135
+"1101","John Enos III",-0.0719312379652117
+"1102","Peter Coyote",-0.132074446967772
+"1103","Alicia Keys",-0.0455139485437917
+"1104","Jason London",-0.152131251444673
+"1105","John Witherspoon",-0.0378682226237428
+"1106","Jake Busey",-0.079869482117299
+"1107","Max Casella",-0.135605697178144
+"1108","Andrew Keegan",-0.138754159702363
+"1109","David Kennedy",-0.149001341831328
+"1110","Lina Esco",0
+"1111","Giancarlo Giannini",0
+"1112","Elena Anaya",0
+"1113","Taylor Handley",-0.166431852175307
+"1114","Shawnee Smith",0.0736037625125199
+"1115","Andrew Lawrence",-0.0473990240751029
+"1116","Alexis Dziena",-0.0649103536806303
+"1117","Eva Amurri Martino",-0.126123315790026
+"1118","Shiri Appleby",-0.11967421702144
+"1119","Oona Laurence",0
+"1120","Jessica Capshaw",0.316267544525075
+"1121","Brandon T. Jackson",-0.0302391446787937
+"1122","Simon Rhee",-0.104888444537279
+"1123","Lindy Booth",-0.145183438363407
+"1124","Zayn Malik",-0.0687676608530236
+"1125","Vincent Schiavelli",-0.105948737911491
+"1126","Philip Baker Hall",-0.0805406883994884
+"1127","Allison Tolman",-0.00948884932171264
+"1128","Chad Allen",-0.117070161273396
+"1129","William Morgan Sheppard",-0.268139531040525
+"1130","Mark Moses",0
+"1131","Johanna Braddy",0.0245266219296536
+"1132","Kelsey Grammer",0.0124658734372163
+"1133","Tamala Jones",-0.0996325724106605
+"1134","Toby Huss",0
+"1135","Jennifer Garner",0.0689594884705553
+"1136","Evan Ross",0
+"1137","Kevin Nealon",0.0387669812903138
+"1138","Stephanie Vogt",0
+"1139","Maria Dizzia",-0.135746323333299
+"1140","Eddie 'Piolin' Sotelo",-0.18249221155131
+"1141","Scott A. Martin",-0.183756487848125
+"1142","Lee Majors",-0.085399559419456
+"1143","Sergej Trifunovic",-0.148541026536191
+"1144","Cheryl Tiegs",-0.148964834803567
+"1145","Claire Foy",-0.141291129234458
+"1146","Ryan Donowho",-0.151365643545528
+"1147","Daryl Sabara",-0.0920369284969579
+"1148","Dul?? Hill",0
+"1149","Jared Gilman",0
+"1150","Minnie Driver",-0.109012486950635
+"1151","Drew Waters",-0.190596361383123
+"1152","Craig Fairbrass",0
+"1153","Luke Perry",-0.162234617325269
+"1154","Katrina Bowden",0
+"1155","Victor Rivers",-0.143026479508652
+"1156","Roger Cross",-0.144541283001651
+"1157","Michaela McManus",0
+"1158","Scout Taylor-Compton",-0.173964493759258
+"1159","Shanley Caswell",0
+"1160","Tucker Albrizzi",-0.0678052625842274
+"1161","Lauren German",-0.0582461396193049
+"1162","Crystal Lowe",-0.0212985715496339
+"1163","Tate Taylor",-0.135537086164362
+"1164","David Zayas",-0.0579544260614296
+"1165","Nicky Katt",-0.195852371646869
+"1166","Rory Culkin",-0.15100337965857
+"1167","Drew Fuller",-0.154450607301489
+"1168","John Doman",-0.0338236313618725
+"1169","Garry Shandling",-0.232107312063295
+"1170","Heather Morris",-0.109271069291197
+"1171","Fisher Stevens",-0.173199810482965
+"1172","Beth Grant",-0.135750167632226
+"1173","Max Beesley",-0.156361537057439
+"1174","Paris Hilton",-0.184470664221762
+"1175","Lindsay Price",0
+"1176","Steven Christopher Parker",-0.00839611828657038
+"1177","Marques Houston",-0.0206406397283501
+"1178","David Denman",-0.0660262050325241
+"1179","Lola Glaudini",-0.0767126645778819
+"1180","Natalie Stephany Aguilar",0
+"1181","Sean Michael Afable",-0.136253776740788
+"1182","Justin Theroux",-0.138961370089755
+"1183","Julie Benz",-0.101599956533729
+"1184","Omar Metwally",0
+"1185","Ben Falcone",0.00430123690316048
+"1186","Dan Byrd",-0.0286272542469762
+"1187","John de Lancie",-0.199264520570097
+"1188","Jeremy Davies",-0.138608312426727
+"1189","Karen Pittman",0
+"1190","Tony Devon",-0.175914186073964
+"1191","Larry Drake",-0.108656086727352
+"1192","Brad Renfro",-0.204099596164585
+"1193","Josh Henderson",0.00189889539888019
+"1194","Lucy Fry",0
+"1195","Helena Mattsson",0
+"1196","Bridgette Wilson-Sampras",0
+"1197","Jenny McCarthy",-0.170776004211786
+"1198","Brenda Strong",-0.144309208568359
+"1199","Mary Goggin",-0.147538547889403
+"1200","Alex Pettyfer",0.0780837080762649
+"1201","Emma Caulfield",-0.102462200852329
+"1202","Tate Donovan",0.0486764939234621
+"1203","Michael Jordan",-0.116752707340416
+"1204","Allison Miller",-0.105014868406636
+"1205","Ken Foree",-0.0951324830603467
+"1206","Rick Fox",-0.131385806039812
+"1207","Matthew McGrory",-0.112732840271062
+"1208","Fred Melamed",-0.124153793523795
+"1209","Teddy Sears",-0.174042945484002
+"1210","Nathaniel Lees",0
+"1211","Randy Couture",-0.252033597330973
+"1212","Tim Guinee",-0.163929082570808
+"1213","Marley Shelton",-0.1582328387663
+"1214","Chris Pontius",-0.0571302960720189
+"1215","Susie Abromeit",-0.15430972033004
+"1216","Casey Affleck",-0.272430680196729
+"1217","Kate Higgins",0
+"1218","Christopher Judge",0
+"1219","Jason Cerbone",-0.149963135836364
+"1220","Annabelle Wallis",0
+"1221","Marin Hinkle",-0.1049709617758
+"1222","Eric Johnson",-0.144310028686673
+"1223","Matt Frewer",-0.22546580999221
+"1224","Stevie Wonder",0.184995970030879
+"1225","John D'Leo",-0.065939343335868
+"1226","Brian Doyle-Murray",-0.103601134300636
+"1227","Christopher Guest",-0.0788855362046974
+"1228","Brandon Smith",-0.158218345879626
+"1229","Bud Cort",-0.112364891126106
+"1230","Alona Tal",-0.127056080697177
+"1231","Windell Middlebrooks",-0.135177412243377
+"1232","Miriam Shor",0
+"1233","Monda Scott",0
+"1234","Lynne Thigpen",0
+"1235","Kendrick Cross",-0.140818029225261
+"1236","Diane Ladd",-0.160346858184486
+"1237","Pat Buchanan",-0.149926083761584
+"1238","Barbara Hershey",0
+"1239","M. Emmet Walsh",-0.0668505187773193
+"1240","Sean Cook",0
+"1241","Shawn Parsons",0
+"1242","Michael Jai White",0.0115039063979807
+"1243","John Billingsley",-0.119908347878325
+"1244","Edie Falco",-0.151710426764062
+"1245","Wayne Brady",-0.13027272413118
+"1246","Alexis Biesiada",-0.14849694087975
+"1247","Kimberly Elise",-0.0549083216810455
+"1248","Louis Lombardi",-0.160224543286317
+"1249","Cree Kelly",-0.152563627141913
+"1250","John Gallagher Jr.",-0.0942242360513201
+"1251","Amiah Miller",0.0180061560823872
+"1252","Sprague Grayden",0.16464359191117
+"1253","Shelley Hennig",-0.0310386807699521
+"1254","Brendon Eggertsen",0.0015948161612247
+"1255","Gloria Sandoval",-0.0742378733629513
+"1256","Rory Cochrane",-0.209804157822186
+"1257","Jason Mewes",-0.0947833979557009
+"1258","Edwin Hodge",-0.117304008287313
+"1259","Cameron Mills",0
+"1260","Randy Wayne",-0.143829454785166
+"1261","Ryan Robbins",-0.0851934757072702
+"1262","Claire Geare",-0.0732325045508624
+"1263","Colleen O'Shaughnessey",-0.122905396650516
+"1264","Patrick Fugit",-0.205302133365983
+"1265","Kerr Smith",-0.154096593938439
+"1266","Jami Gertz",-0.188525545296129
+"1267","Bobby Batson",0
+"1268","Scott Takeda",-0.283362861006686
+"1269","Jon Tenney",0
+"1270","Mia Kirshner",-0.120841592268547
+"1271","Tim Russ",0
+"1272","Greg Germann",-0.141138158017826
+"1273","Megan Ambuhl Graner",-0.149349090604461
+"1274","Patch Darragh",0.0330585051525868
+"1275","Daniel Stewart Sherman",-0.1498096869492
+"1276","Sandra Staggs",0
+"1277","Callum Blue",0
+"1278","John Stamos",0
+"1279","Patricia Neal",0
+"1280","Cyndi Lauper",0
+"1281","Esai Morales",-0.165481379330649
+"1282","Natasha Henstridge",-0.264585874774219
+"1283","Cody Howard",0
+"1284","Michael Dudikoff",0
+"1285","Takashi Miike",0.0121803340661305
+"1286","Greg Grunberg",0
+"1287","Mark Margolis",-0.0692076487399788
+"1288","Sarah Drew",-0.125583290474576
+"1289","Mary McDonnell",-0.17464453418603
+"1290","Nicholas Gonzalez",-0.141827835900153
+"1291","Dove Cameron",0
+"1292","Michael J. Morris",0
+"1293","Shawn Roberts",-0.163731607046886
+"1294","Peter Boyle",-0.134417254423792
+"1295","J.D. Evermore",-0.109756943252376
+"1296","Lara Flynn Boyle",0
+"1297","Hill Harper",-0.0504564153618049
+"1298","Mia Wasikowska",-0.21237038294188
+"1299","Elaine Hendrix",-0.175575200374566
+"1300","Lorelei Linklater",-0.0786525908214085
+"1301","Dr. Dre",-0.12670049226665
+"1302","Paul Sorvino",-0.150722119433737
+"1303","Faye Dunaway",0
+"1304","Stephen McHattie",-0.138628007418628
+"1305","Alan Taylor",-0.146113686733437
+"1306","Aaron Hughes",-0.159340596782687
+"1307","Lou Taylor Pucci",-0.243739765419245
+"1308","Balinese Tari Legong Dancers",-0.142673050276425
+"1309","Blair Underwood",-0.146913567262907
+"1310","Ricky Schroder",-0.164645043344731
+"1311","Jordan Trovillion",-0.148090181622858
+"1312","Michael Cerveris",-0.14993983826743
+"1313","Shannon Woodward",0
+"1314","Rachel Sterling",0
+"1315","Gina Holden",0
+"1316","Kate Dickie",-0.0796758402339423
+"1317","Gloria Votsis",0
+"1318","Geoff Stults",-0.113739453530683
+"1319","Christian Campbell",0
+"1320","Jerry Brown",-0.149910203455202
+"1321","Demi Moore",-0.189372059190696
+"1322","Adrian Gonzalez",0
+"1323","Matt Gerald",-0.114466845188594
+"1324","Rus Blackwell",0
+"1325","Bruce Davison",0.0182595818797936
+"1326","Terry Walters",-0.19018998550169
+"1327","Eric Dane",0.131566981807843
+"1328","Molly Ephraim",0.00154885518914741
+"1329","Adelaide Kane",0.0733333662700422
+"1330","Victoria Leigh",0.00239393325806328
+"1331","Mikki Padilla",-0.125494615767647
+"1332","Jimmy Jean-Louis",-0.107884048116219
+"1333","Ariane Labed",-0.12716474309086
+"1334","Lupe Ontiveros",-0.170096117946382
+"1335","Rob McElhenney",-0.177488388333664
+"1336","Grace Gummer",-0.134463204345419
+"1337","Joe Howard",-0.142380737115714
+"1338","Michael Bolten",-0.14197867745115
+"1339","Kevin Gage",-0.189513541181396
+"1340","Megalyn Echikunwoke",-0.0679985352558937
+"1341","Aaron Ashmore",0
+"1342","William Atherton",-0.149427376311499
+"1343","Betsy Russell",0
+"1344","Darren Keefe Reiher",0
+"1345","Ashley Martin",0
+"1346","Alex Meraz",0
+"1347","David Bianchi",0
+"1348","Shantel VanSanten",0
+"1349","Brooke Newton",0
+"1350","Stacy Keach",-0.0644160294425612
+"1351","Cybill Shepherd",0
+"1352","Michael Nouri",-0.0847473640008511
+"1353","Patrick Bauchau",0
+"1354","Gregory Cruz",0
+"1355","Paula Jai Parker",0
+"1356","Laurie Metcalf",-0.186421778133921
+"1357","Gabrielle Reece",0
+"1358","Nick Searcy",0.730448682514363
+"1359","Alanna Ubach",0.120475059088286
+"1360","Zackary Steven Graham",0
+"1361","La'Princess Jackson",-0.0593207780052082
+"1362","Michael Weston",-0.089276247437946
+"1363","Ato Essandoh",0.145480095216087
+"1364","Joshua Ormond",-0.13693187733386
+"1365","Tal Bachman",-0.108678082374174
+"1366","Sheryl Crow",-0.145948444932582
+"1367","Diana Scarwid",-0.228600779339489
+"1368","Carly Schroeder",-0.149789833392289
+"1369","Emily Pearson",0
+"1370","Emmanuel Kabongo",0
+"1371","Aimee Garcia",-0.0721923209099838
+"1372","Cinda McCain",-0.16222280685904
+"1373","Sebastian Aguilar",0
+"1374","Louise Fletcher",-0.163508033443206
+"1375","Kayla Ewell",0
+"1376","Nick Stahl",0.268764523752092
+"1377","Arturo Castro",-0.149982780558997
+"1378","Martha Higareda",0
+"1379","David Proval",0
+"1380","Maria Doyle Kennedy",0
+"1381","Ruby Harris",-0.108713459410677
+"1382","Alex Kendrick",-0.101535886880838
+"1383","James Urbaniak",-0.148850505461377
+"1384","Albert Delpy",-0.133695766556801
+"1385","Sarah Clarke",-0.134200878767321
+"1386","Shelley Waggener",0
+"1387","Brad William Henke",-0.140959292289234
+"1388","George W. Bush",-0.175238566642854
+"1389","Leonor Varela",-0.184760187287643
+"1390","Enrico Colantoni",0
+"1391","Peter Stickles",-0.144409499107168
+"1392","Kirby Heyborne",-0.146755594091805
+"1393","Dick Cheney",0
+"1394","Bill Maher",-0.131862159515647
+"1395","Manny Perez",-0.159239166933284
+"1396","Krysta Rodriguez",-0.148486033330477
+"1397","Nathan Parsons",-0.149013957424802
+"1398","Caleb Landry Jones",0
+"1399","Frank Vincent",0
+"1400","Amy Ryan",-0.164888867777725
+"1401","Kate Burton",-0.17596544817074
+"1402","Michael McLafferty",0
+"1403","James Kyson",-0.119806748956268
+"1404","William Lee Scott",0
+"1405","Linus Roache",-0.1499545245496
+"1406","Mario Cimarro",0
+"1407","Lew Temple",-0.104087125524641
+"1408","Saffron Burrows",0
+"1409","Ben Schwartz",0
+"1410","Kevin McCarthy",-0.149984786095716
+"1411","Eddie Vedder",0
+"1412","Kevin Alejandro",-0.164836570697659
+"1413","Wray Crawford",0
+"1414","Michael Aaron Milligan",0
+"1415","Anthony Edwards",-0.193644371923492
+"1416","Mike 'The Miz' Mizanin",0
+"1417","Adam Ratcliffe",-0.1448333763333
+"1418","Gina Montana",0
+"1419","David Patrick Kelly",-0.123882337735154
+"1420","Bill Irwin",-0.20665387110992
+"1421","J.J. Abrams",-0.149880596360347
+"1422","Luke Edwards",0
+"1423","Will Estes",-0.145614564064503
+"1424","Chris Cleveland",0
+"1425","Michael Welch",0
+"1426","Lamman Rucker",-0.0606746295927579
+"1427","Pixie Davies",0
+"1428","Marisa Coughlan",-0.274706347874112
+"1429","Gage Golightly",0
+"1430","Cheryl Hines",-0.0417275313851851
+"1431","Elizabeth Meriwether",-0.129280583195539
+"1432","Jennifer Westfeldt",0
+"1433","T.J. Storm",0
+"1434","Alia Shawkat",-0.200091343998353
+"1435","Theresa Russell",0
+"1436","Connor Paolo",-0.149961388483164
+"1437","Lisa Brave",0
+"1438","Brendan Sexton III",-0.148645778836595
+"1439","Jeff Garlin",-0.0465663838742876
+"1440","Aidan Quinn",-0.180159958384455
+"1441","Dan Hicks",0
+"1442","Monica Calhoun",-0.161012004289932
+"1443","Jim O'Heir",-0.186779410988612
+"1444","Jenny O'Hara",0
+"1445","John Arcilla",-0.149475211819903
+"1446","Joey Lauren Adams",-0.187697513640618
+"1447","Jaime Zevallos",0
+"1448","Dee Wallace",-0.141410036032976
+"1449","Jon Hunter",0
+"1450","Johnny Messner",0
+"1451","Balthazar Getty",0
+"1452","Glen Powell",0
+"1453","Christina Moore",0
+"1454","Jonathan Mangum",0
+"1455","Kieu Chinh",-0.148193778198165
+"1456","Bryan Callen",0.148617881284053
+"1457","Chloe Bridges",0
+"1458","Jenni Rivera",-0.15158733824825
+"1459","Elvis Nolasco",0
+"1460","Daniel von Bargen",-0.000513986139270229
+"1461","Marshall Allman",0
+"1462","Coyote Shivers",-0.188494357545729
+"1463","Antonio Arru??",0
+"1464","Denise Boutte",0
+"1465","Sabrina Carmichael",0
+"1466","Deirdre Lorenz",0
+"1467","Dane Cook",-0.136105225427399
+"1468","Vernon Wells",0
+"1469","Renee Olstead",-0.0690734542230392
+"1470","Ingrid Bols?? Berdal",0
+"1471","Robin Givens",-0.0915527355337339
+"1472","Claudiu Trandafir",0
+"1473","Al Gore",0
+"1474","Keith Richards",-0.134925488315376
+"1475","Adam Arkin",-0.133120084911976
+"1476","Eric Schlosser",-0.137564913005819
+"1477","Robert Amaya",-0.134924087429185
+"1478","Julia Garner",-0.139406380089483
+"1479","Jenny Slate",-0.14328559879965
+"1480","Michael O'Keefe",-0.142934650349928
+"1481","Lou Adler",-0.133544238615945
+"1482","Phyllis Diller",0
+"1483","Ossie Davis",0
+"1484","Frank Gerrish",-0.147745068929746
+"1485","Nat Wolff",0.00776158477341922
+"1486","Cara Seymour",-0.203272191903607
+"1487","Elden Henson",-0.118147116461096
+"1488","Rufus Graham",-0.149351648051139
+"1489","James Gunn",-0.289215071721214
+"1490","Emily Baldoni",0
+"1491","Ana Claudia Talanc??n",0
+"1492","Alexia Rasmussen",-0.149682170112151
+"1493","Paul Blackthorne",-0.210300260720319
+"1494","Vanilla Ice",0
+"1495","Frank Whaley",-0.147141046177175
+"1496","Matt Walsh",-0.143606637474638
+"1497","A.J. Buckley",-0.0874008151266886
+"1498","Lauren C. Mayhew",0
+"1499","Janette Armand",0
+"1500","Marlene Forte",-0.173417584452396
+"1501","Sticky Fingaz",0
+"1502","Anslem Richardson",0
+"1503","Pierre Dulat",0
+"1504","Shona Kay",0
+"1505","Gia Mantegna",0
+"1506","Mike Colter",0.106732055065981
+"1507","Robert Kennedy Jr.",0
+"1508","Brian Dorton",0
+"1509","G.J. Echternkamp",-0.14715529864633
+"1510","David Gallagher",-0.152024157903032
+"1511","Melonie Diaz",-0.104704709467902
+"1512","Rian Bishop",-0.168576587351787
+"1513","Janel Parrish",-0.138506900707756
+"1514","D. David Morin",-0.143955947383595
+"1515","Christopher Berry",0
+"1516","Samaire Armstrong",-0.137690648297529
+"1517","Melora Walters",0
+"1518","Tom Guiry",0.139041214383015
+"1519","Eion Bailey",-0.179478230970641
+"1520","Kurt Angle",-0.149890444873805
+"1521","Larry Bagby",0
+"1522","Alan Pietruszewski",0
+"1523","Katy Helvenston-Wettengal",0
+"1524","Fred Armisen",-0.0858296171894578
+"1525","Larry King",0.0108113881963697
+"1526","Jake Ryan",-0.140919870100448
+"1527","Christel Khalil",-0.149857642691813
+"1528","Jennifer Lee Wiggins",0
+"1529","Christopher Toler",-0.140767415700773
+"1530","Bruce Altman",-0.0496911458837152
+"1531","Kara Hayward",0
+"1532","Wesley Jonathan",-0.130290486244637
+"1533","Tristan Mack Wilds",-0.0766260134157448
+"1534","Steffinnie Phrommany",0
+"1535","Lee Armstrong",-0.149513249336191
+"1536","Dave Fennoy",0
+"1537","Madison Lintz",0
+"1538","Lorraine Ziff",0
+"1539","David A.R. White",-0.171471434927606
+"1540","Matthew Feeney",-0.149924223457211
+"1541","Angela Nordeng",-0.151834782434329
+"1542","Colin Andrews",0
+"1543","Steven Michael Quezada",0
+"1544","Annabella Sciorra",-0.115718043505819
+"1545","Ken Bevel",-0.0464534546922912
+"1546","Saul Stein",-0.0641860704849629
+"1547","Eva Carrozza",-0.127358789109952
+"1548","Bill Clinton",-0.108758637851716
+"1549","Lincoln Hoppe",-0.146418790174569
+"1550","Peter Riegert",-0.1444011690647
+"1551","Ari Gold",-0.146853942511749
+"1552","Big Budah",0
+"1553","LisaRaye McCoy",-0.146307581533013
+"1554","Seymour Cassel",-0.189927633637904
+"1555","Ricky Jay",0
+"1556","Greg Speirs",-0.149614134584424
+"1557","Jake Sandvig",-0.178472812605848
+"1558","Amber Benson",-0.149900595306198
+"1559","Joanne Whalley",0
+"1560","Ann Dowd",-0.152614766727401
+"1561","Christa B. Allen",-0.126988565573376
+"1562","Rai Alexandra",0
+"1563","Bruce Vilanch",0
+"1564","John McGlothlin",0
+"1565","Tim Abell",0
+"1566","Randy Jay Burrell",0
+"1567","Barry Bostwick",0
+"1568","Jennifer Landa",0
+"1569","Joel Paul Reisig",0
+"1570","Sarah Callan",-0.149930797710662
+"1571","Jeff Delaney",0
+"1572","Dennis L.A. White",0
+"1573","Lloyd Kaufman",-0.149925703786245
+"1574","Cheyenne Jackson",0
+"1575","Jack Canfield",0
+"1576","Ace Marrero",0
+"1577","Eve Plumb",-0.19336803838213
+"1578","Ashley Palmer",0.162307027225981
+"1579","Jay Adams",0
+"1580","Jesse Garcia",-0.145236104017387
+"1581","Sue Corcoran",-0.149957161267043
+"1582","Jonathan Caouette",0
+"1583","Chris Cox",0
+"1584","Paul Elia",0
+"1585","Andrew Daly",-0.0814068113880141
+"1586","Adam LeFevre",-0.161328707471715
+"1587","Joe Bishop",0
+"1588","Natalie Welch",0
+"1589","Peter Gerety",-0.148887878767581
+"1590","Gary Coleman",-0.147974274139263
+"1591","Lucy",-0.148476733848699
+"1592","Eddie Jones",-0.149975554501399
+"1593","Alexander Wraith",0
+"1594","Elizabeth Stenholt",-0.149985339778619
+"1595","Joanna Cassidy",0
+"1596","Matt Servitto",-0.310135319265994
+"1597","Jason Tobin",-0.139301857071355
+"1598","Mike White",-0.00211177840354529
+"1599","Rizwan Manji",-0.147450225384937
+"1600","Nicholas Simmons",0
+"1601","Anne Archer",-0.126395621130558
+"1602","Charlie Bewley",-0.310949041015664
+"1603","Clint Jordan",-0.149857519571791
+"1604","Gus Van Sant",-0.156280225384639
+"1605","Flaco Navaja",0
+"1606","Natalie Canerday",-0.149861566253837
+"1607","Mark Hengst",0
+"1608","Marty Lindsey",0
+"1609","Derek Brandon",0
+"1610","Kate Flannery",0
+"1611","Steve Duin",0
+"1612","Brit Morgan",0
+"1613","Dana Blackstone",0
+"1614","Robert Davi",-0.403480979392031
+"1615","Jacob Zachar",0
+"1616","Brock Baker",0
+"1617","Vivian Lamolli",0
+"1618","Donald Austin",-0.149676885645851
+"1619","Jasper Johal",-0.148917487791428
+"1620","Chris Thomas",-0.143158833347178
+"1621","Leo Rossi",-0.149498496602126
+"1622","Natasha Bedingfield",-0.149384527643309
+"1623","Stevan Mena",0
+"1624","Adam Rifkin",0
+"1625","Ryan Kennedy",0
+"1626","Jennifer Lafleur",-0.144565565857146
+"1627","Victoria Lachelle",0
+"1628","Evelyn Jefferson",0
+"1629","Jordan Bridges",0
+"1630","Chase Masterson",0
+"1631","Robert Turano",0
+"1632","Robin Bartlett",0
+"1633","Alex Emanuel",0
+"1634","Stacie Evans",0
+"1635","William Mapother",-0.214747657134174
+"1636","Joe Lev",0
+"1637","Aaron Stanford",-0.207627653797144
+"1638","Rowan Isaacson",-0.149551038794049
+"1639","Bill Allen",0
+"1640","Hugh Ducklow",-0.149975999479408
+"1641","Jesse Jane",0
+"1642","Xinhua Jiang",-0.149973437976604
+"1643","Hassan Johnson",0
+"1644","Mike Birbiglia",-0.163062374407083
+"1645","Valentine",0
+"1646","Erin Bethea",-0.092457058304405
+"1647","Cassidy Gifford",-0.0859679822718284
+"1648","Brian Howe",-0.149678881064942
+"1649","Gabriela Castillo",0
+"1650","Hugh Mun",0
+"1651","Dottie Alexander",0
+"1652","Seth Ackerman",0
+"1653","Steve Diasparra",0
+"1654","Amanda Kearsan",-0.117555606540137
+"1655","Sean Whalen",-0.150264976859044
+"1656","Lena Dunham",-0.184171944925989
+"1657","Vincent Duvall",0
+"1658","Kevin Corrigan",-0.256089353282417
+"1659","Courtney Bell",0
+"1660","Jeremy Sande",0
+"1661","Chelse Swain",0
+"1662","David Mersault",0
+"1663","Olivia Cooke",0
+"1664","Greg Aronowitz",0
+"1665","Paul Eenhoorn",0
+"1666","Jon Gries",-0.103120460786809
+"1667","Eddie Rouse",-0.141574102917035
+"1668","Johnny Walter",0
+"1669","Patricia Raven",0
+"1670","Thomas Brophy",0
+"1671","Kirpatrick Thomas",-0.149304054176988
+"1672","Kate Dollenmayer",0
+"1673","Ron Gelner",0
+"1674","Panchito G??mez",0
+"1675","Mikaal Bates",0
+"1676","Suzi Lorraine",0
+"1677","Lisa Arnold",0
+"1678","Brittany Curran",0
+"1679","Alana Kaniewski",0
+"1680","Katie Aselton",-0.138137527861604
+"1681","Heather Burns",0.169085665647359
+"1682","Jason Trost",0
+"1683","Michael Cortez",0
+"1684","Joe Coffey",0
+"1685","David Sullivan",0
+"1686","John Considine",0
+"1687","Caitlin FitzGerald",0
+"1688","Maxwell Moody",0
+"1689","Brian Herzlinger",-0.149750024353954
+"1690","Johnny Depp",0.295672534841261
+"1691","J.K. Simmons",0.11157032036445
+"1692","Chris Hemsworth",0.553265922542909
+"1693","Henry Cavill",0.364434349791168
+"1694","Kevin Spacey",-0.067745613736589
+"1695","Aidan Turner",0.23805661219696
+"1696","Bingbing Li",0.676712526854092
+"1697","Tim Holmes",0
+"1698","Joe Mantegna",0.172530686850466
+"1699","Jason Statham",0.0867220924280108
+"1700","Jennifer Lawrence",0.520422766828774
+"1701","Charlie Hunnam",0.0944778404943263
+"1702","Sofia Boutella",0
+"1703","Tzi Ma",0.337405473477846
+"1704","Jim Broadbent",0.350573914100775
+"1705","Jimmy Bennett",-0.0739968725434195
+"1706","Joseph Gordon-Levitt",0.194364997005545
+"1707","Leonardo DiCaprio",0.202467842083963
+"1708","Nicolas Cage",0.00077625898036277
+"1709","Bruce Spence",0.143683867163634
+"1710","Zack Ward",0.841528596056034
+"1711","Robin Williams",0.0337281407454632
+"1712","Steve Bastoni",0.642002628451589
+"1713","Seychelle Gabriel",0.284913849486457
+"1714","Elisabeth Harnois",-0.201267012949978
+"1715","Ed Begley Jr.",-0.0801258072234996
+"1716","James D'Arcy",0.0603990903832737
+"1717","Robert Pattinson",0.701053898735523
+"1718","Jim Parsons",0.0235466350708418
+"1719","Alfre Woodard",0.0665940026009695
+"1720","Miguel Ferrer",-0.151208111576233
+"1721","Karen Allen",0.363807281233171
+"1722","Shelley Conn",-0.0650064466002387
+"1723","Stephen Amell",0
+"1724","James Corden",-0.0296571906514127
+"1725","Mahadeo Shivraj",0.251249826777498
+"1726","Jacob Tremblay",0.0579537530236395
+"1727","Eartha Kitt",0.183997567158012
+"1728","Jamie Kennedy",-0.153969638247019
+"1729","Francesca Capaldi",0
+"1730","Michael Imperioli",-0.0680442072904069
+"1731","Alexander Gould",0.419051397961255
+"1732","Mei Melan??on",0
+"1733","Denis Leary",0.505071278151111
+"1734","Bella Thorne",0.00219857538026131
+"1735","Daniel Radcliffe",-0.154337051853491
+"1736","Paddy Considine",0.0385225907487484
+"1737","Jeff Bennett",0.209305903449257
+"1738","Li Gong",-0.0396220287266361
+"1739","Amber Stevens West",0.468604146436136
+"1740","Raymond Cruz",-0.0373329123587777
+"1741","Sarah Michelle Gellar",0.0317035597834206
+"1742","Tia Carrere",0.315123737705362
+"1743","Michael Emerson",-0.0128662337944613
+"1744","Charlie Rowe",-0.0485176787395549
+"1745","Richard Tyson",-0.0896010359140028
+"1746","Fergie",-0.0946606564607931
+"1747","Bob Neill",0
+"1748","Jerry Stiller",0.0082398882416423
+"1749","Nicholas Lea",0.0928938406572111
+"1750","Tom Selleck",0
+"1751","Martin Landau",-0.119055440855824
+"1752","Tim Conway",0.307187030387655
+"1753","Jeremy Irvine",0
+"1754","Frank Langella",-0.155058762086762
+"1755","James Martin Kelly",0
+"1756","Talisa Soto",0
+"1757","Ron Howard",0
+"1758","Lea Michele",-0.14519508933148
+"1759","Roxanne McKee",-0.0970583806622403
+"1760","Jenna Fischer",-0.181912094387341
+"1761","Clint Eastwood",0.0971006003243746
+"1762","Quvenzhan?? Wallis",0
+"1763","Pamela Reed",-0.0582931478069113
+"1764","Verne Troyer",0.449511739053787
+"1765","Craig Stark",0.0344954411515583
+"1766","Jill Hennessy",0
+"1767","Carol Ann Susi",0.142305662394981
+"1768","Ki Hong Lee",0.116115452622233
+"1769","Misha Gabriel Hamilton",-0.0503681090842097
+"1770","James Babson",0.0410571629679392
+"1771","Isaac Hempstead Wright",-0.0091594122437659
+"1772","Eileen Brennan",0.0311415516704349
+"1773","Ryan Gosling",-0.110981807078793
+"1774","Blair Brown",-0.0359831477827209
+"1775","Sunny Mabrey",0
+"1776","Josh Wingate",0
+"1777","Matt Bomer",-0.0393126953014487
+"1778","Taylor Negron",-0.119362539507723
+"1779","Robert Baker",-0.0622316523167301
+"1780","Alyson Hannigan",0.103095965590388
+"1781","David Carradine",-0.0465625864438334
+"1782","Xander Berkeley",-0.00713508964429236
+"1783","Billy Campbell",-0.113801921934546
+"1784","Todd Stashwick",0
+"1785","Todd Giebenhain",-0.134089496247339
+"1786","Quentin Tarantino",-0.14173097860661
+"1787","Jennifer Ehle",-0.0176219487050153
+"1788","Alice Greczyn",0.0846861909759185
+"1789","Kathleen Freeman",0
+"1790","Joel Courtney",0
+"1791","Fann Wong",0
+"1792","Olivier Martinez",-0.067450605289566
+"1793","Toby Stephens",0.0145618628807716
+"1794","Sh?? Kosugi",0
+"1795","Alden Ehrenreich",-0.111022087026941
+"1796","P.J. Soles",0
+"1797","Candice Bergen",0.0784364375975261
+"1798","Bill Cobbs",-0.0785158278557541
+"1799","Sydney Pollack",0.0155127991861477
+"1800","Demi??n Bichir",0
+"1801","Malese Jow",-0.0675726182423479
+"1802","Marcela Mar",-0.137114904702363
+"1803","Daniel Kaluuya",-0.0161829018651824
+"1804","F. Murray Abraham",0.00818454309454949
+"1805","Judith Chapman",-0.0812772608447883
+"1806","Augustus Prew",-0.070297567448622
+"1807","Bono",-0.0502745922937285
+"1808","Robert Clohessy",-0.0915417803154175
+"1809","Jerry Ferrara",0.0560656129976224
+"1810","Javier Botet",0.12836180274521
+"1811","Carmen Perez",0.114332034365166
+"1812","Beau Mirchoff",0.203366621654288
+"1813","Kelly Rutherford",0.122091315499897
+"1814","Olivia Munn",0
+"1815","Jason Alexander",0.0795356809079809
+"1816","Krista Allen",0
+"1817","Joaquim de Almeida",-0.069467683197729
+"1818","Pink",0.171594319747344
+"1819","Rudy Youngblood",-0.00869716330555395
+"1820","Topher Grace",-0.11078313990886
+"1821","Gena Rowlands",-0.0155058405954637
+"1822","Johnny Cannizzaro",-0.0176780309313413
+"1823","Bobby Lee",0
+"1824","Miriam Margolyes",0.0376249523928167
+"1825","James Wilcox",0.10055079818494
+"1826","Emma Bell",0
+"1827","Noah Bean",-0.0628107516862845
+"1828","Gary Dourdan",-0.117756878466094
+"1829","John Gatins",0
+"1830","James Brolin",-0.0313058780440994
+"1831","Arliss Howard",0.0284013892572304
+"1832","Colin Ferguson",0
+"1833","Omar Epps",-0.140744690959325
+"1834","D.B. Woodside",0.0897257351226886
+"1835","Sonia Braga",-0.0823626796823606
+"1836","Mo'Nique",-0.106898272754167
+"1837","Mike Howard",-0.103935519203051
+"1838","Laura-Leigh",0.348063885009039
+"1839","Charlie McDermott",-0.14295310866895
+"1840","Catherine Dyer",0.784515282609972
+"1841","Charlyne Yi",0.354524404128825
+"1842","Craig Parker",-0.0211445325254107
+"1843","Keisha Castle-Hughes",-0.0441584373955943
+"1844","Aaliyah",-0.00369799924657659
+"1845","Mitch Pileggi",-0.174223770520572
+"1846","Ken Arnold",-0.0710529961303739
+"1847","Drake Bell",-0.110505090494382
+"1848","Tim Meadows",-0.0632511139863492
+"1849","Tiago Riani",-0.00746465588927116
+"1850","Liam Aiken",-0.0323451062184148
+"1851","Max Minghella",-0.0897280980911181
+"1852","Ryan Guzman",-0.050437063548116
+"1853","Sean Pertwee",-0.250372012576816
+"1854","Matt Lucas",0.393524549904905
+"1855","Ken Howard",-0.0729652475961899
+"1856","Joan Plowright",0.0143721107015702
+"1857","Emily Osment",0.12547787508726
+"1858","Cory Hardrict",0
+"1859","Antony Starr",0
+"1860","Brenda Song",0
+"1861","Vanessa Redgrave",0
+"1862","Mehcad Brooks",-0.0495842392133511
+"1863","Edgar Arreola",-0.0256403972714112
+"1864","Bojana Novakovic",-0.0446890470775841
+"1865","Jessica Barden",-0.0367737950384238
+"1866","Craig Ferguson",-0.0749275847404096
+"1867","Eddie Cibrian",-0.056843666080503
+"1868","David Paymer",-0.103184653664934
+"1869","Jessica Par??",-0.113913377236023
+"1870","Grace Phipps",-0.0985297449084241
+"1871","Ian Whyte",-0.0330178457429779
+"1872","Sandra Ellis Lafferty",-0.222061795073368
+"1873","Dick Clark",0
+"1874","Aldis Hodge",0.355551687773237
+"1875","Imelda Staunton",-0.119260357018934
+"1876","Eddie Cahill",0.0795264588713808
+"1877","Lilli Lavine",0
+"1878","David Lyons",0
+"1879","Dominic Flores",-0.246246509040885
+"1880","Matt Smith",-0.00583589749430695
+"1881","Harold Ramis",0.35452507783769
+"1882","Dolly Parton",0
+"1883","Erick Avari",0.5428943171009
+"1884","Robert Pine",-0.0169241436704236
+"1885","Sarah Carter",-0.0895227519004397
+"1886","Daniel Roebuck",-0.117663094862317
+"1887","Pam Ferris",-0.106726476719984
+"1888","Woody Allen",-0.169589980096548
+"1889","Christo Jivkov",0
+"1890","Luke Bracey",-0.0749200900677891
+"1891","Katharine Isabelle",0
+"1892","Darcy Donavan",0.0904575074607314
+"1893","Jim Meskimen",-0.0368543147006863
+"1894","Elizabeth Daily",0
+"1895","Nicki Aycox",-0.075197106238143
+"1896","George Kennedy",0
+"1897","Connie Ray",-0.0814155020598561
+"1898","Tyler James Williams",-0.286747556905126
+"1899","Laura Ramsey",-0.114153359068203
+"1900","Chris Zylka",0.382970046605274
+"1901","Dallas Barnett",0
+"1902","Martin Kove",0
+"1903","Gerry Bednob",0.0989839967450167
+"1904","Romola Garai",-0.104648791764269
+"1905","Drew Powell",-0.0215191733266062
+"1906","Manish Dayal",0.0025831703771102
+"1907","Dianne Wiest",-0.195687066174471
+"1908","Roma Downey",0.0179476506894931
+"1909","Jack Reynor",-0.0635378584849078
+"1910","Ornella Muti",-0.103071779482101
+"1911","Ian Somerhalder",-0.179755803464842
+"1912","Bam Margera",0.0535001402509868
+"1913","Mackenzie Foy",0.450967474674476
+"1914","Shailene Woodley",0.10790189626841
+"1915","John Amos",0.0968442182519939
+"1916","Kath Soucie",-0.0756605898138121
+"1917","Violante Placido",-0.0498608655571583
+"1918","Jeremy Shada",0
+"1919","Gunnar Hansen",-0.0671855730102536
+"1920","Marisa Saks",0
+"1921","Peter Firth",0
+"1922","Samira Wiley",0
+"1923","Mustafa Haidari",0
+"1924","Andy Dick",-0.10650536450209
+"1925","Ronald Reagan",-0.114369589663622
+"1926","James Callis",-0.108685424218856
+"1927","Taylor Cole",0
+"1928","Martin Dew",-0.127243572587239
+"1929","Chriss Anglin",-0.152776958550898
+"1930","Dylan Authors",0
+"1931","Donny Boaz",-0.194452574866615
+"1932","Damon Wayans",0.0541380703515943
+"1933","Necar Zadegan",0
+"1934","Joey D. Vieira",0
+"1935","Eric Mendenhall",0.0171467638708507
+"1936","Kari J. Kramer",0
+"1937","Caroline Dhavernas",-0.090405827475023
+"1938","Luenell",0.211553208190738
+"1939","Raoul Bova",-0.0273366925740491
+"1940","Sally Hawkins",-0.145988822041537
+"1941","Christian Clemenson",0
+"1942","Christian Monzon",-0.127540957621676
+"1943","Amanda Schull",0
+"1944","Rebecca Budig",-0.119281332452133
+"1945","James Hetfield",-0.140392764367247
+"1946","Cassie Ventura",0.0131926555015875
+"1947","Kirk Fox",-0.149099420118307
+"1948","Chris Moss",-0.0922697119205806
+"1949","Emmanuelle Vaugier",0.103761260640557
+"1950","Morgan Saylor",0
+"1951","T.I.",0.150959817091031
+"1952","Thomas F. Wilson",-0.146320277624825
+"1953","Julianna Guill",-0.136141643544406
+"1954","Danny Strong",0
+"1955","Clive Russell",-0.131831754476348
+"1956","Farrah Fawcett",-0.146417679647106
+"1957","Barry Corbin",0.0175824455653492
+"1958","Clayton Snyder",-0.0127743279851296
+"1959","Jack Davenport",0.795753664209579
+"1960","Jessie T. Usher",-0.0654280228091802
+"1961","Kim Director",0
+"1962","Sierra McCormick",-0.0764061969591027
+"1963","Kelly Carlson",-0.121820680081431
+"1964","Yuri Lowenthal",-0.118926535013698
+"1965","Christopher Lambert",-0.0449201794814365
+"1966","Kevin McNally",-0.0981933809715055
+"1967","Rick Yune",-0.106497963307013
+"1968","Khandi Alexander",-0.112159860372263
+"1969","Matthew Settle",-0.0441104327209796
+"1970","Stephen Graham",0.312151195296015
+"1971","Sharon Leal",0
+"1972","Mar??a Valverde",0
+"1973","Jensen Ackles",0.0151222622271722
+"1974","Phil Vischer",-0.0962086074240455
+"1975","Melissa Sagemiller",-0.141290782727139
+"1976","scar Jaenada",-0.146698925778401
+"1977","Chris Elliott",0.053151421949371
+"1978","Teo Halm",-0.0405169892951798
+"1979","Yuki Matsuzaki",-0.140013083418253
+"1980","Justin Chon",-0.11825252960643
+"1981","Jelena Jovanova",-0.149166998467751
+"1982","Gabriel Millman",-0.122726550947491
+"1983","Julian Morris",-0.182560354456833
+"1984","Alex Veadov",0.0469706188814656
+"1985","Britney Spears",0
+"1986","Lexie Contursi",-0.0789958233863762
+"1987","Tammin Sursok",-0.0976957569612587
+"1988","Heather Matarazzo",0
+"1989","Gary Weeks",-0.0871833911343695
+"1990","Jill Clayburgh",-0.13706897491462
+"1991","Anika Noni Rose",0.101799914221476
+"1992","David Richmond-Peck",-0.145774482470117
+"1993","Eamonn Walker",-0.17886883253204
+"1994","David Hewlett",0
+"1995","Gary Daniels",0
+"1996","Lucas Grabeel",-0.171435564871061
+"1997","Phyllida Law",-0.149021931288979
+"1998","Nora Dunn",-0.155422554602647
+"1999","Boris Kodjoe",-0.0788939305984366
+"2000","Laila Haley",-0.0695205328580674
+"2001","Julia Ormond",0.232836300331401
+"2002","Steve Oedekerk",-0.104901920843493
+"2003","Harry Styles",-0.0687753953898488
+"2004","Chase Ellison",-0.117085683631887
+"2005","Jasper Cole",-0.149090011085782
+"2006","Kurtwood Smith",0
+"2007","Robert Picardo",-0.165469133207256
+"2008","Gillian White",0
+"2009","Eoin Macken",0
+"2010","Vincent Gallo",-0.148985171256713
+"2011","Numan Acar",-0.141310237253637
+"2012","Kip Pardue",-0.14287048894919
+"2013","Teryl Rothery",0
+"2014","Jizelle Jade",0
+"2015","Oliver Hudson",-0.165624081372987
+"2016","Kristin Lehman",-0.116781638348056
+"2017","Q'orianka Kilcher",-0.149322223634812
+"2018","Jacinda Barrett",-0.0866253591026844
+"2019","Mariah Carey",-0.066721260867088
+"2020","Robert Redford",-0.224415955779547
+"2021","Jennifer Freeman",-0.0206435106040054
+"2022","Mackenzie Davis",-0.0767214462427493
+"2023","Tina Gilton",0
+"2024","Alexandra Maria Lara",0
+"2025","Christopher Nicholas Smith",0.0339193473138145
+"2026","Rachel Ann Mullins",0
+"2027","Mckenna Grace",0
+"2028","Saif Ali Khan",-0.147558607500594
+"2029","Sid Haig",-0.12184646377962
+"2030","Nathalie Fay",-0.167705090997934
+"2031","Debi Derryberry",0
+"2032","Ben Browder",0
+"2033","Rex Baker",0
+"2034","Glenn Plummer",-0.149983593012147
+"2035","Emily Podleski",-0.144301568386654
+"2036","Osama bin Laden",0.185029030769918
+"2037","Hugh M. Hefner",-0.145128422754292
+"2038","John Cameron Mitchell",0
+"2039","Rachel Alig",0
+"2040","Chelcie Ross",-0.0266789672404741
+"2041","Noam Chomsky",-0.149946580196868
+"2042","Pruitt Taylor Vince",-0.0545316882263146
+"2043","Mira Sorvino",-0.150732962253802
+"2044","Kayla Jackson",-0.148517192327063
+"2045","Matt Shively",0.00159848684344514
+"2046","Richard Cabral",-0.0742339580268934
+"2047","James Lafferty",-0.0365791506984211
+"2048","Jessica Lowndes",0
+"2049","Warren Christie",-0.158644091530446
+"2050","Sterling Jerins",-0.0732408935127418
+"2051","Lara Jill Miller",-0.122921722777658
+"2052","Macaulay Culkin",-0.0971710660242425
+"2053","Jeffrey Frost",-0.149369584055281
+"2054","Ocean James",0.0330671719384887
+"2055","Mike Figueroa",-0.149830280654037
+"2056","Glenn Campbell",0
+"2057","Henry Ian Cusick",0
+"2058","Heather Locklear",0
+"2059","David Raizor",0
+"2060","Mikal Vega",0
+"2061","Maria Conchita Alonso",0
+"2062","Rich Pecci",-0.124806836809957
+"2063","Katherine McNamara",0
+"2064","Julian Richings",-0.077748333059562
+"2065","Joely Richardson",0
+"2066","Marlee Matlin",-0.104679185624103
+"2067","Ellar Coltrane",-0.0786618734402498
+"2068","Angell Conwell",-0.101823298368323
+"2069","Ashley Rickards",0
+"2070","Anna Gunn",0
+"2071","Collin Alfredo St. Dic",-0.142692647439145
+"2072","Kristen Quintrall",0
+"2073","Eric Mabius",0
+"2074","Gideon Emery",0
+"2075","Ian Ziering",0
+"2076","Alice Krige",0
+"2077","Jane Goodall",-0.149930894797377
+"2078","Murray Bartlett",0
+"2079","Danielle Kotch",0.00240340466692373
+"2080","Seamus Davey-Fitzpatrick",-0.127181756880667
+"2081","Callie Thorne",-0.142908297367419
+"2082","Robyn Lively",-0.141998057070855
+"2083","Michael Gross",-0.149447868310095
+"2084","Johnny Pacar",-0.141158229289566
+"2085","Matt Cohen",0
+"2086","Neil Hopkins",0
+"2087","Tom Everett Scott",-0.0428035952228659
+"2088","French Stewart",0
+"2089","Anthony L. Fernandez",0
+"2090","Olivia Rose Keegan",0
+"2091","Greg Crowe",-0.170269645850953
+"2092","Isaac Hayes",0
+"2093","Gerry Lopez",0
+"2094","Brianna Brown",0
+"2095","Barack Obama",0
+"2096","David Jason Perez",-0.0593268333278938
+"2097","Joan Chen",-0.222023916628728
+"2098","Katharine Ross",-0.149810264750876
+"2099","Dustin Lance Black",0
+"2100","Anthony 'Citric' Campos",-0.185879330879191
+"2101","Jossara Jinaro",0
+"2102","Nicole Smolen",0
+"2103","Brian Austin Green",0
+"2104","Michael Derek",-0.150003111620787
+"2105","Travis Myers",0
+"2106","Maika Monroe",-0.108727190884922
+"2107","Ben Davies",-0.0403281058301696
+"2108","Vernon Dobtcheff",-0.133713571371581
+"2109","Najarra Townsend",-0.138595398662978
+"2110","Sook-Yin Lee",-0.144429044648832
+"2111","Noah Danby",-0.146959818517153
+"2112","Campbell Scott",-0.122198541338889
+"2113","Danny Aiello",-0.159254132693395
+"2114","Matt Bennett",-0.148506266975183
+"2115","Jess Weixler",-0.149034272754597
+"2116","Jordi Vilasuso",0
+"2117","Daniel Baldwin",0
+"2118","Paul Sheehan",-0.149975014365713
+"2119","Mircea Monroe",-0.150034546250548
+"2120","Sunil Narkar",0
+"2121","Kate Maberly",-0.150005345432188
+"2122","Jon Mack",0
+"2123","William McNamara",0
+"2124","Trenton Rostedt",0
+"2125","Melissa Bolona",0
+"2126","Paul McGillion",0
+"2127","Logan Browning",-0.144819101262315
+"2128","George Newbern",0
+"2129","Kimberley Crossman",0
+"2130","Christian Keyes",0
+"2131","James Duval",-0.160220673211776
+"2132","Matthew Alan",0
+"2133","Sarah Butler",-0.190170784621325
+"2134","Dustin Ingram",0
+"2135","William Baldwin",-0.12929792639869
+"2136","Scott Cohen",0
+"2137","Matthew Ziff",-0.15125415615419
+"2138","Ward G. Smith",0
+"2139","Paul Guilfoyle",-0.148666342070257
+"2140","Jessy Schram",-0.223238317234296
+"2141","Ted Raimi",0.23979178868307
+"2142","Brian Lee Franklin",-0.149495866983191
+"2143","Angela Sarafyan",-0.204491661563136
+"2144","Lee Scott",0
+"2145","Katrina Law",0
+"2146","Timothy Hutton",-0.102788447028353
+"2147","Long Nguyen",-0.148214327153717
+"2148","Vic Mignogna",0
+"2149","Zuhair Haddad",0
+"2150","Jason Marsden",0
+"2151","Lemmy",-0.188482444443126
+"2152","Nataniel S??nchez",0
+"2153","Rich Ceraulo",0
+"2154","Seregon O'Dassey",0
+"2155","Benjamin A. Onyango",-0.0915643146160744
+"2156","Fernanda Andrade",0
+"2157","Mick Jagger",-0.134943992237207
+"2158","W. Earl Brown",-0.13313827736693
+"2159","Michael Pollan",-0.137583815223392
+"2160","Rachel Hendrix",-0.134942565954888
+"2161","Christopher Abbott",-0.139423612263297
+"2162","Gaby Hoffmann",-0.133198063604088
+"2163","Wilford Brimley",-0.147765608586871
+"2164","Steven Yeun",-0.135078294047317
+"2165","Alex Gibney",0
+"2166","Kumar Gaurav",-0.149372349078155
+"2167","David Hyde Pierce",-0.142620419581954
+"2168","Will Rothhaar",0
+"2169","Jordana Spiro",-0.188661632704419
+"2170","Nora Zehetner",-0.150416234168029
+"2171","Scott Levy",0
+"2172","Ilene Graff",0
+"2173","Nicole Randall Johnson",0
+"2174","Russell Hodgkinson",0
+"2175","Maureen McCormick",0
+"2176","Magi Avila",0
+"2177","Angelina Armani",0
+"2178","Jason K. Wixom",0
+"2179","Justin Baldoni",0
+"2180","Alma Martinez",0
+"2181","Odessa Rae",-0.147175552990326
+"2182","Ahna O'Reilly",-0.104718166284636
+"2183","Gavin MacLeod",-0.151508812086277
+"2184","Tommy O'Reilly",0
+"2185","Zachary Knighton",0
+"2186","Shane Dawson",-0.149911088260845
+"2187","Corbin Allred",0
+"2188","Taylor Pigeon",0
+"2189","Scott Helvenston",0
+"2190","Isaac C. Singleton Jr.",-0.164209800597039
+"2191","Raymond J. Barry",-0.149878224380136
+"2192","Dichen Lachman",-0.0976787940217123
+"2193","Kevin Scott Richardson",-0.140786569693566
+"2194","Laura Fraser",0
+"2195","Trey Loney",-0.149533772548719
+"2196","Kendyl Joi",-0.149944802169439
+"2197","Karen Alexander",0
+"2198","Russell Wong",0
+"2199","Kirk Cameron",-0.0464536087322405
+"2200","Blanchard Ryan",-0.0641929838530333
+"2201","Heather Berman",-0.127375810353383
+"2202","Ken Burns",-0.149607746737241
+"2203","Rachel Dratch",-0.15927411606892
+"2204","Rachel True",-0.146874071598937
+"2205","David Mamet",0
+"2206","Tommy Sheppard",-0.149634714784405
+"2207","Tori Spelling",-0.149921208131694
+"2208","Keith Carradine",0
+"2209","Daston Kalili",0
+"2210","Carol Channing",0
+"2211","Vincent Chimato",0
+"2212","Mike Beckingham",0
+"2213","Shaun Sipos",-0.0671757081950189
+"2214","Jennifer Hale",0
+"2215","Mary Kate Wiles",0
+"2216","Carrie Bradstreet",0
+"2217","Elizabeth Streb",-0.149951313198383
+"2218","Mike Stanley",0
+"2219","Luis Sanchez",0
+"2220","John Karyus",-0.149946213630422
+"2221","Bob Proctor",0
+"2222","Jack E. Curenton",0
+"2223","Micah Sloat",0.119912959098291
+"2224","Tony Alva",0
+"2225","Emily Rios",-0.145255885631428
+"2226","Tony Doupe",-0.149977693445365
+"2227","Greg Ayres",0
+"2228","Bill Farmer",0
+"2229","R. Brandon Johnson",-0.146994319830518
+"2230","Mark Zupan",0
+"2231","Tom E. Nicholson",0
+"2232","James Cagney",-0.14301790352044
+"2233","Daniel London",-0.149845112795786
+"2234","John Robinson",-0.14697584012404
+"2235","Don Wallace",-0.149996097463149
+"2236","Lalaine",0
+"2237","Trish Basinger",-0.15000587904276
+"2238","Aunjanue Ellis",-0.136045718471763
+"2239","Hector Echavarria",0
+"2240","Parry Shen",-0.139320730345586
+"2241","Purva Bedi",-0.14747037117444
+"2242","Keri Maletto",0
+"2243","Amir Talai",-0.155410289256542
+"2244","Marshal Hilton",0
+"2245","Samantha Futerman",-0.149878037766478
+"2246","Judy Marte",0
+"2247","Michael Abbott Jr.",-0.149882072656564
+"2248","Eme Ikwuakor",0
+"2249","Florence Henderson",0
+"2250","Victoria Jackson",0
+"2251","Sam Adams",0
+"2252","Noah Segan",0
+"2253","Joshua Ray Bell",0
+"2254","Matthew Emerick",0
+"2255","Mark Fantasia",0
+"2256","Brendan Doogie Milewski",-0.14969737750689
+"2257","Dan Futterman",-0.242276523843753
+"2258","The Dalai Lama",-0.148937875031209
+"2259","Michael Joiner",-0.14317829452226
+"2260","William Joseph Elk III",-0.149518924953116
+"2261","Matisyahu",-0.149404932034229
+"2262","Marri Savinar",0
+"2263","Melanie Papalia",0
+"2264","Susan Chambers",0
+"2265","William Katt",0
+"2266","Darryl Hunt",0
+"2267","Mia Farrow",0
+"2268","John Newton",0
+"2269","Elaine Bromka",0
+"2270","Paul Hickert",0
+"2271","Sally Kirkland",0
+"2272","Abigail Evans",0
+"2273","Robin Lord Taylor",0
+"2274","Charla Cochran",0
+"2275","Bebe Neuwirth",-0.124936515109467
+"2276","Temple Grandin",-0.149571461864752
+"2277","Joel Moody",0
+"2278","Naderev Sano",-0.149996484661957
+"2279","Lisa Ann",0.306739540088805
+"2280","Ariel Hsing",-0.149993805168193
+"2281","J.D. Williams",0
+"2282","Christopher Denham",-0.148868447828022
+"2283","Diane Sorrentino",0
+"2284","Jason Stuart",0
+"2285","Richard Moll",0
+"2286","Pfeifer Brown",-0.0859781008707518
+"2287","Fay Masterson",-0.149699188864212
+"2288","Kevin P. Farley",0
+"2289","Claire Gordon-Harper",0
+"2290","Jon Brion",0
+"2291","Michelle Simone Miller",0
+"2292","Chemeeka Walker",-0.117570773568817
+"2293","Ty Parker",0
+"2294","Justin Gordon",0
+"2295","Dan Novy",0
+"2296","Chris 'Wonder' Schoeck",0
+"2297","Taliesin Jaffe",0
+"2298","Jan Haley",0
+"2299","Elissa Dowling",-0.197794334308472
+"2300","Julianne Gabert",0
+"2301","Joseph Campanella",-0.149324259377488
+"2302","Andrew Bujalski",0
+"2303","Nichole Ceballos",0
+"2304","Franky G",-0.170989437781434
+"2305","Tjasa Ferme",0
+"2306","Kristen Seavey",0
+"2307","Shannen Fields",-0.138324095839902
+"2308","Ashley Tramonte",0
+"2309","Robbie Barnes",0
+"2310","Zoe Lister-Jones",0
+"2311","Tatiana Suarez-Pico",0
+"2312","Julianna Pitt",0
+"2313","Shane Carruth",0
+"2314","Richard Jewell",0
+"2315","Kerry Bish??",0
+"2316","Eva Boehnke",0
+"2317","John August",-0.149770314025461
+"2318","Polly Walker",0.162175963317973
+"2319","Alan D. Purwin",1.04722417978891
+"2320","Dami??n Alc??zar",0
+"2321","Nicole Scherzinger",0
+"2322","Scott Grimes",0
+"2323","James Nesbitt",0.664279726049758
+"2324","Kristin Scott Thomas",-0.114550449127355
+"2325","Tadanobu Asano",0
+"2326","B.J. Novak",0.20990806086027
+"2327","Taika Waititi",0.165107398738076
+"2328","Don Rickles",1.33507849611343
+"2329","Noel Clarke",0.717211730192874
+"2330","Ralph Brown",0.0075684436063702
+"2331","Reece Ritchie",0.229487320878105
+"2332","Peter Sohn",0.269425249942327
+"2333","Julie Walters",0.531335850841774
+"2334","Lydia Wilson",0
+"2335","No??mie Lenoir",0
+"2336","Tom McCarthy",0.116772294693355
+"2337","Casper Crump",0.270654233576011
+"2338","Jess Harnell",0.835581956509888
+"2339","Stephen Colbert",0.566337897597157
+"2340","Phyllis Smith",0.704425934588975
+"2341","Sam Riley",-0.148584267488877
+"2342","Jin Akanishi",-0.0822297273673026
+"2343","Mary Kay Place",0.19724440630113
+"2344","Thomas Robinson",0.130823303504331
+"2345","Peter Scolari",0
+"2346","Judd Hirsch",0.229470932491306
+"2347","Carolyn Hennesy",0.268762694783545
+"2348","Robert Capron",0.0501721624610504
+"2349","Ruth Negga",0
+"2350","Laura Brent",0.143683073017286
+"2351","Willow Smith",0.829381563675876
+"2352","David Kelly",0.195245424570943
+"2353","Dominic Monaghan",0.487435494337777
+"2354","Livvy Stubenrauch",1.20184851877944
+"2355","Helmut Bakaitis",0.641981947155028
+"2356","Armin Mueller-Stahl",-0.0976645296685604
+"2357","James Lipton",0
+"2358","Niecy Nash",0.248893989493839
+"2359","Lily James",0.264965342099228
+"2360","Art Malik",0.00974864768151662
+"2361","Mike Bell",0.42808127444814
+"2362","Matt Craven",-0.0456515462468273
+"2363","Karan Brar",0.105426339969913
+"2364","Julian Glover",0
+"2365","Zach Woods",0.0280613272301514
+"2366","Sebastian Roch??",0.102962155629389
+"2367","Michael Nyqvist",0.666017068987061
+"2368","David Herman",-0.18586959656699
+"2369","Bryan Brown",-0.139815177501908
+"2370","Jean Simmons",-0.0988631345157673
+"2371","David Threlfall",0.128154700528299
+"2372","Lukas Haas",0.285241855064771
+"2373","Andy Richter",0.227706236950009
+"2374","April Winchell",0.432894483270155
+"2375","Jordi Moll??",0.0590890641014385
+"2376","August Diehl",0.225487373615942
+"2377","Della Reese",0.334566767407594
+"2378","J??rgen Prochnow",0.508464128739792
+"2379","Jeffrey Garcia",0
+"2380","Paul Anderson",0
+"2381","Bob Gunton",0.3637988956578
+"2382","Tabu",0.0644312774385564
+"2383","Peter Fonda",0
+"2384","Sean Harris",0.287722377392196
+"2385","Melanie Griffith",-0.0835619068568889
+"2386","Christina Cox",-0.115083950022439
+"2387","Nicholas Elia",-0.00845560912988401
+"2388","Teyonah Parris",-0.064997255561126
+"2389","Zo?? Bell",0
+"2390","James Coburn",0.822328922152222
+"2391","Rila Fukushima",0.253035688779271
+"2392","Jeremy Howard",0.572282077102572
+"2393","Tim Heidecker",0.0622487236844342
+"2394","Mini Anden",0.0838610023525118
+"2395","Stephanie March",0
+"2396","Olly Alexander",-0.0296491445141142
+"2397","Chad L. Coleman",0.146324338850228
+"2398","Madison McKinley",0.251246428015073
+"2399","G.W. Bailey",-0.0222059940032933
+"2400","Olga Fonda",0.0863840268200581
+"2401","Vanessa Matsui",0.0579599717285585
+"2402","Aramis Knight",0
+"2403","Cyril Raffaelli",0.37314364642558
+"2404","C??cile De France",-0.23191644620914
+"2405","Spencer Breslin",0.0707284145687464
+"2406","Philip Glenister",0
+"2407","Benedict Wong",0
+"2408","Oliver Reed",0
+"2409","Michael Rispoli",-0.0932707585100231
+"2410","Derek Jeter",0
+"2411","Gary Lewis",0
+"2412","Troy Evans",0.110334069669708
+"2413","Anthony LaPaglia",-0.208198467497902
+"2414","Michael Wincott",-0.205724562192235
+"2415","Ben Stein",-0.0887695714876897
+"2416","Frank Dillane",-0.275158576044106
+"2417","Bill Melendez",0
+"2418","Patricia Velasquez",0.640029784750202
+"2419","Roger Bart",0.0476235792113564
+"2420","Drake",-0.109553306735386
+"2421","Bernard Hill",0.311212611355728
+"2422","Olivia Williams",-0.216573226953092
+"2423","Chris Barrie",0.270456524025131
+"2424","Lou Romano",0
+"2425","Harris Yulin",-0.10760640739923
+"2426","Miranda Otto",0.447227494424568
+"2427","Al Roker",0.310253728480277
+"2428","Kelly Keaton",0
+"2429","Joey Slotnick",-0.0400969202358681
+"2430","Kelly Lynch",-0.115796376493079
+"2431","Robert Maillet",0.504354484700996
+"2432","Kim Delaney",-0.000646221064022561
+"2433","Will.i.am",0.385189038890135
+"2434","Oksana Akinshina",0.420079634776465
+"2435","Elliott Gould",0.565386774375745
+"2436","Fred Tatasciore",0.209305110840042
+"2437","Jim Carter",0.0231405627635582
+"2438","Sarah Parish",0.0600863729702508
+"2439","Clemens Schick",-0.00507986596719704
+"2440","Karl Yune",-0.039609687869927
+"2441","Nikki Griffin",0
+"2442","Jsu Garcia",-0.037323635048766
+"2443","Ellen Wong",-0.115952006810733
+"2444","Rekha Sharma",0
+"2445","Miguel A. Nez Jr.",0.429328754937695
+"2446","Julie Kavner",0
+"2447","Katt Williams",-0.0909805432451692
+"2448","Tom Hulce",0.046827567302858
+"2449","Brian Steele",0.0410686458106925
+"2450","Anthony Reynolds",1.4009301454474
+"2451","Mike Tyson",0.693813826445642
+"2452","David Ogden Stiers",0.0468945921031975
+"2453","Garrick Hagon",0
+"2454","Dalip Singh",0.32753876957962
+"2455","Lauren Gottlieb",0.255144327053951
+"2456","Paul Michael Glaser",0.217607297103165
+"2457","Nellie Sciutto",0
+"2458","Paula Abdul",0
+"2459","Kathryn Joosten",0
+"2460","William Abadie",0.111049541645681
+"2461","Juan Riedinger",-0.00790712443506396
+"2462","Josh Robert Thompson",0.172153089850216
+"2463","Zahn McClarnon",0.0991996188226357
+"2464","Nicholas Turturro",-0.228645933805341
+"2465","Jose Pablo Cantillo",-0.0659805186633705
+"2466","Fran Drescher",0.482368275394627
+"2467","Josh Stamberg",0.0322054309009424
+"2468","Adrian Alonso",-0.0128547803857481
+"2469","Bruce Thomas",-0.124576059966089
+"2470","Madison Rothschild",-0.0485075023536791
+"2471","John Topor",-0.0895891991634752
+"2472","Andrea Di Stefano",-0.0946486520869314
+"2473","Lotte Verbeek",-0.133864036900733
+"2474","Tom Sizemore",0
+"2475","Melissa Sturm",0.262462881416113
+"2476","Mo Gallini",0.296132750665868
+"2477","Jonathan Winters",-0.227615151290965
+"2478","Rita Davies",-0.0610780114936699
+"2479","Jay Leno",0
+"2480","Allen Covert",0
+"2481","Paul Dooley",0.0229150727446895
+"2482","Izabella Scorupco",0
+"2483","Barry Shabaka Henley",0.0204584602644154
+"2484","Yvette Nicole Brown",-0.0876570078069852
+"2485","Jud Tylor",-0.102539818175052
+"2486","Christian Berkel",-0.12189320411852
+"2487","Sarah Steele",-0.0654861497661359
+"2488","Azura Skye",-0.0667389944462461
+"2489","Steve Byers",0.0447685517032214
+"2490","Ransford Doherty",-0.0738632374279708
+"2491","Keegan-Michael Key",0.0224331202605119
+"2492","Tim McGraw",0
+"2493","Marcia Wallace",0.365246995911698
+"2494","Jeffrey DeMunn",-0.0859683348493292
+"2495","Cristi??n de la Fuente",0
+"2496","Conrad Vernon",1.37829248359558
+"2497","Leila Arcieri",0.321330531592437
+"2498","Bob Balaban",-0.0764985776402476
+"2499","John Buffalo Mailer",-0.0403988693085114
+"2500","Zach McGowan",0.0218987507443707
+"2501","Garcelle Beauvais",-0.121694734905532
+"2502","Celina Beach",0
+"2503","Andrew Bryniarski",0
+"2504","Gregg Henry",0
+"2505","Gaia Weiss",-0.0970457570824673
+"2506","Gary Farmer",0
+"2507","Stephen Merchant",0
+"2508","Graham McTavish",0.0313601048753672
+"2509","Michael Gaston",-0.149198348369867
+"2510","Reece Thompson",-0.274604530117402
+"2511","Eric Lloyd",0.298322513452272
+"2512","Andrea Savage",0.235441768601647
+"2513","William Devane",0.106399491960873
+"2514","Horatio Sanz",0.00796185844911638
+"2515","Michael Kitchen",-0.0582821401926474
+"2516","Jonah Bobo",-0.272092168043291
+"2517","Brian Geraghty",-0.0720362008437938
+"2518","Robert Wagner",0.449501862738398
+"2519","Ice-T",0
+"2520","Chelsea Handler",0.198556334825226
+"2521","Vincent Regan",0
+"2522","Haley Bennett",-0.00828931826518762
+"2523","Drew Sidora",0
+"2524","Emily Ratajkowski",0
+"2525","Nicky Naud??",0.226910767563901
+"2526","Jimmy Shubert",0.230348170819343
+"2527","Rosa Salazar",0.088272735666771
+"2528","Jaqueline Fleming",0.081983765156832
+"2529","Judith Hill",0
+"2530","Griffin Kane",0.100721397980866
+"2531","Bill Hunter",0.0660919073243625
+"2532","John Hodgman",-0.0886755340843963
+"2533","Kristen Connolly",-0.043331317713407
+"2534","Fred Williamson",0.18793796528554
+"2535","Elaine Stritch",-0.148473852718231
+"2536","Ritchie Coster",0
+"2537","Gemma Chan",0.0230341182165309
+"2538","Louis Ferreira",0
+"2539","Wade Williams",0.00272855695249497
+"2540","Leleti Khumalo",-0.178985437821523
+"2541","Jonathan Frakes",0
+"2542","Julia Duffy",-0.100608848141148
+"2543","Joe Viterelli",0
+"2544","Xzibit",-0.0459562254673352
+"2545","Jacob Hopkins",0
+"2546","Timothy West",-0.119858324983638
+"2547","Vanessa Marshall",-0.142556676968771
+"2548","Shawn Christian",-0.12186254088035
+"2549","Paolo Montalban",-0.213130387448848
+"2550","Stefan Kapicic",1.03727236709977
+"2551","Keir O'Donnell",1.03239889498284
+"2552","Willie Garson",0.107513290981406
+"2553","Matt Bushell",-0.0622200439770141
+"2554","Kevin Brown",-0.108846164271251
+"2555","Michael Bowen",0.00647125527989965
+"2556","Matthew Gray Gubler",0
+"2557","Michael Chernus",-0.0356199197020105
+"2558","Natasha Richardson",0.204061297950332
+"2559","James Karen",0.392051763120582
+"2560","Haley Ramm",0.173423165426145
+"2561","Chiaki Kuriyama",0.118570122459378
+"2562","Kate Luyben",0.0146456380345435
+"2563","Rex Linn",0
+"2564","Paterson Joseph",0
+"2565","John Castle",-0.113787919059111
+"2566","Hugh Bonneville",0.048176594769974
+"2567","David Walton",-0.122613255659787
+"2568","Madison Pettis",-0.0403986998726232
+"2569","Jon Seda",-0.163948849351895
+"2570","David Backus",-0.134074770829458
+"2571","Matt O'Leary",-0.147463996553485
+"2572","Kelvin Han Yee",-0.364872075650881
+"2573","Parker Sawyers",0
+"2574","Ann-Margret",0.157993791465657
+"2575","Victoria Smurfit",-0.234803743768398
+"2576","Rob Moran",0.175073368426615
+"2577","Bobby Block",0
+"2578","Jon Stewart",0
+"2579","Zach Mills",0
+"2580","Mark L. Young",0.123281399611058
+"2581","Michael Monks",0.084017571798837
+"2582","Rupert Graves",-0.0729425693404866
+"2583","Georgina Chapman",0
+"2584","Conrad Goode",0.0355325046194212
+"2585","Chad Lowe",0.037573044939454
+"2586","Reuben Langdon",-0.0138494184587314
+"2587","Kayvan Novak",-0.0231453074662445
+"2588","Ana de la Reguera",-0.0242243645057194
+"2589","Scott Lawrence",0
+"2590","Taylor Dooley",-0.194559405729269
+"2591","Peter Youngblood Hills",-0.100134397897823
+"2592","Rain",0.0671424267433521
+"2593","Rachel Roberts",-0.109754314174771
+"2594","Rick Hoffman",-0.0981528125253779
+"2595","Jessica Collins",-0.118618805633448
+"2596","Raza Jaffrey",-0.104412160484643
+"2597","Willie Nelson",-0.228257303243504
+"2598","James Lew",0.26742140218445
+"2599","Mel Rodriguez",0
+"2600","Steve Bacic",0
+"2601","Gretchen Mol",-0.0896365839389475
+"2602","Alissa Dean",-0.0937750977486103
+"2603","Julia Jones",-0.203168129214845
+"2604","Anita Briem",-0.00800223116767956
+"2605","Steve Whitmire",0.145227741289108
+"2606","Robert Ri'chard",-0.0151220246680249
+"2607","Izabella Miko",-0.0478560753012179
+"2608","Ian Richardson",0
+"2609","Gary Stretch",0
+"2610","Will Beinbrink",-0.0493298467321065
+"2611","Joe Komara",0
+"2612","Nels Lennarson",-0.121674768509262
+"2613","James With",0
+"2614","Unax Ugalde",-0.137099569916579
+"2615","Togo Igawa",0
+"2616","Harvey Fierstein",-0.155075932520023
+"2617","Peter Greene",0
+"2618","Daniel Mays",-0.153679010169917
+"2619","Chelsea Bond",-0.0812643031449257
+"2620","Valerie Tian",-0.0603572514015343
+"2621","Charice",0
+"2622","David Eigenberg",-0.00673703892982329
+"2623","Slash",0.0386100712564996
+"2624","Jared Burke",-0.103497028305261
+"2625","Anders Holm",-0.244461197251898
+"2626","Evan Jones",0.283258207693132
+"2627","B??r??nice Bejo",-0.0515724091836628
+"2628","J. Smith-Cameron",-0.0992449091527145
+"2629","JoBeth Williams",-0.154299668558195
+"2630","Bonnie Hunt",0.0291120103183304
+"2631","Dan Bilzerian",0.322809007166289
+"2632","Marcella Lentz-Pope",0.0703081295584632
+"2633","Sachiko Ishida",0.114336855694778
+"2634","Wendy Crewson",-0.00738245466671773
+"2635","Rene Russo",0
+"2636","Jason Douglas",0
+"2637","Jane Curtin",0
+"2638","Marisol Nichols",0.0852339727648623
+"2639","David Thornton",0.155349726087082
+"2640","Sam Jaeger",0.0382825976259861
+"2641","Lino Facioli",-0.017333767770743
+"2642","Jonathan Morgan Heit",0.00183499599082811
+"2643","Jonathan Brewer",-0.00868888091208736
+"2644","Derek Mears",-0.0444414576207217
+"2645","Ebon Moss-Bachrach",0.0116948723321015
+"2646","Joy Bryant",-0.0154955218138747
+"2647","Scott Vance",-0.0176676178296305
+"2648","Jeremy Owen",0
+"2649","Julene Renee",-0.067089622755972
+"2650","Shenae Grimes-Beech",0
+"2651","Angie Dickinson",-0.0647734773727089
+"2652","Ione Skye",-0.00227829731835654
+"2653","Stephen Henderson",-0.148774277947979
+"2654","Vanessa Aspillaga",-0.0627984692125693
+"2655","Jesse L. Martin",-0.0700035061680082
+"2656","Angela Bettis",-0.0621745386165191
+"2657","William Ragsdale",-0.0859445115728161
+"2658","Lauren Lee Smith",0
+"2659","Helen McCrory",-0.121230959391264
+"2660","Greg Collins",-0.355076209076519
+"2661","Kelly Ripa",-0.181726492966464
+"2662","Jasmine Trinca",-0.221374884140618
+"2663","Ljubomir Kerekes",0
+"2664","Michelle Nolden",0.0284098744754367
+"2665","Michael Hitchcock",-0.119136104920604
+"2666","Tim Daly",-0.11926197413521
+"2667","Oscar Gale",-0.141305740434207
+"2668","Courtney Gains",0.368003651006186
+"2669","Eduardo Ver??stegui",0
+"2670","Kari Matchett",-0.0823496682329912
+"2671","Matthew Glave",-0.0774451153967439
+"2672","Harry Treadaway",-0.178653962520961
+"2673","Bruce Goodchild",-0.103921681809793
+"2674","Nick Robinson",-0.0651272250151064
+"2675","Owen Burke",0.0133478542849498
+"2676","Christopher James Baker",-0.0195881825034828
+"2677","Clarence Williams III",-0.170795345581538
+"2678","Larenz Tate",-0.140719360973793
+"2679","John Larroquette",0
+"2680","Omid Abtahi",-0.0809581217986816
+"2681","Reginald Ballard",0.289496050553828
+"2682","Bruce Green",0.139518345935496
+"2683","Rebecca Mader",0
+"2684","Sherri Shepherd",0
+"2685","Debra Winger",0
+"2686","Kiersey Clemons",-0.0589066214353819
+"2687","Mackenzie Aladjem",0
+"2688","Steven Mackintosh",-0.0211336754583765
+"2689","Tom Bosley",-0.0211342014273311
+"2690","Kirsten Day",0.00378598680206515
+"2691","Colin Stinton",-0.187831678318593
+"2692","Kaitlyn Dever",0
+"2693","Carmen Ejogo",-0.116800845297202
+"2694","Joanna Lumley",-0.281327725426789
+"2695","Richard Cetrone",-0.071040038734833
+"2696","Richard Thomas",-0.312188901085772
+"2697","Marion Ross",-0.0547844281828744
+"2698","Michael Beach",-0.0878810499416555
+"2699","Michael Mosley",-0.0387152290588026
+"2700","Wendell Pierce",-0.0941901197356777
+"2701","Matt Price",-0.117164021406332
+"2702","Jason Behr",-0.161066805297345
+"2703","Shawn Doyle",-0.122614322297897
+"2704","Fiona Shaw",0
+"2705","Maurice Compte",-0.152369108244151
+"2706","Benno F??rmann",0
+"2707","Jade Kindar-Martin",-0.202948928463865
+"2708","Beverly D'Angelo",-0.10375951065001
+"2709","Jacob Latimore",0.143823777679841
+"2710","Melissa McMeekin",0
+"2711","Sami Gayle",-0.168330447644006
+"2712","Hayley Lovitt",-0.00746229665951637
+"2713","Vincent Perez",-0.157192319510516
+"2714","Dato Bakhtadze",-0.0897146223438118
+"2715","Chris Ellis",-0.0628953801309759
+"2716","Eddie Jemison",-0.112657441824906
+"2717","Robert John Burke",-0.150469821304139
+"2718","Susanne Lothar",0
+"2719","Steve Bannos",0.393530090969457
+"2720","Portia Doubleday",-0.0788109153398071
+"2721","Russell Peters",0.076478365507329
+"2722","Holmes Osborne",-0.0729565021060899
+"2723","Leland Orser",-0.098383847204434
+"2724","Simon Callow",0
+"2725","Jayne Eastwood",-0.159326371405695
+"2726","Dillon Casey",0.232886346969944
+"2727","Rodger Bumpass",-0.0101749968495894
+"2728","Yetta Gottesman",0
+"2729","Chris Lowell",0.0403911994020151
+"2730","Howard Hesseman",0
+"2731","Daniel Rindress-Kay",0
+"2732","Tracie Thoms",-0.0153286648080423
+"2733","Jean Smart",0.0586181513890933
+"2734","Maria Thayer",0
+"2735","Bonnie Somerville",0
+"2736","Anne Meara",0
+"2737","Nellie McKay",0.0183922177098985
+"2738","Luisa Ranieri",0
+"2739","Facundo Lombard",-0.0599308464321892
+"2740","Sanoe Lake",0.0134906115464911
+"2741","Danny Rhodes",-0.0569318037040516
+"2742","Megan Franich",0
+"2743","Method Man",-0.192722612275352
+"2744","John Macmillan",-0.0367622165872835
+"2745","Jasika Nicole",-0.0594060009422782
+"2746","Tom Kane",-0.0456339119858507
+"2747","Katie Lowes",0
+"2748","Luke Mably",-0.0738184677334032
+"2749","Huell Howser",-0.0749145121234524
+"2750","Cheri Oteri",-0.0658578945341327
+"2751","Dave Annable",-0.119967921299261
+"2752","Aisha Hinds",0
+"2753","Hugh Dillon",0
+"2754","Deborah Kara Unger",0
+"2755","Marcel Iures",-0.155439496352096
+"2756","Robert Costanzo",-0.111788204925366
+"2757","Mark Camacho",-0.113898750137046
+"2758","Sandra Vergara",-0.0985157949738426
+"2759","Randall Duk Kim",0
+"2760","Christiana Leucas",-0.122243268820074
+"2761","Munro Chambers",-0.155113337199835
+"2762","Terence Maynard",-0.11570469497698
+"2763","Lynda Boyd",-0.252219390105133
+"2764","Ned Bellamy",-0.16063780715708
+"2765","James Biberi",-0.155715651953972
+"2766","Kris Marshall",-0.225145534089366
+"2767","Kathy Baker",-0.235247837600803
+"2768","Tyler Hilton",0
+"2769","Jennifer Hall",0
+"2770","Angel Coulby",-0.143626833141684
+"2771","R. Marcos Taylor",0.355555223063586
+"2772","Enrique Iglesias",-0.116020482695029
+"2773","Charlie Talbert",0.0304795286751743
+"2774","Demetri Martin",-0.11924404594723
+"2775","Kenneth Mitchell",0.0795326764742852
+"2776","Ann Talman",0
+"2777","Mimi Kirkland",0
+"2778","Jeri Ryan",-0.0726979619150085
+"2779","T??mas Lemarquis",-0.0597621336562549
+"2780","Antoni Corone",-0.0640067020531673
+"2781","Ben Chaplin",-0.10033447749766
+"2782","George Lopez",-0.147114680005703
+"2783","Jeffrey Markle",0.0110754365749906
+"2784","Michael Rady",-0.184626798493497
+"2785","Vanesa Tomasino",-0.216683627150108
+"2786","David Harbour",-0.0539735434724699
+"2787","Suzie Plakson",0.0204502204152139
+"2788","Keegan Connor Tracy",-0.00118126409696053
+"2789","Seth Meyers",-0.00317486170823087
+"2790","Hristo Shopov",0
+"2791","Ahney Her",0.382990884430052
+"2792","Clarke Peters",-0.0749117070430963
+"2793","Jamie Blackley",0
+"2794","Andrea Martin",-0.0110220190790891
+"2795","Liza Lapira",0.14541742102695
+"2796","Bob Newhart",0.128553131834658
+"2797","Jay R. Ferguson",-0.10145294913037
+"2798","Chris Gauthier",0.0434531384822388
+"2799","Kevin Breznahan",-0.0368430962491533
+"2800","Nancy Cartwright",0
+"2801","Gregory Alan Williams",0
+"2802","Billy Aaron Brown",-0.0449135593730297
+"2803","Chelan Simmons",-0.0626046053064755
+"2804","DMX",-0.0571623256058912
+"2805","Kylie Bunbury",-0.0156568627418788
+"2806","Griffin Cleveland",0
+"2807","Amy Stewart",-0.0814023693423003
+"2808","James Read",-0.0721811737116383
+"2809","scar Jaenada",-0.14669254868948
+"2810","Jack Thompson",-0.103857339953755
+"2811","Don McManus",0
+"2812","Jacob Pitts",0
+"2813","Amanda Tilson",-0.119359104183955
+"2814","Sergio Calder??n",0
+"2815","Illeana Douglas",-0.322368449942199
+"2816","Zena Grey",-0.128804869011733
+"2817","Jacob Young",-0.108951200586522
+"2818","Chris Parnell",-0.116762058999805
+"2819","Patrick St. Esprit",-0.135359986772044
+"2820","Natasha Calis",-0.0330333759072445
+"2821","Rhys Coiro",0
+"2822","Kaylee DeFer",0
+"2823","Jack Plotnick",-0.147206841386289
+"2824","Michael Par??",-0.0223335420300334
+"2825","Igor Zaripov",0
+"2826","Shawn Hatosy",-0.167981268391522
+"2827","Gil Birmingham",-0.149576539396522
+"2828","Jennifer Schwalbach Smith",-0.102908255298423
+"2829","Derek Graf",0.0480315680513653
+"2830","Catherine Dent",-0.119337044279131
+"2831","Matt Letscher",-0.222032963201437
+"2832","Dell Yount",-0.158254877160424
+"2833","Lainie Kazan",0.34041060781237
+"2834","Garrett Morris",-0.175536807850194
+"2835","Lillete Dubey",-0.104635106172775
+"2836","Alexandra Silber",0.071594091847466
+"2837","Colleen Haskell",0.0747407457706933
+"2838","Juhi Chawla",0.0025924095199553
+"2839","Darwin Shaw",0.017956262054661
+"2840","Charles Keating",-0.07017452917444
+"2841","Kyle Gass",-0.0955527031576052
+"2842","Franco Nero",-0.127199888318668
+"2843","Dendrie Taylor",-0.261287094392777
+"2844","Alessandra Mastronardi",-0.103058202812626
+"2845","DeWayne Warren",-0.0758869342931029
+"2846","Leslie Hope",-0.156608691982927
+"2847","Steve Harris",0
+"2848","Ali Hillis",0
+"2849","Hayley McFarland",0.237531008572292
+"2850","Ski Carr",0.0775229429697404
+"2851","Melissa Ordway",0.0900436053226359
+"2852","Jason Weaver",0
+"2853","Romeo Miller",-0.0153520771909689
+"2854","Tony Jay",0
+"2855","Charles Mesure",-0.0195558114217435
+"2856","Marc Macaulay",-0.0163073241296023
+"2857","Ken Sansom",-0.0145716735666826
+"2858","Aryana Engineer",0.00213175248241831
+"2859","Brian d'Arcy James",-0.0196145516865936
+"2860","Filippo Timi",-0.0498493267531403
+"2861","Anneliese van der Pol",-0.0475291064290521
+"2862","Jane Fonda",-0.0618335380978811
+"2863","Carrie Preston",0
+"2864","Trey Parker",0
+"2865","Mar??a Botto",0
+"2866","Francesca Rettondini",0
+"2867","Skyler Samuels",-0.086260424370984
+"2868","Romi Aboulafia",-0.0812775996490263
+"2869","Christine Lakin",-0.108487670170544
+"2870","Toby Hemingway",0
+"2871","Jake Short",-0.185827543030545
+"2872","Tom Bower",-0.163676882104518
+"2873","Riki Lindhome",-0.101524044778804
+"2874","Khalid Abdalla",0
+"2875","Zak Orth",-0.106491671559904
+"2876","Bernie Sanders",-0.114359627925053
+"2877","Joe Cole",-0.124206421526338
+"2878","Lorna Raver",0
+"2879","Sam Lerner",-0.223029669203799
+"2880","Nimrat Kaur",-0.108677204950084
+"2881","Jordan Carlos",-0.133955852340457
+"2882","Nick Gomez",0
+"2883","Riccardo Scamarcio",-0.655105993489151
+"2884","Serena Scott Thomas",-0.127229360890166
+"2885","Victoria Learn",0
+"2886","Tyrone Benskin",-0.399909761357095
+"2887","Brent Anderson",-0.194443915684573
+"2888","Toni Braxton",-0.177370971961877
+"2889","Melvil Poupaud",-0.325103723472773
+"2890","Tom Conti",-0.177553709468648
+"2891","Elea Oberon",0
+"2892","Jacqueline Lovell",0
+"2893","Hope Olaide Wilson",0.0171582464925531
+"2894","Cabrina Collesides",0
+"2895","Kelli Barrett",-0.0903991539447678
+"2896","David Moscow",0.0204219828449691
+"2897","John Aylward",0
+"2898","Roger Allam",0
+"2899","Dominique McElligott",0
+"2900","Dante Brown",0
+"2901","Tracy Letts",0
+"2902","Chester",0.211553463587706
+"2903","JR Bourne",0.120039324225281
+"2904","Joey Fatone",-0.129249050606748
+"2905","Fran Kranz",0.0160225424060084
+"2906","Collins Pennie",0.00448809181622756
+"2907","Mario Monicelli",-0.027326529482022
+"2908","Andrew Dice Clay",0
+"2909","Susan Blommaert",0
+"2910","Dan Bakkedahl",0
+"2911","Ethan Stiefel",0
+"2912","Timoth??e Chalamet",0
+"2913","Kevin G. Schmidt",-0.160560147164781
+"2914","Bruce Payne",-0.119267462527931
+"2915","Frankie Valli",-0.0960833555125585
+"2916","James Cullen Bressack",0
+"2917","Lars Ulrich",-0.140378002382302
+"2918","Luis Rosado",0.0132010687921722
+"2919","Vondie Curtis-Hall",-0.194453267598877
+"2920","Rob Campbell",-0.149084392313552
+"2921","Eric Sykes",0
+"2922","Jay Chandrasekhar",-0.110681894885514
+"2923","Paulo Costanzo",0.0581736844644538
+"2924","Erik Knudsen",-0.104649221485348
+"2925","Mary McCormack",-0.192783250219689
+"2926","Diana Maria Riva",0
+"2927","Shad Moss",-0.109241513097033
+"2928","Malika",-0.152744082574758
+"2929","Ben Platt",0
+"2930","Megyn Price",0
+"2931","Ellen Sandweiss",0
+"2932","Jake Wood",-0.121647451035791
+"2933","Tim Williams",-0.136127380979282
+"2934","Samm Levine",0
+"2935","Rachel Brosnahan",0
+"2936","Finn Ireland",-0.131817723294137
+"2937","Tsianina Joelson",0
+"2938","Marc Donato",0
+"2939","Cynthia Stevenson",-0.276351019304755
+"2940","Tracey Walter",-0.183346846571351
+"2941","Ruby Jerins",-0.302084517933994
+"2942","Trent Ford",-0.13500732177382
+"2943","Huey Lewis",-0.140823683885722
+"2944","Robin Weigert",-0.190765350306268
+"2945","Ivan Sergei",-0.157629038236327
+"2946","William Shockley",0
+"2947","Grasie Mercedes",0.136919614852609
+"2948","William Petersen",-0.235945362233937
+"2949","Margot Kidder",-0.114178824026912
+"2950","Martha MacIsaac",-0.0814019373917232
+"2951","Holland Taylor",0
+"2952","Bianca Kajlich",-0.0990662024999537
+"2953","Russ Tamblyn",0
+"2954","Ser'Darius Blain",-0.0654190739376777
+"2955","Kurt Loder",0
+"2956","Jason Spevack",-0.0763947771125768
+"2957","Jonathan Jackson",-0.112526098563873
+"2958","Angelo Anthony Pizza",-0.108393799826543
+"2959","Eddie Kaye Thomas",0
+"2960","Larry Mullen Jr.",-0.13908210256062
+"2961","Adam Copeland",-0.131799244107729
+"2962","Sandra Nelson",-0.0895341563855791
+"2963","Daniel Wu",-0.106490807956393
+"2964","Michael Michele",-0.112148092801286
+"2965","Marla Sokoloff",-0.209126478663306
+"2966","Diahann Carroll",0
+"2967","Conleth Hill",-0.125896288818514
+"2968","Chris Geere",-0.172376242479923
+"2969","Brady Corbet",-0.150136569827452
+"2970","Kevin Nash",0.0460831318687042
+"2971","Bart Shatto",0
+"2972","Chad Bishop",0
+"2973","Shelby Vischer",-0.0733716805309027
+"2974","Gino Salvano",-0.103825640301864
+"2975","Lexa Doig",-0.162086349680962
+"2976","China Chow",0
+"2977","Osric Chau",0
+"2978","Jane Adams",-0.1531355119284
+"2979","Noam Jenkins",-0.1366273404576
+"2980","Candace Kroslak",-0.141276765869676
+"2981","Boys II Men",0.0553890183585583
+"2982","Fredro Starr",0.182901728693728
+"2983","Martin Henderson",0.0429229928504129
+"2984","Gene Simmons",-0.0583067954591843
+"2985","Sedona Legge",0.121935497893682
+"2986","Henry Simmons",-0.135131411532819
+"2987","Jason Gray-Stanford",-0.0405072801245515
+"2988","Rolando Molina",-0.115710845904393
+"2989","Shid?? Nakamura",0
+"2990","Sarah Wright",-0.0673205882045197
+"2991","Natalie Lisinska",-0.166510836912251
+"2992","Branko Djuric",-0.1491529330712
+"2993","Roma Maffia",0.0124487113214854
+"2994","Rob Morrow",-0.122718955232498
+"2995","Rumer Willis",0
+"2996","Rorke Denver",0.0469765629635458
+"2997","Ashley Hinshaw",-0.0152061452533318
+"2998","Dave Allen",0
+"2999","Oliver Cooper",0.00396690898727051
+"3000","Obba Babatund??",-0.182368190781488
+"3001","Valeria Golino",-0.144903814710242
+"3002","Anthony Burrell",-0.078984824751233
+"3003","Meg Crosbie",-0.071763864540875
+"3004","Sofia Black-D'Elia",-0.0871720512425145
+"3005","Tammy Blanchard",0
+"3006","Sherman Hemsley",-0.179907932236697
+"3007","Brian Dietzen",-0.197532279019238
+"3008","Samantha Ivers",-0.149402356041176
+"3009","Jake Richardson",-0.14202126333537
+"3010","Timothy Webber",-0.145760834914768
+"3011","James Shigeta",-0.162046180473942
+"3012","Andy Davoli",-0.226281649116256
+"3013","Alexandra Callas",0
+"3014","Ginger Jensen",0
+"3015","Jason Mantzoukas",-0.0704936979688006
+"3016","Paz de la Huerta",0.0085014610186581
+"3017","Peter Berg",-0.0656420800368539
+"3018","Alex Karpovsky",-0.135602549565357
+"3019","Angus Barnett",-0.149008325618889
+"3020","Scott Patterson",0.0478639376495057
+"3021","Alix Freihage",0
+"3022","Francesc Pag??s",0
+"3023","Dustin Milligan",0
+"3024","Leigh Whannell",0.0986635800673682
+"3025","Clare Kramer",-0.0576523983790947
+"3026","Angus Macfadyen",0.0181545381660501
+"3027","Dabney Coleman",-0.047393393462183
+"3028","Stephanie Lemelin",-0.202427615740949
+"3029","Sal Lopez",-0.0699111222104368
+"3030","Isiah Whitlock Jr.",0
+"3031","Jaden Klein",-0.0695154850631385
+"3032","Johnny Whitworth",-0.108650095966116
+"3033","Hakeem Kae-Kazim",-0.0556600122154452
+"3034","Vanessa Lengies",-0.20948360082186
+"3035","Jennifer Tung",-0.104890307099665
+"3036","Carlos Alazraqui",0
+"3037","Niall Horan",-0.0687652985265547
+"3038","Jack Guzman",-0.117073643759337
+"3039","Jon Polito",-0.175094897332144
+"3040","Rob Huebel",-0.13850154705112
+"3041","Lee Tergesen",-0.202709072127692
+"3042","Patricia Belcher",-0.142071931996578
+"3043","Jillian Estell",-0.104440236955075
+"3044","Fran??ois Chau",0
+"3045","Rae Dawn Chong",0
+"3046","Gen Seto",0
+"3047","Dree Hemingway",-0.135740004387443
+"3048","Robert Peters",-0.182483900672996
+"3049","Carol Sutton",-0.183750081916084
+"3050","Robert Pralgo",-0.206206044675455
+"3051","Anna Vareschi",-0.148972095217603
+"3052","Haluk Bilginer",-0.141297534143044
+"3053","Larry Fessenden",-0.150093146149073
+"3054","Jeffrey Combs",-0.313633909048782
+"3055","Lee Norris",-0.163541205826997
+"3056","Adrian Holmes",0
+"3057","Enrique Murciano",-0.143011838833473
+"3058","H??ctor Jim??nez",0
+"3059","Luisa D'Oliveira",0
+"3060","Parker Bagley",0
+"3061","Roberta Valderrama",0.155494784767612
+"3062","Herbert Russell",-0.225212879991741
+"3063","Patrick Cranshaw",-0.135529078436796
+"3064","Gbenga Akinnagbe",-0.270640501835831
+"3065","Dylan Kussman",-0.116767077907525
+"3066","David Arquette",-0.384994594820579
+"3067","Kevin McHale",-0.109262136688276
+"3068","Shaun Evans",-0.149319039361016
+"3069","Debrianna Mansini",0
+"3070","Valarie Pettiford",-0.156359592491713
+"3071","Brad James",0
+"3072","James Huang",-0.0724764345736443
+"3073","Jill Talley",-0.00839471338844748
+"3074","Steve Harvey",-0.101753564947965
+"3075","Daisy Betts",-0.066034000746748
+"3076","Josh Pais",-0.0767118164929511
+"3077","Justin Hall",0
+"3078","Samantha Mathis",0
+"3079","Diego Velazquez",0
+"3080","Michaela Watkins",-0.183932593102384
+"3081","Mark Feuerstein",-0.160783178085018
+"3082","David Thewlis",0
+"3083","Mary Catherine Garrison",0
+"3084","Alexa Havins",-0.210726626987782
+"3085","Grant Bowler",0
+"3086","Natalie Coughlin",0
+"3087","Craig Sheffer",0
+"3088","Todd Louiso",-0.126749628707839
+"3089","Stanislav Ianevski",0
+"3090","Clyde Kusatsu",0
+"3091","Alan Van Sprang",-0.164387235799751
+"3092","Richard Bull",-0.170772752670849
+"3093","Vic Aviles",-0.147546168457524
+"3094","Angus Sampson",-0.102458109875726
+"3095","Cody Linley",-0.0355900362963805
+"3096","Bob Costas",-0.116745609363585
+"3097","Vanessa Ray",-0.119805059510685
+"3098","Erin Daniels",-0.112728357666866
+"3099","Peter Breitmayer",-0.124148220787221
+"3100","Darryl Stephens",-0.113579010464403
+"3101","Keri Lynn Pratt",-0.174038091879943
+"3102","Lil' Wayne",-0.17633808331473
+"3103","Miriama Smith",0
+"3104","Jennifer Butler",-0.1451632933585
+"3105","Erin Wasson",-0.167697736220071
+"3106","Derek Wayne Johnson",-0.154309243842522
+"3107","Cindy Robinson",0
+"3108","Julian Sands",0
+"3109","Olesya Rulin",0
+"3110","Travis Aaron Wade",0
+"3111","Tim DeKay",-0.139688991536463
+"3112","Mark De Alessandro",-0.14997146427681
+"3113","Gabriel Bateman",0.0180095208297408
+"3114","Jake Cherry",-0.10498316004764
+"3115","Ricky Martin",0.18502736452846
+"3116","Ajay Naidu",-0.112655439274129
+"3117","Laura Harris",-0.0788802459743152
+"3118","Rick Dial",-0.158213834166448
+"3119","Amy Madigan",-0.112353754404273
+"3120","Luis E. Carazo",-0.208494415558896
+"3121","Dominik Garc??a-Lorido",0
+"3122","Raquel Alessi",-0.135183310064507
+"3123","Alexis Kendra",0
+"3124","Polly Noonan",0
+"3125","Frederick Weller",-0.140870081078031
+"3126","Sammy Nagi Njuguna",-0.140805846434424
+"3127","Ritchie Montgomery",-0.160340148811268
+"3128","Bill Baird",-0.1499347237193
+"3129","Robert Wahlberg",0
+"3130","Li Jun Li",0
+"3131","Trieu Tran",-0.160137645778921
+"3132","Eva Marcille",-0.130280357875721
+"3133","Kayla Raparelli",-0.148505511742597
+"3134","Tamara Taylor",0.0216470220454146
+"3135","Tony Danza",0
+"3136","David Dastmalchian",0
+"3137","Mike Eshaq",-0.152558219005893
+"3138","Ron Silver",0
+"3139","Sumalee Montano",0.097027938567784
+"3140","Daren Kagasoff",0.00703252522226458
+"3141","Alisha Boe",0.00160403479680908
+"3142","Jorja Fox",-0.127594707603024
+"3143","Garrett Ryan",-0.0365778034537981
+"3144","Brian O'Halloran",-0.100359863545026
+"3145","Jim Rash",-0.265252152116186
+"3146","Perdita Weeks",-0.117300833863193
+"3147","Seth Gilliam",-0.195691283007864
+"3148","Rachel Korine",0
+"3149","Andrew Airlie",-0.0851851197716897
+"3150","Sahajak Boonthanakit",-0.0732323792750388
+"3151","Wood Harris",0
+"3152","Lauren London",-0.124504834000533
+"3153","Mona Marshall",-0.122911223785242
+"3154","Shirley Jones",-0.245495008644213
+"3155","Jonathan Silverman",-0.325860243454085
+"3156","Cynthia Barrett",0
+"3157","Marilyn Manson",0
+"3158","Winter Ave Zoli",0
+"3159","Kristoffer Polaha",-0.177118972022212
+"3160","Ken Davis",-0.149358078208623
+"3161","Olivia DeJonge",0.0330711428204643
+"3162","Kel O'Neill",-0.149818799231049
+"3163","Jelena Nik",0
+"3164","Katie Leclerc",0
+"3165","David Adam Flannery",-0.194332446908435
+"3166","Ed Quinn",0
+"3167","Robert Longstreet",0
+"3168","Louise Lasser",-0.167907415120794
+"3169","Patricia Heaton",-0.125594237936889
+"3170","Debbie Harry",-0.131664465968509
+"3171","Charlotte Rampling",-0.124810989360885
+"3172","Braeden Lemasters",0
+"3173","Lateef Crowder",0
+"3174","Kathleen Munroe",-0.169864439484046
+"3175","Catherine Lambert",0
+"3176","Marcus Lyle Brown",-0.134411092554353
+"3177","David A Cole",0
+"3178","Adam Hicks",-0.0504457687509392
+"3179","Armin Shimerman",-0.104681343861593
+"3180","Libby Villari",-0.0786535199338129
+"3181","DJ Pooh",-0.126692370652741
+"3182","Gabriel Iglesias",0
+"3183","Amy Hill",-0.190266425172237
+"3184","Lesley Ann Warren",-0.138616270028983
+"3185","Benjamin Fletcher",-0.146106751436943
+"3186","Puti Sri Candra Dewi",-0.142681759085681
+"3187","Rita Wilson",-0.146913075566002
+"3188","Elena Satine",0
+"3189","Ernie Reyes Jr.",-0.184194728005685
+"3190","Ronnie Gene Blevins",-0.245888899734514
+"3191","Zoe Levin",-0.148084418406583
+"3192","Pauline McLynn",-0.208871062979128
+"3193","Nick Damici",-0.149950374353358
+"3194","Peter Jacobson",0
+"3195","Kira McLean",0
+"3196","Black Thomas",0
+"3197","Brooke D'Orsay",0
+"3198","Jon Osbeck",0
+"3199","Ralph Ineson",-0.0796690306124264
+"3200","Derek Magyar",0
+"3201","Robert Vaughn",-0.194344861574751
+"3202","Cassandra Scerbo",0
+"3203","Blaine Anderson",0
+"3204","Jere Burns",0
+"3205","Grey Griffin",0
+"3206","Peter Agnefjall",-0.149919947106894
+"3207","Edward Conna",0
+"3208","Luis Antonio",0
+"3209","Piper Laurie",-0.329753344523165
+"3210","Amy Irving",-0.183943613171761
+"3211","Mary Page Keller",-0.195795581234577
+"3212","Dayna Devon",-0.125492190483027
+"3213","Lauryn Hill",-0.135417588280591
+"3214","Joyful Drake",-0.107874525887651
+"3215","Athina Rachel Tsangari",-0.127172010903484
+"3216","Clifton Powell",-0.146299137396246
+"3217","David Heyman",-0.142893433576795
+"3218","Ann Morgan Guilbert",-0.223112749898963
+"3219","Robert Noble",-0.14237457349721
+"3220","Christopher Schmidt",-0.141987860855342
+"3221","Andrew Rannells",-0.316931872805763
+"3222","Lindsey Haun",0
+"3223","Bob Ross",-0.149437431880731
+"3224","David Douglas",0
+"3225","Talia Shire",0
+"3226","Chris Kattan",-0.16817635710611
+"3227","Olivia Alexander",0
+"3228","Jillian Murray",0
+"3229","Jason Priestley",0
+"3230","Brett Wagner",0
+"3231","Scott Evans",0
+"3232","Brenda Vaccaro",-0.188621098179999
+"3233","Mia Barron",0
+"3234","Tempestt Bledsoe",-0.158867764601658
+"3235","Allegra Carpenter",0
+"3236","Elise Neal",0
+"3237","Joe Dinicol",-0.157395454481023
+"3238","Laird John Hamilton",0
+"3239","Beth Broderick",0
+"3240","Dinesh D'Souza",0
+"3241","Dana Hanna",-0.0593203175000661
+"3242","Jill Flint",-0.0749105722081686
+"3243","Jessica Hecht",-0.222022326715868
+"3244","Ana Gasteyer",-0.136926828806196
+"3245","Dayo Okeniyi",-0.228439048892687
+"3246","Steve Burg",-0.108690723138125
+"3247","George Harris",-0.14980027172648
+"3248","Gavin Newsom",0
+"3249","Tenoch Huerta",-0.163129198845301
+"3250","Paul T. Taylor",-0.347224933089889
+"3251","Rene Rosado",0
+"3252","Ivette Alvarez",0
+"3253","Linden Ashby",0
+"3254","Brad Lee Wind",-0.149993232238775
+"3255","Cheyenne Haynes",0
+"3256","Carmen Argenziano",0
+"3257","Shaun O'Hagan",0
+"3258","Jake Weary",-0.108719060144259
+"3259","T.C. Stallings",-0.0403216808067297
+"3260","Daniel Tay",0
+"3261","Marie Pillet",-0.133704473530187
+"3262","Lauren Sweetser",0
+"3263","Miranda July",-0.138581256404102
+"3264","Barney Frank",-0.192077791242087
+"3265","Sydelle Noel",-0.206170866159118
+"3266","Raphael Barker",-0.144419671706849
+"3267","Bruce Newbold",-0.146950897153522
+"3268","Donald Rumsfeld",0
+"3269","Austin Lyon",-0.200242335495697
+"3270","Linda Lovelace",-0.15488519077749
+"3271","Zack Pearlman",-0.148496910529132
+"3272","John Hensley",-0.149024951044599
+"3273","Chuck Zito",0
+"3274","Charly Bivona",0
+"3275","Michelle Hurst",-0.143174702326005
+"3276","Kaiwi Lyman-Mersereau",0
+"3277","Kathy Uyen",-0.149965702556539
+"3278","Ricardo Chavira",0
+"3279","Mark Rolston",0
+"3280","Glenn Howerton",0
+"3281","Paul Williams",-0.149996078133451
+"3282","Peter Hermann",-0.145987807565165
+"3283","Josh Meyers",0
+"3284","Steve Earle",0
+"3285","Dave Sheridan",0
+"3286","James Chalke",0
+"3287","David Lewis",0
+"3288","Dwight Henry",0
+"3289","Donald Trump",-0.149875004789546
+"3290","Bree Williamson",0
+"3291","Circus-Szalewski",0
+"3292","Daniel Franzese",-0.190164783330073
+"3293","Alejandro Furth",0
+"3294","Samuel Davis",0
+"3295","Owen Kline",-0.129289617464959
+"3296","Brian Stepanek",0
+"3297","Sam Medina",0
+"3298","Philip Friedman",0
+"3299","Ryan McDonald",-0.181196469972013
+"3300","Summer Phoenix",0
+"3301","Malone Thomas",0
+"3302","Joel Murray",0
+"3303","Timothy Patrick Quill",0
+"3304","David Alan Grier",-0.186772090186944
+"3305","Darren E. Burrows",0
+"3306","Ronnie Lazaro",-0.149486806721902
+"3307","Matthew Lawrence",-0.16307101765739
+"3308","Michael Elian",0
+"3309","Michael Berryman",-0.157227497559198
+"3310","Matt Hunter",0
+"3311","Lydia Hearst",0
+"3312","Kiowa Gordon",0
+"3313","Cullen Douglas",0
+"3314","Angela Jones",0
+"3315","Cat Ly",-0.148205432732349
+"3316","Matt Crabtree",0
+"3317","Christopher Atkins",0
+"3318","Jorge Diaz",-0.151588763570495
+"3319","Anupam Kher",0
+"3320","Felicia Pearson",0
+"3321","Ben Youcef",0
+"3322","Eric Lange",0
+"3323","Zo?? Poledouris",0
+"3324","Juan Carlos Montoya",0
+"3325","Jim Cody Williams",0
+"3326","Vanessa Lee Chester",0
+"3327","Patrick Muldoon",0
+"3328","Dustin Diamond",0
+"3329","Matthew R. Anderson",0
+"3330","Heather Sossaman",-0.0690716445956371
+"3331","Maria Canals-Barrera",-0.0915578205674968
+"3332","Paul Borghese",-0.131764805044715
+"3333","Albert Maysles",-0.134935772004049
+"3334","Magda Apanowicz",-0.152855160712727
+"3335","Rhea Perlman",-0.133130204755632
+"3336","Barbara Kowalcyk",-0.137575611102256
+"3337","Jason Burkey",-0.134934522535869
+"3338","Kathleen Rose Perkins",-0.139488098787601
+"3339","Jake Lacy",-0.143285693615656
+"3340","Misty Upham",-0.142944092771527
+"3341","Merry Clayton",-0.133541959006827
+"3342","Colette Divine",0
+"3343","Ella Joyce",0
+"3344","Rick Macy",-0.147757224178026
+"3345","Robert Beltran",-0.185994979131168
+"3346","Olivia Crocicchia",-0.32260929298319
+"3347","Venida Evans",-0.135077072588297
+"3348","Kathleen Quinlan",-0.17028642359665
+"3349","Greg D'Agostino",0
+"3350","Aasheekaa Bathija",-0.149364080986245
+"3351","Melissa Gilbert",-0.14114833903124
+"3352","Raquel Elizabeth Ames",-0.151251978679513
+"3353","Nathaniel Parker",-0.142612534379844
+"3354","Hallee Hirsh",0
+"3355","Jonathon Trent",-0.188659231787467
+"3356","Meredith Hagner",-0.149672154257823
+"3357","Ian Bohen",-0.210298320191224
+"3358","Jennifer Sky",0
+"3359","Heather Bucha",-0.147142887087102
+"3360","Laura Breckenridge",0
+"3361","James Eckhouse",0
+"3362","Alicia Ziegler",0
+"3363","Janet Hubert",0
+"3364","Diane Venora",0
+"3365","Kevin Hamedani",0
+"3366","Chrystee Pharris",0
+"3367","Jay Paulson",0
+"3368","Summer Napoles",0
+"3369","Fiona Dourif",0
+"3370","Jarrod Phillips",0
+"3371","Cathryn de Prume",0
+"3372","Eve Ensler",0
+"3373","Kristen Johnston",-0.159502314331871
+"3374","Patrick Wilson",-0.147167592113232
+"3375","Ariana Neal",-0.104711993467154
+"3376","Adam Carolla",-0.16857347383545
+"3377","Jacqueline Bisset",0
+"3378","Hal Linden",-0.15150801331024
+"3379","Michelle Tabora",0
+"3380","Diane Baker",0
+"3381","Arly Jover",0
+"3382","Cherami Leigh",-0.149903153785724
+"3383","Whit Spurgeon",0
+"3384","Donna Zovko",0
+"3385","Jeanette Branch",-0.164211584129314
+"3386","Pat Healy",-0.140912501864705
+"3387","Renee Faia",-0.149870466166047
+"3388","Whitney Able",0
+"3389","Michele Morrow",0
+"3390","Tommy the Clown",-0.140779228379203
+"3391","Walter Masterson",-0.175489122553269
+"3392","Louis Ozawa Changchien",0
+"3393","Jeff Lima",-0.176219776774029
+"3394","Danielle Savre",0
+"3395","Amy Lucas",-0.149526191529019
+"3396","Karolina Wydra",0
+"3397","Cynthia Watros",-0.171470451087705
+"3398","Tac Fitzgerald",-0.149937291287896
+"3399","Exie Booker",-0.151830364085311
+"3400","Francine Blake",0
+"3401","Lymari Nadal",0
+"3402","John Brodsky",0
+"3403","Daniel Travis",-0.0641890576726171
+"3404","Abby Elliott",0
+"3405","Paul Daggett",-0.127369317458379
+"3406","Bob Dole",-0.149607181367197
+"3407","Daryn Tufts",-0.146411442550021
+"3408","Jason Kravits",-0.144402523507665
+"3409","Denny Kirkwood",-0.146866956840631
+"3410","Curt Doussett",0
+"3411","Ti West",0
+"3412","Dick Cavett",0
+"3413","Mickey Hart",-0.149627482831813
+"3414","Joe McQueen",-0.17847542544421
+"3415","Garrett M. Brown",-0.149914047833827
+"3416","Eddie Spears",-0.236028375211607
+"3417","Matthew Cowles",-0.152614251147848
+"3418","Max Adler",-0.169032985009296
+"3419","Stafford Douglas",-0.331245398381975
+"3420","Chin-Chien Chang",0
+"3421","Tony Bennett",0
+"3422","Al Sapienza",0
+"3423","Tom Stedham",0
+"3424","Vincent De Paul",0
+"3425","Terrance Zdunich",0
+"3426","Felix Avitia",0
+"3427","Yassie Hawkes",0
+"3428","Laura Flanders",-0.149944310684564
+"3429","Jamison Stalsworth",0
+"3430","Kate Graham",-0.149939268004417
+"3431","Michael Stahl-David",0
+"3432","Eric Worre",0
+"3433","Amy Hargreaves",-0.193363999872034
+"3434","Amber Armstrong",0.162316478147553
+"3435","Jeff Ament",0
+"3436","Alicia Sixtos",-0.145249157717053
+"3437","David Frederick White",-0.14997082680209
+"3438","Renee Leblanc",0
+"3439","Mike Huckabee",0
+"3440","Alex Sanborn",0
+"3441","Michelle Krusiec",0
+"3442","Desmond Askew",-0.146987648121675
+"3443","Andy Cohn",0
+"3444","Christian Kapper",0
+"3445","Lynn Redgrave",-0.148886700266647
+"3446","Todd Bridges",-0.143012058478077
+"3447","Will Oldham",-0.148490473403034
+"3448","Kathryn Erbe",0
+"3449","Christina Chambers",-0.149989528688527
+"3450","Darren Kendrick",0
+"3451","Mary Norwood",-0.149999366530542
+"3452","Ryan Carnes",0
+"3453","Ahmed Best",0
+"3454","James McCaffrey",-0.180220609746396
+"3455","Raven Goodwin",-0.130636207947644
+"3456","Ron Rogg??",0
+"3457","Collin Kahey",-0.139314717309473
+"3458","Chris Weitz",-0.189415869048161
+"3459","Anil Kumar",-0.147464109267038
+"3460","Barbie Castro",0
+"3461","Finola Hughes",-0.310944189035928
+"3462","Clint Jung",0
+"3463","Jackie Nova",-0.149871718700225
+"3464","James Deen",-0.15628359476337
+"3465","Dominic Col??n",0
+"3466","Travis Smith",-0.149875828476001
+"3467","Debra Lynn Hull",0
+"3468","Jessica Duffy",0
+"3469","Charles Irving Beale",0
+"3470","Tim Bagley",0
+"3471","Jeff Jacob",0
+"3472","Sedona James",0
+"3473","Annelyse Ahmad",0
+"3474","Travis Betz",0
+"3475","Sheldon Bailey",0
+"3476","Greg Jackson",0
+"3477","Craig Dougherty",-0.149691168642205
+"3478","Matt Keeslar",0
+"3479","Swami Krishnanad",-0.14893176267378
+"3480","Michael Higgenbottom",-0.143172474478669
+"3481","Lorraine Toussaint",-0.216486535317495
+"3482","Cynthia Geary",-0.14951292226747
+"3483","Madeleine Albright",-0.149398990432635
+"3484","Richard Glover",0
+"3485","Bethany Blakey",0
+"3486","John Reardon",0
+"3487","Elise Muller",-0.144566133317661
+"3488","Ali Daniels",0
+"3489","David Lee Smith",0
+"3490","John Reeves",0
+"3491","Bruce Gooch",0
+"3492","H.M. Wynant",0
+"3493","Matthew Gumley",0
+"3494","Rebecca Dayan",0
+"3495","Emily Gorell",0
+"3496","Flint Beverage",0
+"3497","Sienna Beckman",0
+"3498","Ron Rifkin",-0.124938878188277
+"3499","Simon Baron-Cohen",-0.149565583012962
+"3500","Lia Tucker",0
+"3501","Mike Brett",-0.149990644861995
+"3502","Kayden Kross",0
+"3503","Michael Landers",-0.149987967759283
+"3504","Samantha Esteban",0
+"3505","Constance Wu",-0.148862881943361
+"3506","Mel Eslyn",-0.163058408624183
+"3507","Christopher Robin Miller",0
+"3508","Reese Mishler",-0.0859750178576659
+"3509","Larry Blamire",-0.14969352524316
+"3510","Brandon Middleton",0
+"3511","Johnathan Hurley",0
+"3512","David Barnes",0
+"3513","Arik Ascherman",0
+"3514","A.J. DeLucia",0
+"3515","Amelia Giancarlo",-0.117566483000009
+"3516","James DeBello",-0.150264741308037
+"3517","Loanne Bishop",0
+"3518","Erin Cipolletti",0
+"3519","Jemima Kirke",-0.145270669688177
+"3520","Corlandos Scott",0
+"3521","Amanda MacDonald",0
+"3522","Barry Lynch",0
+"3523","Beau Knapp",0
+"3524","Jeff Dowd",0
+"3525","Demetrius Grosse",0
+"3526","Kelen Coleman",0
+"3527","Damian Jewan Lee",-0.141577040432344
+"3528","Shiree Nelson",0
+"3529","Lindsay Felton",0
+"3530","Ronee Collins",0
+"3531","Jordan Scovel",0
+"3532","Christian Anderson",-0.149318711446942
+"3533","Justin Rice",0
+"3534","Parker Riggs",0
+"3535","Casper Martinez",0
+"3536","Damon Owlia",0
+"3537","Travis Legge",0
+"3538","Janet Lee Dapper",0
+"3539","Lindsay MacDonald",0
+"3540","Brandon Landers",0
+"3541","Bari Hyman",-0.178310426893669
+"3542","Nick Principe",0
+"3543","Eric Ambriz",0
+"3544","John Lucas",0
+"3545","Casey Gooden",0
+"3546","Sara Stepnicka",0
+"3547","Daniella Pineda",0
+"3548","David Chandler",0
+"3549","Jon Gunn",-0.149764816429481
