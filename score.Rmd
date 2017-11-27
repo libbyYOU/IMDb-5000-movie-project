@@ -249,7 +249,6 @@ lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(genres_mat
 lasso.coef=data.frame(colnames(genres_matrix),
                       data.frame(lasso.coef))
 genres.coef = lasso.coef %>% 
-  filter(lasso.coef!=0) %>% 
   arrange(desc(lasso.coef))
 ```
 #actors
@@ -297,7 +296,6 @@ lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(actors_mat
 lasso.coef=data.frame(colnames(actors_matrix),
                       data.frame(lasso.coef))
 actors.coef = lasso.coef %>% 
-  filter(lasso.coef!=0) %>% 
   arrange(desc(lasso.coef))
 ```
 
@@ -307,7 +305,6 @@ ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(actors_mat
 ridge.coef=data.frame(colnames(actors_matrix),
                       data.frame(ridge.coef))
 actors.coef = ridge.coef %>% 
-  filter(ridge.coef!=0) %>% 
   arrange(desc(ridge.coef))
 
 
@@ -362,7 +359,6 @@ lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(keywords_m
 lasso.coef=data.frame(colnames(keywords_matrix),
                       data.frame(lasso.coef))
 keywords.coef = lasso.coef %>% 
-  filter(lasso.coef!=0) %>% 
   arrange(desc(lasso.coef))
 ```
 
@@ -373,7 +369,6 @@ ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(keywords_m
 ridge.coef=data.frame(colnames(keywords_matrix),
                       data.frame(ridge.coef))
 keywords.coef = ridge.coef %>% 
-  filter(ridge.coef!=0) %>% 
   arrange(desc(ridge.coef))
 
 
@@ -439,9 +434,12 @@ ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(directors_
 ridge.coef=data.frame(colnames(directors_matrix),
                       data.frame(ridge.coef))
 directors.coef = ridge.coef %>% 
-  filter(ridge.coef!=0) %>% 
   arrange(desc(ridge.coef))
 
+dim(data.frame(ridge.coef))
+dim(directors_matrix)
+dim(actors_matrix)
+dim(directors.coef)
 
 colnames(directors.coef)=c("directors","score_coef")
 

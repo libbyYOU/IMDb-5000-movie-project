@@ -1,0 +1,27 @@
+---
+title: "comperhansive analysis"
+author: "YOU & SHENG"
+date: "November 21, 2017"
+output: pdf_document
+---
+
+```{r}
+library(plyr)
+actors = plyr::join(read.csv("actors_score.csv")[,2:3],
+                    read.csv("actors_gross.csv")[,2:3],
+                    type = "right", 
+                    by = "actors")
+keywords = plyr::join(read.csv("keywords_score.csv")[,2:3],
+                      read.csv("keywords_gross.csv")[,2:3],
+                      type = "right", 
+                      by = "keywords")
+directors = plyr::join(read.csv("directors_score.csv")[,2:3],
+                       read.csv("directors_gross.csv")[,2:3],
+                       type = "right", 
+                       by = "directors")
+genres = plyr::join(read.csv("genres_score.csv")[,2:3],
+                    read.csv("genres_gross.csv")[,2:3],
+                    type = "right", 
+                    by = "genres")
+```
+
