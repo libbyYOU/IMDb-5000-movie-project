@@ -31,3 +31,59 @@ genres = plyr::join(genres_score,
                     by = "genres")
 ```
 
+```{r}
+genres_arrange=genres %>%
+  dplyr::arrange(desc(gross_coef,score.coef))
+genres_gross=genres %>%
+  dplyr::arrange(desc(gross_coef))
+genres_score=genres %>%
+  dplyr::arrange(desc(score.coef))
+
+
+genres_arrange
+genres_gross
+genres_score
+```
+
+```{r}
+keywords_arrange=keywords %>%
+  dplyr::arrange(desc(gross_coef,score_coef))
+keywords_gross=keywords %>%
+  dplyr::arrange(desc(gross_coef))
+keywords_score=keywords %>%
+  dplyr::arrange(desc(score_coef))
+
+keywords_arrange
+keywords_gross
+keywords_score
+```
+
+```{r}
+actors_arrange=actors %>%
+  dplyr::arrange(desc(gross_coef,score_coef))
+actors_gross=actors %>%
+  dplyr::arrange(desc(gross_coef))
+actors_score=actors %>%
+  dplyr::arrange(desc(score_coef))
+
+
+actors_arrange
+actors_gross
+actors_score
+```
+
+```{r}
+directors_arrange=directors %>%
+  dplyr::arrange(desc(gross_coef,score_coef))
+directors_gross=directors %>%
+  dplyr::arrange(desc(gross_coef))
+directors_score=directors %>%
+  dplyr::arrange(desc(score_coef))
+
+
+directors_arrange
+directors_gross
+directors_score
+```
+```
+
