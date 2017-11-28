@@ -43,10 +43,6 @@ genres_score=genres %>%
 genres_arrange
 genres_gross
 genres_score
-
-ggplot(data = genres, aes(x = gross_coef,y = score.coef))+
-  geom_point()+
-  geom_text(label=paste(genres$genres),colour="black",size=4)
 ```
 
 ```{r}
