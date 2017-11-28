@@ -90,7 +90,6 @@ The categorical variables include: director_name, actor_1_name, actor_2_name, ac
 # Gross in million
 Firstly, we calculate gross and budget in million, so that budget will not be over-valued in this model.
 ```{r}
-library(dplyr)
 movie1=movie %>%
   mutate(budget=budget/1000000)%>%
   mutate(gross=gross/1000000)
@@ -187,6 +186,18 @@ MSE.lasso
 ```{r}
 dim(genres_matrix)[2]
 ```
+```{r}
+genres.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:24,]
+genres.lasso.co=data.frame(genres.lasso.coef)
+genres.lasso.co=data.frame(rownames(genres.lasso.co),genres.lasso.co)
+genres.lasso.co=genres.lasso.co[genres.lasso.coef!=0,]
+genres.lasso.co=genres.lasso.co[-1,]
+
+dplyr::arrange(genres.lasso.co,desc(genres.lasso.coef))
+```
+
+
+
 Since MSE for ridge model and lasso model are nearly the same, and we would like to identify first genres and last ones leading to high gross. Thus, we use Ridge model to generate coefficients to keep more genres in outcomes.
 
 ```{r}
@@ -237,6 +248,15 @@ lasso.best.lam=lasso.cv.out$lambda.min
 lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
 MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
+```
+```{r}
+keywords.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:24,]
+keywords.lasso.co=data.frame(keywords.lasso.coef)
+keywords.lasso.co=data.frame(rownames(keywords.lasso.co),keywords.lasso.co)
+keywords.lasso.co=keywords.lasso.co[keywords.lasso.coef!=0,]
+keywords.lasso.co=keywords.lasso.co[-1,]
+
+dplyr::arrange(keywords.lasso.co,desc(keywords.lasso.coef))
 ```
 
 
@@ -294,6 +314,17 @@ lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
 MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
+
+```{r}
+directors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:24,]
+directors.lasso.co=data.frame(directors.lasso.coef)
+directors.lasso.co=data.frame(rownames(directors.lasso.co),directors.lasso.co)
+directors.lasso.co=directors.lasso.co[directors.lasso.coef!=0,]
+directors.lasso.co=directors.lasso.co[-1,]
+
+dplyr::arrange(directors.lasso.co,desc(directors.lasso.coef))
+```
+
 
 
 ```{r}
@@ -356,6 +387,17 @@ lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
 MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
+
+```{r}
+actors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:3550,]
+actors.lasso.co=data.frame(actors.lasso.coef)
+actors.lasso.co=data.frame(rownames(actors.lasso.co),actors.lasso.co)
+actors.lasso.co=actors.lasso.co[actors.lasso.coef!=0,]
+actors.lasso.co=actors.lasso.co[-1,]
+
+dplyr::arrange(actors.lasso.co,desc(actors.lasso.coef))
+```
+
 
 We use Ridge model to generate coefficients.
 ```{r}
