@@ -194,6 +194,8 @@ genres.lasso.co=genres.lasso.co[genres.lasso.coef!=0,]
 genres.lasso.co=genres.lasso.co[-1,]
 
 dplyr::arrange(genres.lasso.co,desc(genres.lasso.coef))
+
+dim(genres.lasso.co)[1]/dim(genres_matrix)[2]
 ```
 
 
@@ -250,19 +252,23 @@ MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
 ```{r}
-keywords.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:24,]
+dim(keywords_matrix)[2]
+```
+
+
+```{r}
+keywords.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:5254,]
 keywords.lasso.co=data.frame(keywords.lasso.coef)
 keywords.lasso.co=data.frame(rownames(keywords.lasso.co),keywords.lasso.co)
 keywords.lasso.co=keywords.lasso.co[keywords.lasso.coef!=0,]
 keywords.lasso.co=keywords.lasso.co[-1,]
 
 dplyr::arrange(keywords.lasso.co,desc(keywords.lasso.coef))
+
+dim(keywords.lasso.co)[1]/dim(keywords_matrix)[2]
 ```
 
 
-```{r}
-dim(keywords_matrix)[2]
-```
 For keywords analysis, we also use Ridge model to calculate coefficients.
 ```{r}
 keywords.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:5254,]
@@ -314,22 +320,23 @@ lasso.pre=predict(lasso.mod,s=lasso.best.lam,newx = x[-train,])
 MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
+```{r}
+dim(directors_matrix)[2]
+```
+
 
 ```{r}
-directors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:24,]
+directors.lasso.coef=predict(lasso.mod,type="coefficients",s=lasso.best.lam)[1:1466,]
 directors.lasso.co=data.frame(directors.lasso.coef)
 directors.lasso.co=data.frame(rownames(directors.lasso.co),directors.lasso.co)
 directors.lasso.co=directors.lasso.co[directors.lasso.coef!=0,]
 directors.lasso.co=directors.lasso.co[-1,]
 
 dplyr::arrange(directors.lasso.co,desc(directors.lasso.coef))
+
+dim(directors.lasso.co)[1]/dim(directors_matrix)[2]
 ```
 
-
-
-```{r}
-dim(directors_matrix)[2]
-```
 
 We use Ridge model to generate coefficients.
 ```{r}
@@ -396,6 +403,8 @@ actors.lasso.co=actors.lasso.co[actors.lasso.coef!=0,]
 actors.lasso.co=actors.lasso.co[-1,]
 
 dplyr::arrange(actors.lasso.co,desc(actors.lasso.coef))
+
+dim(actors.lasso.co)[1]/dim(actors_matrix)[2]
 ```
 
 
