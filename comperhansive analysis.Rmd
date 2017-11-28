@@ -6,7 +6,9 @@ output: pdf_document
 ---
 
 ```{r}
+library(dplyr)
 library(plyr)
+library(ggplot2)
 actors1 = read.csv("actors_score.csv")
 actors2 = read.csv("actors_score.csv")
 actors = plyr::join(read.csv("actors_score.csv")[,2:3],
@@ -43,6 +45,10 @@ genres_score=genres %>%
 genres_arrange
 genres_gross
 genres_score
+
+ggplot(data = genres, aes(x = gross_coef,y = score.coef))+
+  geom_point()+
+  geom_text(label=paste(genres$genres),colour="black",size=4)
 ```
 
 ```{r}
