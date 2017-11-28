@@ -100,7 +100,7 @@ movie1=movie %>%
 We assume that gross has relationship with both production and marketing process, thus gross is probably affected by factors including budget,duration and popularity of director and cast (which is reflected by Facebook likes). Additionally, gross is also affected by word-of-mouth marketing online, which could be reflected through IMDb score, number of voted users and number of critics for reviews. 
 
 ```{r}
-data=dplyr::select(movie1,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
+data=dplyr::select(movie1,gross,budget,duration,title_year,director_facebook_likes,  actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
 
 set.seed(1)
 train_n=sample(dim(data)[1],0.75*dim(data)[1])
@@ -134,25 +134,16 @@ summary(M3)
 ```
 
 ```{r}
-M4=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score,train_data)
+M4=lm(gross~.-facenumber_in_poster-movie_facebook_likes-title_year,train_data)
 summary(M4)
 ```
 
 ```{r}
-M5=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year,train_data)
+M5=lm(gross~.-facenumber_in_poster-movie_facebook_likes-title_year-num_critic_for_reviews,train_data)
 summary(M5)
 ```
 
 
-```{r}
-M6=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews,train_data)
-summary(M6)
-```
-
-```{r}
-M7=lm(gross~.-facenumber_in_poster-movie_facebook_likes-imdb_score-title_year-num_critic_for_reviews-duration,train_data)
-summary(M7)
-```
 From this model, budget has a strong positive relationship with gross
 
 ## Analysis into categorical variables
