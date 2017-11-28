@@ -241,6 +241,12 @@ lasso.best.lam=lasso.cv.out$lambda.min
 lasso.pre=predict(lassom,s=lasso.best.lam,newx = test_x)
 MSE.lasso=mean((lasso.pre-test_y)^2)
 MSE.lasso
+
+sum(predict(lassom,type = "coefficients", s=lasso.best.lam)[2:dim(genres_matrix)[2]+1]!=0)
+
+sum(lasso.pre != 0)
+
+sum(predict(lassom,type = "coefficients", s=lasso.best.lam)[2:dim(genres_matrix)[2]+1]!=0)/dim(genres_matrix)[2]
 ```
 
 The results are pretty close,so we consider using lasso to identify the genres that have the most important influence on IMDb score. 
@@ -286,6 +292,8 @@ lasso.best.lam=lasso.cv.out$lambda.min
 lasso.pre=predict(lassom,s=lasso.best.lam,newx = test_x)
 MSE.lasso=mean((lasso.pre-test_y)^2)
 MSE.lasso
+
+sum(predict(lassom,type = "coefficients", s=lasso.best.lam)[2:dim(actors_matrix)[2]+1]!=0)/dim(actors_matrix)[2]
 ```
 
 The results are pretty close,so we consider using ridge to identify the genres that have the most important influence. 
