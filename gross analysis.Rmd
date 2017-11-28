@@ -87,7 +87,7 @@ The categorical variables include: director_name, actor_1_name, actor_2_name, ac
 
 ## Analysis into numerical variables
 
-# gross in million
+# Gross in million
 Firstly, we calculate gross and budget in million, so that budget will not be over-valued in this model.
 ```{r}
 library(dplyr)
@@ -97,7 +97,7 @@ movie1=movie %>%
 ```
 
 # Select numerical variables to be analysed
-We assumed that gross has relationship with both production and marketing process, thus gross is probably affected by factors including budget,duration and popularity of director and cast (which is reflected by Facebook likes). Additionally, gross is also related to marketing
+We assume that gross has relationship with both production and marketing process, thus gross is probably affected by factors including budget,duration and popularity of director and cast (which is reflected by Facebook likes). Additionally, gross is also affected by word-of-mouth marketing online, which could be reflected through IMDb score, number of voted users and number of critics for reviews. 
 
 ```{r}
 data=dplyr::select(movie1,gross,budget,duration,title_year,director_facebook_likes, imdb_score, actor_1_facebook_likes, actor_2_facebook_likes,actor_3_facebook_likes, cast_total_facebook_likes, movie_facebook_likes, num_voted_users, num_critic_for_reviews, facenumber_in_poster)
@@ -109,7 +109,7 @@ test_data=data[-train_n,]
 ```
 
 # Create correlation matrix
-Firstly, 
+Firstly, we create a correlation matrix to view relationship between gross and other factors.
 ```{r}
 library(corrplot)
 cor(train_data,use="na.or.complete")
@@ -156,8 +156,9 @@ summary(M7)
 From this model, budget has a strong positive relationship with gross
 
 ## Analysis into categorical variables
+Then we further analyze categorical variables. We dig into genres, keywords, directors and actors respectively and find out coefficients of each object in order to identify top ones leading to high gross in each category.
 
-# Identify top 8 genres leading to high gross
+# Identify relationship between genres and gross
 Build Ridge model and Lasso model to help us identify genres that have relationship with gross.
 
 ```{r}
@@ -195,8 +196,7 @@ MSE.lasso
 ```{r}
 dim(genres_matrix)[2]
 ```
-
-Since MSE for ridge model and lasso model are nearly the same, we use lasso model to generate coefficients, so that we could get less number of coefficients.
+Since MSE for ridge model and lasso model are nearly the same, and we would like to identify first genres and last ones leading to high gross. Thus, we use Ridge model to generate coefficients to keep more genres in outcomes.
 
 ```{r}
 genres.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:24,]
@@ -214,7 +214,7 @@ ordered.asc.genres
 colnames(genres.co)=c("genres","gross_coef")
 ```
 
-# Identify top keywords leading to high gross
+# Identify relationship between keywords and gross
 ```{r}
 gross.keywords=data.frame(movie$gross,keywords_matrix)
 gross.keywords=na.omit(gross.keywords)
@@ -252,7 +252,7 @@ MSE.lasso
 ```{r}
 dim(keywords_matrix)[2]
 ```
-
+For keywords analysis, we also use Ridge model to calculate coefficients.
 ```{r}
 keywords.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:5254,]
 keywords.co=data.frame(keywords.ridge.coef)[-1,]
@@ -270,7 +270,7 @@ ordered.asc.keywords
 colnames(keywords.co)=c("keywords","gross_coef")
 ```
 
-# Identify directors leading to high gross
+# Identify relationship between directors and gross
 ```{r}
 gross.directors=data.frame(movie$gross,directors_matrix)
 gross.directors=na.omit(gross.directors)
@@ -309,7 +309,6 @@ MSE.lasso
 dim(directors_matrix)[2]
 ```
 
-
 We use Ridge model to generate coefficients.
 ```{r}
 directors.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:1466,]
@@ -328,7 +327,7 @@ ordered.asc.directors
 colnames(directors.co)=c("directors","gross_coef")
 ```
 
-# Identify actors and their relationship to high gross
+# Identify relationship between actors and gross
 ```{r}
 gross.actors=data.frame(movie$gross,actors_matrix)
 gross.actors=na.omit(gross.actors)
@@ -367,7 +366,7 @@ MSE.lasso=mean((lasso.pre-y[-train])^2)
 MSE.lasso
 ```
 
-
+We use Ridge model to generate coefficients.
 ```{r}
 actors.ridge.coef=predict(ridge.mod,type="coefficients",s=ridge.best.lam)[1:3550,]
 actors.ridge.co=data.frame(actors.ridge.coef)[-1,]
@@ -384,6 +383,7 @@ ordered.asc.actors
 colnames(actors.ridge.co)=c("actors","gross_coef")
 ```
 
+Finally, generate related csv files for further analysis.
 ```{r}
 write.csv(actors.ridge.co,file = "actors_gross.csv")
 write.csv(directors.co,file = "directors_gross.csv")

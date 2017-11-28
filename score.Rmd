@@ -128,9 +128,9 @@ glm=glm(movie.high_low~.-movie.actor_3_facebook_likes-movie.actor_2_facebook_lik
 summary(glm)
 ```
 
-Step by step, we elimated some variables' effect, include actor's facebook likes and cast_total_facebook_likes. In another words, all the variables contains facebook's effect. The IMDB_Score have nothing relate to the facebook.
+Step by step, we eliminated some variables, including actor's facebook likes and cast_total_facebook_likes. In other words, all the variables related to Facebook were removed. The IMDB_Score has nothing to do with Facebook.
 
-For the remined variables, the longer the movie, the higher the score which is a little superice, however, the year also is a significant variables means that recent years the movie get harder than before to get a score higher then 7.0.
+For the remaining variables, the longer the movie, the higher the score which is a little superising. However, the year also is a significant variable indicating that in recent years, the movie get harder than before to get a score higher then 7.0.
 
 
 ```{r}
@@ -202,9 +202,9 @@ rm(error_matrix,test_data_scaled,train_data_scaled,k,k_range,kk,knn_pred,misclas
 
 
 
-In a conclusion, the lda model would be the best model to predict the high or low of the imdb score.Besides,the knn model and glm model have quite big misclassification error so we cannot use them.
+In conclusion, the lda model would be the best to predict whether IMDb score of a movie is high or low. Besides,the knn model and glm model have quite big misclassification error so we cannot use them.
 
-To identify genres that have relationship with IMDB score,we used lasso and irdge model to identify.
+To identify genres that have relationship with IMDB score,we used lasso and ridge model.
 
 ```{r}
 library(glmnet)
@@ -243,7 +243,7 @@ MSE.lasso=mean((lasso.pre-test_y)^2)
 MSE.lasso
 ```
 
-The results are pretty close,so we consider use lasso to identity the genres have the most important influence. 
+The results are pretty close,so we consider using lasso to identify the genres that have the most important influence on IMDb score. 
 
 ```{r}
 ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(genres_matrix)[2]+1,]
@@ -251,9 +251,8 @@ ridge.coef=data.frame(colnames(genres_matrix),
                       data.frame(ridge.coef))
 genres.coef = ridge.coef
 ```
-#actors
 
-
+# Actors
 ```{r}
 score_actors=data.frame(movie$movie_title,movie$high_low,actors_matrix)
 score_actors=na.omit(score_actors)
@@ -289,7 +288,7 @@ MSE.lasso=mean((lasso.pre-test_y)^2)
 MSE.lasso
 ```
 
-The results are pretty close,so we consider use lasso to identity the genres have the most important influence. 
+The results are pretty close,so we consider using ridge to identify the genres that have the most important influence. 
 
 ```{r}
 ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(actors_matrix)[2]+1,]
@@ -314,7 +313,7 @@ actors.coef[1:10,1]
 actors.coef[(dim(actors.coef)[1]-10):dim(actors.coef)[1],1]
 ```
 
-#keywords
+# Keywords
 
 
 ```{r}
@@ -352,7 +351,7 @@ MSE.lasso=mean((lasso.pre-test_y)^2)
 MSE.lasso
 ```
 
-The results are pretty close,so we consider use lasso to identity the keywords have the most important influence. 
+The results are pretty close,so we consider using lasso to identity the keywords have the most important influence. 
 
 ```{r}
 lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(keywords_matrix)[2]+1,]
@@ -362,7 +361,7 @@ keywords.coef = lasso.coef %>%
   arrange(desc(lasso.coef))
 ```
 
-There is no result
+There is no result.
 
 ```{r}
 ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(keywords_matrix)[2]+1,]
@@ -378,7 +377,7 @@ keywords.coef[1:10,1]
 keywords.coef[(dim(keywords.coef)[1]-10):dim(keywords.coef)[1],1]
 ```
 
-#directors
+# Directors
 
 
 ```{r}
@@ -416,7 +415,7 @@ MSE.lasso=mean((lasso.pre-test_y)^2)
 MSE.lasso
 ```
 
-The results are pretty close,so we consider use lasso to identity the directors have the most important influence. 
+The results are pretty close,so we consider using lasso to identity the directors have the most important influence. 
 
 ```{r}
 lasso.coef=predict(lassom,type="coefficients",s=lasso.best.lam)[1:dim(directors_matrix)[2]+1,]
@@ -427,7 +426,7 @@ directors.coef = lasso.coef %>%
   arrange(desc(lasso.coef))
 ```
 
-There is no result
+There is no result.
 
 ```{r}
 ridge.coef=predict(ridgem,type="coefficients",s=ridge.best.lam)[1:dim(directors_matrix)[2]+1,]
